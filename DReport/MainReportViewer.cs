@@ -131,6 +131,10 @@ namespace DReport
         private object dt_rpt10;
         private object dt_rpt5;
         private object dt_rpt12;
+        private object dt_rpt13;
+        private object dt_rpt14;
+        private DataTable dt_rpt15;
+        private DataTable dt_rpt16;
 
         private void rpt6()
         {
@@ -318,6 +322,100 @@ namespace DReport
             catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT12");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt13()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt13.Text.Replace("-", "");
+                string endDate = dtEndRpt13.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt13(beginDate, endDate));
+                    dt_rpt13 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT13");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt14()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt14.Text.Replace("-", "");
+                string endDate = dtEndRpt14.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt14(beginDate, endDate));
+                    dt_rpt14 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT14");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt15()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt15.Text.Replace("-", "");
+                string endDate = dtEndRpt15.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt15(beginDate, endDate));
+                    dt_rpt15 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT15");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt16()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt16.Text.Replace("-", "");
+                string endDate = dtEndRpt16.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt16(beginDate, endDate));
+                    dt_rpt16 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT16");
                 XtraMessageBox.Show(ex.Message);
             }
         }
@@ -592,6 +690,102 @@ namespace DReport
                 MessageBox.Show(ex.Message);
             }
         }
+        private void expdata13(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl15.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata14(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl16.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata15(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl17.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata16(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl18.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btnSearchRpt1_Click(object sender, EventArgs e)
         {
             using (frmWaitForm frm = new frmWaitForm(rpt1))
@@ -691,6 +885,38 @@ namespace DReport
             }
             gridControl14.DataSource = dt_rpt12;
         }
+        private void btnSearchRpt13_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt13))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl15.DataSource = dt_rpt13;
+        }
+        private void btnSearchRpt14_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt14))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl16.DataSource = dt_rpt14;
+        }
+        private void btnSearchRpt15_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt15))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl17.DataSource = dt_rpt15;
+        }
+        private void btnSearchRpt16_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt16))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl18.DataSource = dt_rpt16;
+        }
 
         private void btnToXLSX2_Click(object sender, EventArgs e)
         {
@@ -746,6 +972,26 @@ namespace DReport
         private void btnToXLSX12_Click(object sender, EventArgs e)
         {
             expdata12("rpt12");
+        }
+
+        private void btnToXLSX13_Click(object sender, EventArgs e)
+        {
+            expdata13("rpt13");
+        }
+
+        private void btnToXLSX14_Click(object sender, EventArgs e)
+        {
+            expdata14("rpt14");
+        }
+
+        private void btnToXLSX15_Click(object sender, EventArgs e)
+        {
+            expdata15("rpt15");
+        }
+
+        private void btnToXLSX16_Click(object sender, EventArgs e)
+        {
+            expdata16("rpt16");
         }
     }
 }
