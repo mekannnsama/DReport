@@ -5,11 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.DocumentView.Controls;
+using DevExpress.XtraBars.Alerter;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DReportUtil.DBControl;
@@ -19,11 +22,44 @@ namespace DReport
 {
     public partial class MainReportViewer : XtraForm
     {
+        
         DBConnecter dbconn = new DBConnecter();
         private string dbres = string.Empty;
-        public MainReportViewer()
+        public MainReportViewer( string permi)
         {
-            InitializeComponent();
+            InitializeComponent( );
+            if (permi == "SALES")
+            {
+                tbRpt1.PageVisible = false;
+                xtraTabControl2.PageVisible = false;
+                gridControl3.PageVisible = false;
+                gridControl4.PageVisible = false;
+                gridControl6.PageVisible = false;
+
+                xtraTabPage1.PageVisible = false;
+                xtraTabPage2.PageVisible = false;
+                xtraTabPage3.PageVisible = false;
+                xtraTabPage4.PageVisible = false;
+                xtraTabPage5.PageVisible = false;
+                xtraTabPage6.PageVisible = false;
+                xtraTabPage7.PageVisible = false;
+                xtraTabPage8.PageVisible = false;
+                xtraTabPage9.PageVisible = false;
+                xtraTabPage10.PageVisible = false;
+         
+                xtraTabPage12.PageVisible = false;
+                xtraTabPage13.PageVisible = false;
+                xtraTabPage14.PageVisible = false;
+                xtraTabPage15.PageVisible = false;
+                xtraTabPage16.PageVisible = false;
+                xtraTabPage17.PageVisible = false;
+                xtraTabPage18.PageVisible = false;
+                xtraTabPage19.PageVisible = false;
+                xtraTabPage20.PageVisible = true;
+                xtraTabPage21.PageVisible = true;
+            }
+
+            
         }
 
         private void MainReportViewer_FormClosing(object sender, FormClosingEventArgs e)
@@ -69,7 +105,7 @@ namespace DReport
         }
 
         private void rpt2()
-         {
+        {
             try
             {
                 string beginDate = dtBeginRpt2.Text.Replace("-", "");
@@ -85,16 +121,11 @@ namespace DReport
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT2");
                 XtraMessageBox.Show(ex.Message);
             }
-         }
-
-        internal void show()
-        {
-            throw new NotImplementedException();
         }
 
         private void rpt3()
@@ -113,7 +144,7 @@ namespace DReport
                     XtraMessageBox.Show(dbres);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT3");
                 XtraMessageBox.Show(ex.Message);
@@ -123,7 +154,6 @@ namespace DReport
         DataTable dt_rpt6 = new DataTable();
         private object dt_rpt3;
         private DataTable dt_rpt4;
-        private object dt_expdata1;
         private DataTable dt_rpt1;
         private DataTable dt_rpt7;
         private DataTable dt_rpt8;
@@ -133,8 +163,18 @@ namespace DReport
         private object dt_rpt12;
         private object dt_rpt13;
         private object dt_rpt14;
-        private DataTable dt_rpt15;
-        private DataTable dt_rpt16;
+        private object dt_rpt15;
+        private object dt_rpt16;
+        private object dt_rpt17;
+        private object dt_rpt18;
+        private object dt_rpt19;
+        private object dt_rpt20;
+        private object dt_rpt21;
+        private object dt_rpt22;
+        private object dt_rpt23;
+        private object dt_rpt24;
+        private object dt_rpt25;
+        private object dt_rpt26;
 
         private void rpt6()
         {
@@ -153,7 +193,7 @@ namespace DReport
                     XtraMessageBox.Show(dbres);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT6");
                 XtraMessageBox.Show(ex.Message);
@@ -182,7 +222,7 @@ namespace DReport
                 XtraMessageBox.Show(ex.Message);
             }
         }
-        
+
         private void rpt7()
         {
             try
@@ -260,11 +300,10 @@ namespace DReport
             try
             {
                 string beginDate = dtBeginRpt10.Text.Replace("-", "");
-                string endDate = dtEndRpt10.Text.Replace("-", "");
 
                 if (dbconn.idbCheck(out dbres))
                 {
-                    DataTable dt = dbconn.getTable(DBQry.rpt10(beginDate, endDate));
+                    DataTable dt = dbconn.getTable(DBQry.rpt10(beginDate));
                     dt_rpt10 = dt;
                 }
                 else
@@ -416,6 +455,240 @@ namespace DReport
             catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT16");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt17()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt17.Text.Replace("-", "");
+                string endDate = dtEndRpt17.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt17(beginDate, endDate));
+                    dt_rpt17 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT17");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt18()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt18.Text.Replace("-", "");
+                string endDate = dtEndRpt18.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt18(beginDate, endDate));
+                    dt_rpt18 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT18");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt19()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt19.Text.Replace("-", "");
+                string endDate = dtEndRpt19.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt19(beginDate, endDate));
+                    dt_rpt19 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT19");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt20()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt20.Text.Replace("-", "");
+                string endDate = dtEndRpt20.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt20(beginDate, endDate));
+                    dt_rpt20 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT20");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt21()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt21.Text.Replace("-", "");
+                //string endDate = dtEndRpt21.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt21(beginDate));
+                    dt_rpt21 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT21");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt22()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt22.Text.Replace("-", "");
+                string endDate = dtEndRpt22.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt22(beginDate,endDate));
+                    dt_rpt22 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT22");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt23()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt23.Text.Replace("-", "");
+                string endDate = dtEndRpt23.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt23(beginDate, endDate));
+                    dt_rpt23 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT23");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rpt24()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt24.Text.Replace("-", "");
+                string endDate = dtEndRpt24.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt24(beginDate, endDate));
+                    dt_rpt24 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT24");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt25()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt25.Text.Replace("-", "");
+                string endDate = dtEndRpt25.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt25(beginDate, endDate));
+                    dt_rpt25 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT25");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt26()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt26.Text.Replace("-", "");
+                string endDate = dtEndRpt26.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt26(beginDate, endDate));
+                    dt_rpt26 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT26");
                 XtraMessageBox.Show(ex.Message);
             }
         }
@@ -728,7 +1001,7 @@ namespace DReport
                 }
                 ds = di.GetAccessControl();
                 ds.AddAccessRule(fsar);
-                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));
                 gridControl16.ExportToXlsx(fname);
                 XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 System.Diagnostics.Process.Start(logfolder);
@@ -776,8 +1049,251 @@ namespace DReport
                 }
                 ds = di.GetAccessControl();
                 ds.AddAccessRule(fsar);
-                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));
                 gridControl18.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void expdata17(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl19.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata18(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl20.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void expdata19(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl21.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void expdata20(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl22.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata21(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl23.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata22(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl24.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata23(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl25.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata24(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl26.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata25(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl27.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void expdata26(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl28.ExportToXlsx(fname);
                 XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 System.Diagnostics.Process.Start(logfolder);
             }
@@ -861,7 +1377,8 @@ namespace DReport
 
         private void btnSearchRpt10_Click(object sender, EventArgs e)
         {
-            using (frmWaitForm frm = new frmWaitForm(rpt10))
+/*            MessageBox.Show("Засвартай байна. Лизинг үлдэгдэл гээд жижгээр бичсэн рүү орно уу !!!");
+*/            using (frmWaitForm frm = new frmWaitForm(rpt10))
             {
                 frm.ShowDialog(this);
             }
@@ -917,6 +1434,99 @@ namespace DReport
             }
             gridControl18.DataSource = dt_rpt16;
         }
+
+        private void btnSearchRpt17_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt17))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl19.DataSource = dt_rpt17;
+        }
+
+        private void btnSearchRpt18_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt18))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl20.DataSource = dt_rpt18;
+        }
+
+        private void btnSearchRpt19_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt19))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl21.DataSource = dt_rpt19;
+        }
+
+        private void btnSearchRpt20_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt20))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl22.DataSource = dt_rpt20;
+        }
+        private void btnSearchRpt21_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt21))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl23.DataSource = dt_rpt21;
+        }
+
+        private void btnSearchRpt22_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt22))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl24.DataSource = dt_rpt22;
+
+        }
+        private void btnSearchRpt23_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt23))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl25.DataSource = dt_rpt23;
+
+        }
+
+        private void btnSearchRpt24_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt24))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl26.DataSource = dt_rpt24;
+
+        }
+
+        private void btnSearchRpt25_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt25))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl27.DataSource = dt_rpt25;
+
+        }
+        private void btnSearchRpt26_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt26))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl28.DataSource = dt_rpt26;
+        }
+
+
 
         private void btnToXLSX2_Click(object sender, EventArgs e)
         {
@@ -993,5 +1603,53 @@ namespace DReport
         {
             expdata16("rpt16");
         }
+
+        private void btnToXLSX17_Click(object sender, EventArgs e)
+        {
+            expdata17("rpt17");
+        }
+        private void btnToXLSX18_Click(object sender, EventArgs e)
+        {
+            expdata18("rpt18");
+        }
+
+        private void btnToXLSX19_Click(object sender, EventArgs e)
+        {
+            expdata19("rpt19");
+        }
+
+        private void btnToXLSX20_Click(object sender, EventArgs e)
+        {
+            expdata20("rpt20");
+        }
+
+        private void btnToXLSX21_Click(object sender, EventArgs e)
+        {
+            expdata21("rpt21");
+        }
+        private void btnToXLSX22_Click(object sender, EventArgs e)
+        {
+            expdata22("rpt22");
+        }
+
+        private void btnToXLSX23_Click(object sender, EventArgs e)
+        {
+            expdata23("rpt23");
+        }
+
+        private void btnToXLSX24_Click(object sender, EventArgs e)
+        {
+            expdata24("rpt24");
+        }
+
+        private void btnToXLSX25_Click(object sender, EventArgs e)
+        {
+            expdata25("rpt25");
+        }
+        private void btnToXLSX26_Click(object sender, EventArgs e)
+        {
+            expdata26("rpt26");
+        }
+
     }
 }

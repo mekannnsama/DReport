@@ -13,7 +13,7 @@ namespace DReport
 {
     public partial class frmWaitForm : XtraForm
     {
-        private Action<string> expdata1;
+        //private Action<string> expdata1;
 
         public Action Worker { get; set; }
         public frmWaitForm(Action worker)

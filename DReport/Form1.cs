@@ -44,10 +44,11 @@ namespace DReport
                     {
                         string pass = dt.Rows[0]["USER_PASSWORD"].ToString();
                         string uName = dt.Rows[0]["USER_FIRST_NAME"].ToString();
-                        if(EncDecFunction.Decrypt(pass) == txtPassword.Text)
+                        string permi = dt.Rows[0]["DIVISION"].ToString();
+                        if (EncDecFunction.Decrypt(pass) == txtPassword.Text)
                         {
                             this.Hide();
-                            MainReportViewer report = new MainReportViewer();
+                            MainReportViewer report = new MainReportViewer(permi);
                             report.Show();
                         }
                         else
@@ -66,5 +67,7 @@ namespace DReport
                 XtraMessageBox.Show(ex.Message);
             }
         }
+
+
     }
 }

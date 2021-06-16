@@ -7,7 +7,7 @@ namespace DReportUtil.DBControl
 {
     public class DBConnecter
     {
-        private string TAG = "DBCONTROL";
+        //private string TAG = "DBCONTROL";
         OracleConnection conn;
         public DBConnecter()
         {
@@ -124,7 +124,7 @@ namespace DReportUtil.DBControl
                     dt.Clear();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //SystemLogWriter.LogWriter._error(TAG, ex.ToString());
                 dt.Clear();

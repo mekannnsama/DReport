@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DReport", "DReport\DReport.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DReportUtil", "DReportUtil\DReportUtil.csproj", "{4089B318-383F-4756-96D5-FF63F9DA3109}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DReportSetup", "DReportSetup\DReportSetup.vdproj", "{297B3808-1FBF-441F-B929-73298DA4C860}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DReportInstall", "DReportInstall\DReportInstall.vdproj", "{E2E39D1D-17B5-45BF-A7BC-5D55C8DFB7CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +23,8 @@ Global
 		{4089B318-383F-4756-96D5-FF63F9DA3109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4089B318-383F-4756-96D5-FF63F9DA3109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4089B318-383F-4756-96D5-FF63F9DA3109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{297B3808-1FBF-441F-B929-73298DA4C860}.Debug|Any CPU.ActiveCfg = Debug
-		{297B3808-1FBF-441F-B929-73298DA4C860}.Release|Any CPU.ActiveCfg = Release
+		{E2E39D1D-17B5-45BF-A7BC-5D55C8DFB7CB}.Debug|Any CPU.ActiveCfg = Debug
+		{E2E39D1D-17B5-45BF-A7BC-5D55C8DFB7CB}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
