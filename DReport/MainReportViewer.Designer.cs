@@ -827,11 +827,11 @@ namespace DReport
             // 
             this.gridControl24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl24.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl24.Location = new System.Drawing.Point(0, 91);
+            this.gridControl24.Location = new System.Drawing.Point(0, 114);
             this.gridControl24.MainView = this.gridView25;
             this.gridControl24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl24.Name = "gridControl24";
-            this.gridControl24.Size = new System.Drawing.Size(831, 501);
+            this.gridControl24.Size = new System.Drawing.Size(1039, 626);
             this.gridControl24.TabIndex = 15;
             this.gridControl24.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView25});
@@ -1004,7 +1004,7 @@ namespace DReport
             this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(831, 91);
+            this.panel22.Size = new System.Drawing.Size(1039, 91);
             this.panel22.TabIndex = 14;
             // 
             // btnToXLSX22
@@ -1316,11 +1316,11 @@ namespace DReport
             // 
             this.gridControl23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl23.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl23.Location = new System.Drawing.Point(0, 91);
+            this.gridControl23.Location = new System.Drawing.Point(0, 114);
             this.gridControl23.MainView = this.gridView24;
             this.gridControl23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl23.Name = "gridControl23";
-            this.gridControl23.Size = new System.Drawing.Size(831, 501);
+            this.gridControl23.Size = new System.Drawing.Size(1039, 626);
             this.gridControl23.TabIndex = 14;
             this.gridControl23.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView24});
@@ -1436,7 +1436,7 @@ namespace DReport
             this.panel21.Location = new System.Drawing.Point(0, 0);
             this.panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(831, 91);
+            this.panel21.Size = new System.Drawing.Size(1039, 91);
             this.panel21.TabIndex = 13;
             // 
             // btnToXLSX21
@@ -1750,11 +1750,11 @@ namespace DReport
             // 
             this.gridControl22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl22.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl22.Location = new System.Drawing.Point(0, 91);
+            this.gridControl22.Location = new System.Drawing.Point(0, 114);
             this.gridControl22.MainView = this.gridView23;
             this.gridControl22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl22.Name = "gridControl22";
-            this.gridControl22.Size = new System.Drawing.Size(831, 501);
+            this.gridControl22.Size = new System.Drawing.Size(1039, 626);
             this.gridControl22.TabIndex = 14;
             this.gridControl22.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView23});
@@ -1993,7 +1993,7 @@ namespace DReport
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(831, 91);
+            this.panel20.Size = new System.Drawing.Size(1039, 91);
             this.panel20.TabIndex = 13;
             // 
             // btnToXLSX20
@@ -2308,11 +2308,11 @@ namespace DReport
             // 
             this.gridControl21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl21.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl21.Location = new System.Drawing.Point(0, 91);
+            this.gridControl21.Location = new System.Drawing.Point(0, 114);
             this.gridControl21.MainView = this.gridView22;
             this.gridControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl21.Name = "gridControl21";
-            this.gridControl21.Size = new System.Drawing.Size(831, 501);
+            this.gridControl21.Size = new System.Drawing.Size(1039, 626);
             this.gridControl21.TabIndex = 13;
             this.gridControl21.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView22});
@@ -2452,7 +2452,7 @@ namespace DReport
             this.panel19.Location = new System.Drawing.Point(0, 0);
             this.panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(831, 91);
+            this.panel19.Size = new System.Drawing.Size(1039, 91);
             this.panel19.TabIndex = 12;
             // 
             // btnToXLSX19
@@ -2607,11 +2607,11 @@ namespace DReport
             // 
             this.gridControl20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl20.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl20.Location = new System.Drawing.Point(0, 91);
+            this.gridControl20.Location = new System.Drawing.Point(0, 114);
             this.gridControl20.MainView = this.gridView21;
             this.gridControl20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl20.Name = "gridControl20";
-            this.gridControl20.Size = new System.Drawing.Size(831, 501);
+            this.gridControl20.Size = new System.Drawing.Size(1039, 626);
             this.gridControl20.TabIndex = 14;
             this.gridControl20.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView21});
@@ -2883,7 +2883,7 @@ namespace DReport
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(831, 91);
+            this.panel18.Size = new System.Drawing.Size(1039, 91);
             this.panel18.TabIndex = 1;
             // 
             // btnToXLSX18
@@ -3143,11 +3143,11 @@ namespace DReport
             // 
             this.gridControl19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl19.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl19.Location = new System.Drawing.Point(0, 91);
+            this.gridControl19.Location = new System.Drawing.Point(0, 114);
             this.gridControl19.MainView = this.gridView20;
             this.gridControl19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl19.Name = "gridControl19";
-            this.gridControl19.Size = new System.Drawing.Size(831, 501);
+            this.gridControl19.Size = new System.Drawing.Size(1039, 626);
             this.gridControl19.TabIndex = 14;
             this.gridControl19.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView20});
@@ -3320,7 +3320,7 @@ namespace DReport
             this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(831, 91);
+            this.panel17.Size = new System.Drawing.Size(1039, 91);
             this.panel17.TabIndex = 13;
             // 
             // btnToXLSX17
@@ -3394,11 +3394,11 @@ namespace DReport
             // 
             this.gridControl18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl18.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl18.Location = new System.Drawing.Point(0, 91);
+            this.gridControl18.Location = new System.Drawing.Point(0, 114);
             this.gridControl18.MainView = this.gridView19;
             this.gridControl18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl18.Name = "gridControl18";
-            this.gridControl18.Size = new System.Drawing.Size(831, 501);
+            this.gridControl18.Size = new System.Drawing.Size(1039, 626);
             this.gridControl18.TabIndex = 13;
             this.gridControl18.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView19});
@@ -3560,7 +3560,7 @@ namespace DReport
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(831, 91);
+            this.panel16.Size = new System.Drawing.Size(1039, 91);
             this.panel16.TabIndex = 12;
             // 
             // btnToXLSX16
@@ -3634,11 +3634,11 @@ namespace DReport
             // 
             this.gridControl17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl17.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl17.Location = new System.Drawing.Point(0, 91);
+            this.gridControl17.Location = new System.Drawing.Point(0, 114);
             this.gridControl17.MainView = this.gridView18;
             this.gridControl17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl17.Name = "gridControl17";
-            this.gridControl17.Size = new System.Drawing.Size(831, 501);
+            this.gridControl17.Size = new System.Drawing.Size(1039, 626);
             this.gridControl17.TabIndex = 12;
             this.gridControl17.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView18});
@@ -3723,7 +3723,7 @@ namespace DReport
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(831, 91);
+            this.panel15.Size = new System.Drawing.Size(1039, 91);
             this.panel15.TabIndex = 11;
             // 
             // btnToXLSX15
@@ -4052,11 +4052,11 @@ namespace DReport
             // 
             this.gridControl16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl16.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl16.Location = new System.Drawing.Point(0, 91);
+            this.gridControl16.Location = new System.Drawing.Point(0, 114);
             this.gridControl16.MainView = this.gridView17;
             this.gridControl16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl16.Name = "gridControl16";
-            this.gridControl16.Size = new System.Drawing.Size(831, 501);
+            this.gridControl16.Size = new System.Drawing.Size(1039, 626);
             this.gridControl16.TabIndex = 11;
             this.gridControl16.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView17});
@@ -4284,7 +4284,7 @@ namespace DReport
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(831, 91);
+            this.panel14.Size = new System.Drawing.Size(1039, 91);
             this.panel14.TabIndex = 10;
             // 
             // btnToXLSX14
@@ -4522,11 +4522,11 @@ namespace DReport
             // 
             this.gridControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl15.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl15.Location = new System.Drawing.Point(0, 91);
+            this.gridControl15.Location = new System.Drawing.Point(0, 114);
             this.gridControl15.MainView = this.gridView16;
             this.gridControl15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl15.Name = "gridControl15";
-            this.gridControl15.Size = new System.Drawing.Size(831, 501);
+            this.gridControl15.Size = new System.Drawing.Size(1039, 626);
             this.gridControl15.TabIndex = 10;
             this.gridControl15.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView16});
@@ -4699,7 +4699,7 @@ namespace DReport
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(831, 91);
+            this.panel13.Size = new System.Drawing.Size(1039, 91);
             this.panel13.TabIndex = 9;
             // 
             // btnToXLSX13
@@ -4893,11 +4893,11 @@ namespace DReport
             // 
             this.gridControl14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl14.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl14.Location = new System.Drawing.Point(0, 91);
+            this.gridControl14.Location = new System.Drawing.Point(0, 114);
             this.gridControl14.MainView = this.gridView15;
             this.gridControl14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl14.Name = "gridControl14";
-            this.gridControl14.Size = new System.Drawing.Size(831, 501);
+            this.gridControl14.Size = new System.Drawing.Size(1039, 626);
             this.gridControl14.TabIndex = 9;
             this.gridControl14.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView15});
@@ -5004,7 +5004,7 @@ namespace DReport
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(831, 91);
+            this.panel12.Size = new System.Drawing.Size(1039, 91);
             this.panel12.TabIndex = 8;
             // 
             // btnToXLSX12
@@ -5253,11 +5253,11 @@ namespace DReport
             // 
             this.gridControl9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl9.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl9.Location = new System.Drawing.Point(0, 91);
+            this.gridControl9.Location = new System.Drawing.Point(0, 114);
             this.gridControl9.MainView = this.gridView14;
             this.gridControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl9.Name = "gridControl9";
-            this.gridControl9.Size = new System.Drawing.Size(831, 501);
+            this.gridControl9.Size = new System.Drawing.Size(1039, 626);
             this.gridControl9.TabIndex = 8;
             this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView14});
@@ -5364,7 +5364,7 @@ namespace DReport
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(831, 91);
+            this.panel11.Size = new System.Drawing.Size(1039, 91);
             this.panel11.TabIndex = 7;
             // 
             // btnToXLSX11
@@ -5444,7 +5444,7 @@ namespace DReport
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(831, 91);
+            this.panel6.Size = new System.Drawing.Size(1039, 91);
             this.panel6.TabIndex = 6;
             // 
             // btnToXLSX10
@@ -5507,7 +5507,7 @@ namespace DReport
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(831, 91);
+            this.panel10.Size = new System.Drawing.Size(1039, 91);
             this.panel10.TabIndex = 5;
             // 
             // btnToXLSX9
@@ -5589,7 +5589,7 @@ namespace DReport
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(831, 91);
+            this.panel9.Size = new System.Drawing.Size(1039, 91);
             this.panel9.TabIndex = 4;
             // 
             // btnToXLSX8
@@ -5671,7 +5671,7 @@ namespace DReport
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(831, 91);
+            this.panel8.Size = new System.Drawing.Size(1039, 91);
             this.panel8.TabIndex = 3;
             // 
             // btnToXLSX7
@@ -5753,7 +5753,7 @@ namespace DReport
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(831, 91);
+            this.panel7.Size = new System.Drawing.Size(1039, 91);
             this.panel7.TabIndex = 2;
             // 
             // btnToXLSX6
@@ -5835,7 +5835,7 @@ namespace DReport
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(831, 91);
+            this.panel5.Size = new System.Drawing.Size(1039, 91);
             this.panel5.TabIndex = 2;
             // 
             // btnToXLSX4
@@ -5917,7 +5917,7 @@ namespace DReport
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(831, 91);
+            this.panel4.Size = new System.Drawing.Size(1039, 91);
             this.panel4.TabIndex = 2;
             // 
             // btnToXLSX3
@@ -5999,7 +5999,7 @@ namespace DReport
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(831, 91);
+            this.panel3.Size = new System.Drawing.Size(1039, 91);
             this.panel3.TabIndex = 1;
             // 
             // btnToXLSX2
@@ -6073,10 +6073,10 @@ namespace DReport
             // 
             this.panel2.Controls.Add(this.gridControl1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 91);
+            this.panel2.Location = new System.Drawing.Point(0, 114);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(831, 501);
+            this.panel2.Size = new System.Drawing.Size(1039, 626);
             this.panel2.TabIndex = 1;
             // 
             // panel1
@@ -6091,7 +6091,7 @@ namespace DReport
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(831, 91);
+            this.panel1.Size = new System.Drawing.Size(1039, 91);
             this.panel1.TabIndex = 0;
             // 
             // btnToXLSX1
@@ -6203,11 +6203,11 @@ namespace DReport
             // 
             this.gridControl25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl25.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl25.Location = new System.Drawing.Point(0, 58);
+            this.gridControl25.Location = new System.Drawing.Point(0, 73);
             this.gridControl25.MainView = this.gridView34;
             this.gridControl25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl25.Name = "gridControl25";
-            this.gridControl25.Size = new System.Drawing.Size(831, 534);
+            this.gridControl25.Size = new System.Drawing.Size(1039, 668);
             this.gridControl25.TabIndex = 16;
             this.gridControl25.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView34});
@@ -6303,7 +6303,7 @@ namespace DReport
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(831, 58);
+            this.panel24.Size = new System.Drawing.Size(1039, 58);
             this.panel24.TabIndex = 15;
             // 
             // btnToXLSX23
@@ -6376,11 +6376,11 @@ namespace DReport
             // 
             this.gridControl26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl26.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl26.Location = new System.Drawing.Point(0, 58);
+            this.gridControl26.Location = new System.Drawing.Point(0, 73);
             this.gridControl26.MainView = this.gridView38;
             this.gridControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl26.Name = "gridControl26";
-            this.gridControl26.Size = new System.Drawing.Size(831, 534);
+            this.gridControl26.Size = new System.Drawing.Size(1039, 668);
             this.gridControl26.TabIndex = 17;
             this.gridControl26.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView38,
@@ -6524,7 +6524,7 @@ namespace DReport
             this.panel25.Location = new System.Drawing.Point(0, 0);
             this.panel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(831, 58);
+            this.panel25.Size = new System.Drawing.Size(1039, 58);
             this.panel25.TabIndex = 15;
             // 
             // dtEndRpt24
@@ -6597,11 +6597,11 @@ namespace DReport
             // 
             this.gridControl27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl27.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl27.Location = new System.Drawing.Point(0, 58);
+            this.gridControl27.Location = new System.Drawing.Point(0, 73);
             this.gridControl27.MainView = this.gridView35;
             this.gridControl27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl27.Name = "gridControl27";
-            this.gridControl27.Size = new System.Drawing.Size(831, 534);
+            this.gridControl27.Size = new System.Drawing.Size(1039, 668);
             this.gridControl27.TabIndex = 19;
             this.gridControl27.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView35,
@@ -6778,7 +6778,7 @@ namespace DReport
             this.panel26.Location = new System.Drawing.Point(0, 0);
             this.panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(831, 58);
+            this.panel26.Size = new System.Drawing.Size(1039, 58);
             this.panel26.TabIndex = 18;
             // 
             // dtEndRpt25
@@ -6851,11 +6851,11 @@ namespace DReport
             // 
             this.gridControl28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl28.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl28.Location = new System.Drawing.Point(0, 58);
+            this.gridControl28.Location = new System.Drawing.Point(0, 73);
             this.gridControl28.MainView = this.gridView43;
             this.gridControl28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl28.Name = "gridControl28";
-            this.gridControl28.Size = new System.Drawing.Size(831, 534);
+            this.gridControl28.Size = new System.Drawing.Size(1039, 668);
             this.gridControl28.TabIndex = 20;
             this.gridControl28.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView43,
@@ -6999,7 +6999,7 @@ namespace DReport
             this.panel27.Location = new System.Drawing.Point(0, 0);
             this.panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(831, 58);
+            this.panel27.Size = new System.Drawing.Size(1039, 58);
             this.panel27.TabIndex = 19;
             // 
             // dtEndRpt26
