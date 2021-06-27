@@ -175,6 +175,7 @@ namespace DReport
         private object dt_rpt24;
         private object dt_rpt25;
         private object dt_rpt26;
+        private object dt_rpt27;
 
         private void rpt6()
         {
@@ -689,6 +690,29 @@ namespace DReport
             catch (Exception ex)
             {
                 exceptionManager.ManageException(ex, "RPT26");
+                XtraMessageBox.Show(ex.Message);
+            }
+        }
+        private void rpt27()
+        {
+            try
+            {
+                string beginDate = dtBeginRpt27.Text.Replace("-", "");
+                string endDate = dtEndRpt27.Text.Replace("-", "");
+
+                if (dbconn.idbCheck(out dbres))
+                {
+                    DataTable dt = dbconn.getTable(DBQry.rpt27(beginDate, endDate));
+                    dt_rpt27 = dt;
+                }
+                else
+                {
+                    XtraMessageBox.Show(dbres);
+                }
+            }
+            catch (Exception ex)
+            {
+                exceptionManager.ManageException(ex, "RPT27");
                 XtraMessageBox.Show(ex.Message);
             }
         }
@@ -1302,6 +1326,30 @@ namespace DReport
                 MessageBox.Show(ex.Message);
             }
         }
+        private void expdata27(string filename)
+        {
+            try
+            {
+                var logfolder = AppDomain.CurrentDomain.BaseDirectory + "\\EXPDATA";
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(logfolder);
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+                if (!di.Exists)
+                {
+                    Directory.CreateDirectory(logfolder);
+                }
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                string fname = string.Format(@"{0}\\{1}{2}.xlsx", logfolder, filename, DateTime.Today.ToString("yyyyMMdd"));//logfolder + "\\" + DateTime.Today.ToString("yyyyMMdd") + "productlist.xlsx";
+                gridControl29.ExportToXlsx(fname);
+                XtraMessageBox.Show("Амжилттай хуулж дууслаа.", "Өгөгдөл хуулах", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(logfolder);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btnSearchRpt1_Click(object sender, EventArgs e)
         {
             using (frmWaitForm frm = new frmWaitForm(rpt1))
@@ -1525,6 +1573,14 @@ namespace DReport
             }
             gridControl28.DataSource = dt_rpt26;
         }
+        private void btnSearchRpt27_Click(object sender, EventArgs e)
+        {
+            using (frmWaitForm frm = new frmWaitForm(rpt27))
+            {
+                frm.ShowDialog(this);
+            }
+            gridControl29.DataSource = dt_rpt27;
+        }
 
 
 
@@ -1651,5 +1707,9 @@ namespace DReport
             expdata26("rpt26");
         }
 
+        private void btnToXLSX27_Click(object sender, EventArgs e)
+        {
+            expdata27("rpt26");
+        }
     }
 }
