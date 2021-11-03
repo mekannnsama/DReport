@@ -243,8 +243,8 @@ LEFT JOIN (SELECT CARD_NO ,COUNT(0) AS GEREENII_HUGATSAA FROM D_PRODUCT_PLAN WHE
         public static string rpt8(string begin, string end)
         {
             string qry = string.Format(@"select  CARD_NUMBER, AMOUNT, b.PRODUCT_NAME, a.STARTDATE, enddate, REGDATE,  USER_NAME, DESCR from uni_dish.account_transaction a
-left join PRODUCT_CATALOG b on a.PRODUCT_ID = b.PRODUCT_ID
-where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') and amount = 0 and DESCR like 'нээлтийн%' and a.CARD_NUMBER not like '100%'", begin, end);
+                                         left join PRODUCT_CATALOG b on a.PRODUCT_ID = b.PRODUCT_ID
+                                         where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') and amount = 0 and DESCR like 'нээлтийн%' and a.CARD_NUMBER not like '100%'", begin, end);
             return qry;
         }
 
@@ -253,20 +253,16 @@ where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}',
             string qry = string.Format(@" SELECT A.REVERSE_TRANS_ID ,A.TRANS_ID ,A.CARD_NO,A.BILL_NUMBER,C.PRODUCT_NAME ,D.BRANCH_NAME AS BRANCHNAME, E.CHANNEL_NAME , B.USER_NAME , F.CALL_TYPE_NAME, A.INSERTDATE AS REGDATE,
              A.BONUS_AMOUNT, A.TOTAL_POINT AS NEMEGDSEN_UPOINT, A.SPEND_POINT AS ZARTSUULSAN_UPOINT   FROM (
             SELECT * FROM (
-                        SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.POINT_BALANCE, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,NULL AS REVERSE_TRANS_ID, A.BONUS_POINT FROM UPOINT_TRANSACTION A
+                        SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,NULL AS REVERSE_TRANS_ID FROM UPOINT_TRANSACTION A
                         LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
                         WHERE (A.INSERTDATE >= TO_DATE('{0}','yyyymmddhh24miss') AND 
                         A.INSERTDATE <= TO_DATE('{1}','yyyymmddhh24miss') AND A.RESULT = 0)
                          )
             UNION ALL
             SELECT * FROM (
-                            SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.POINT_BALANCE, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE,C.REGDATE,
-                             B.TRANS_ID AS REVERSE_TRANS_ID,A.BONUS_POINT FROM UPOINT_TRANSACTION A
-                            LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
-                            LEFT JOIN ACCOUNT_TRANSACTION C ON C.TRANS_ID = B.REVERSE_TRANS_ID 
-
-                            WHERE (C.REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') AND 
-                            C.REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') AND A.RESULT = 0 AND (C.DESCR!= '[Дараа төлбөрт шилжүүлэг] идэвхтэй багцын буцаалт.' OR C.DESCR IS NULL)  )
+                            SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.BONUS_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,A.TRANS_ID AS REVERSE_TRANS_ID FROM UPOINT_TRANSACTION A WHERE TRANS_ID IN (
+                            SELECT TO_NUMBER(SUBSTR(PARAMETERS,0,LENGTH(PARAMETERS)-2)) AS TRANS_ID FROM UPOINT_LOG 
+                            WHERE INSERT_DATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND INSERT_DATE <= TO_DATE('{1}','YYYYMMDDHH24MISS')  AND API_NAME = 'UPointReverse reverseTrans' AND SUBSTR(RESULT,1,3) = '000')
                          )) A
             LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
             LEFT JOIN PRODUCT_CATALOG C ON C.PRODUCT_ID = B.PRODUCT_ID
