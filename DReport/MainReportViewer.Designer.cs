@@ -619,7 +619,6 @@ namespace DReport
             this.gridColumn300 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn303 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn304 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn305 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn306 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView44 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView45 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -695,6 +694,7 @@ namespace DReport
             this.user_label_myreg = new System.Windows.Forms.Label();
             this.user_time = new System.Windows.Forms.Label();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.gridColumn305 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabPage17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView25)).BeginInit();
@@ -6873,8 +6873,8 @@ namespace DReport
             this.gridColumn300,
             this.gridColumn303,
             this.gridColumn304,
-            this.gridColumn305,
-            this.gridColumn306});
+            this.gridColumn306,
+            this.gridColumn305});
             this.gridView43.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView43.DetailHeight = 284;
             gridFormatRule8.ApplyToRow = true;
@@ -6952,16 +6952,6 @@ namespace DReport
             this.gridColumn304.VisibleIndex = 5;
             this.gridColumn304.Width = 84;
             // 
-            // gridColumn305
-            // 
-            this.gridColumn305.Caption = "PAYMENT";
-            this.gridColumn305.FieldName = "PAYMENT";
-            this.gridColumn305.MinWidth = 21;
-            this.gridColumn305.Name = "gridColumn305";
-            this.gridColumn305.Visible = true;
-            this.gridColumn305.VisibleIndex = 6;
-            this.gridColumn305.Width = 84;
-            // 
             // gridColumn306
             // 
             this.gridColumn306.Caption = "TCA";
@@ -6969,7 +6959,7 @@ namespace DReport
             this.gridColumn306.MinWidth = 21;
             this.gridColumn306.Name = "gridColumn306";
             this.gridColumn306.Visible = true;
-            this.gridColumn306.VisibleIndex = 7;
+            this.gridColumn306.VisibleIndex = 6;
             this.gridColumn306.Width = 84;
             // 
             // gridView44
@@ -7721,6 +7711,14 @@ namespace DReport
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // gridColumn305
+            // 
+            this.gridColumn305.Caption = "BAINGIIN_LEASING";
+            this.gridColumn305.FieldName = "BAINGIIN_LEASING";
+            this.gridColumn305.Name = "gridColumn305";
+            this.gridColumn305.Visible = true;
+            this.gridColumn305.VisibleIndex = 7;
             // 
             // MainReportViewer
             // 
@@ -8480,7 +8478,6 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn300;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn303;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn304;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn305;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn306;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView44;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView45;
@@ -8558,5 +8555,6 @@ namespace DReport
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn339;
         private DevExpress.XtraEditors.LabelControl endlabel_23;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn305;
     }
 }
