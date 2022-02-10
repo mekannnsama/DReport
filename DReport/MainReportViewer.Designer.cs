@@ -30,8 +30,7 @@ namespace DReport
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue10 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
@@ -40,14 +39,19 @@ namespace DReport
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue3 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue4 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule9 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue9 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue5 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue6 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule7 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue7 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue5 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule8 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue8 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule9 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue9 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue10 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainReportViewer));
             this.gridColumn72 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn88 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn61 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -56,7 +60,7 @@ namespace DReport
             this.gridColumn323 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabPage11 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage17 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl24 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_17 = new DevExpress.XtraGrid.GridControl();
             this.gridView25 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn257 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn258 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -71,13 +75,13 @@ namespace DReport
             this.gridColumn267 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn268 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn269 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.btnToXLSX22 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt22 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt22 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt22 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl41 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_17 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_17 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_17 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_17 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_17 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_17 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_17 = new DevExpress.XtraEditors.LabelControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -94,12 +98,12 @@ namespace DReport
             this.gridColumn73 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn130 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn131 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_25 = new DevExpress.XtraGrid.GridControl();
             this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView12 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView32 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage16 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl23 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_16 = new DevExpress.XtraGrid.GridControl();
             this.gridView24 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn247 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn248 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -109,11 +113,11 @@ namespace DReport
             this.gridColumn252 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn253 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn254 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.btnToXLSX21 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtBeginRpt21 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt21 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_16 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_16 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtBeginRpt_16 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_16 = new DevExpress.XtraEditors.SimpleButton();
+            this.startlabel_16 = new DevExpress.XtraEditors.LabelControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -134,11 +138,11 @@ namespace DReport
             this.gridColumn85 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn86 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn87 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl7 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_26 = new DevExpress.XtraGrid.GridControl();
             this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView31 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage15 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl22 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_15 = new DevExpress.XtraGrid.GridControl();
             this.gridView23 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn196 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn197 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -159,13 +163,13 @@ namespace DReport
             this.gridColumn244 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn245 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn246 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.btnToXLSX20 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt20 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt20 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt20 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_15 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_15 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_15 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_15 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_15 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_15 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_15 = new DevExpress.XtraEditors.LabelControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -185,10 +189,10 @@ namespace DReport
             this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn57 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn58 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl8 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_27 = new DevExpress.XtraGrid.GridControl();
             this.gridView30 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage14 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl21 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_14 = new DevExpress.XtraGrid.GridControl();
             this.gridView22 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn188 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn189 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -200,22 +204,22 @@ namespace DReport
             this.gridColumn195 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn255 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn256 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnToXLSX19 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt19 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt19 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt19 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_14 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_14 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_14 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_14 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_14 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_14 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_14 = new DevExpress.XtraEditors.LabelControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl5 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_4 = new DevExpress.XtraGrid.GridControl();
             this.xtraTabPage13 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl20 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_13 = new DevExpress.XtraGrid.GridControl();
             this.gridView21 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn110 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn198 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -239,13 +243,13 @@ namespace DReport
             this.gridColumn229 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn230 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn231 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.btnToXLSX18 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt18 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt18 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt18 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_13 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_13 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_13 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_13 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_13 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_13 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_13 = new DevExpress.XtraEditors.LabelControl();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn37 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn38 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -260,10 +264,10 @@ namespace DReport
             this.gridColumn69 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn70 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn79 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl10 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_28 = new DevExpress.XtraGrid.GridControl();
             this.gridView29 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage12 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl19 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_12 = new DevExpress.XtraGrid.GridControl();
             this.gridView20 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn202 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn203 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -278,15 +282,15 @@ namespace DReport
             this.gridColumn212 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn213 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn214 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnToXLSX17 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt17 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt17 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt17 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_12 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_12 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_12 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_12 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_12 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_12 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_12 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage10 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl18 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_10 = new DevExpress.XtraGrid.GridControl();
             this.gridView19 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn176 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn177 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -300,33 +304,34 @@ namespace DReport
             this.gridColumn185 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn186 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn187 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.btnToXLSX16 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt16 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt16 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt16 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_10 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_10 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_10 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_10 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_10 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_10 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_10 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage9 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl17 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_9 = new DevExpress.XtraGrid.GridControl();
             this.gridView18 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn171 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn172 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn173 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn174 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn175 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btnToXLSX15 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt15 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt15 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt15 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_9 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_9 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_9 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_9 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_9 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_9 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_9 = new DevExpress.XtraEditors.LabelControl();
             this.gridView8 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_24 = new DevExpress.XtraGrid.GridControl();
             this.gridRpt1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn339 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -346,7 +351,7 @@ namespace DReport
             this.gridView13 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView33 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl16 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_8 = new DevExpress.XtraGrid.GridControl();
             this.gridView17 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn153 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn154 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -366,13 +371,13 @@ namespace DReport
             this.gridColumn168 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn169 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn170 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.btnToXLSX14 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt14 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt14 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt14 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_8 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_8 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_8 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_8 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_8 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_8 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_8 = new DevExpress.XtraEditors.LabelControl();
             this.gridView9 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn89 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn90 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -386,10 +391,10 @@ namespace DReport
             this.gridColumn100 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn101 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn297 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl11 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_1 = new DevExpress.XtraGrid.GridControl();
             this.gridView28 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl15 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_7 = new DevExpress.XtraGrid.GridControl();
             this.gridView16 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn140 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn141 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -404,13 +409,13 @@ namespace DReport
             this.gridColumn150 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn151 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn152 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnToXLSX13 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt13 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt13 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt13 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_7 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_7 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_7 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_7 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_7 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_7 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_7 = new DevExpress.XtraEditors.LabelControl();
             this.gridView10 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn102 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn103 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -420,10 +425,10 @@ namespace DReport
             this.gridColumn107 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn108 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn109 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl12 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_2 = new DevExpress.XtraGrid.GridControl();
             this.gridView27 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl14 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_6 = new DevExpress.XtraGrid.GridControl();
             this.gridView15 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn132 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn133 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -432,13 +437,13 @@ namespace DReport
             this.gridColumn136 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn137 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn139 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.btnToXLSX12 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt12 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt12 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt12 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_6 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_6 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_6 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_6 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_6 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_6 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_6 = new DevExpress.XtraEditors.LabelControl();
             this.gridView11 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn111 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn112 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -453,10 +458,10 @@ namespace DReport
             this.gridColumn120 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn121 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn122 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridControl13 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_3 = new DevExpress.XtraGrid.GridControl();
             this.gridView26 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl9 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_5 = new DevExpress.XtraGrid.GridControl();
             this.gridView14 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn124 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn125 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -465,87 +470,87 @@ namespace DReport
             this.gridColumn128 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn129 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn138 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btnToXLSX11 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt5 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt5 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt11 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_5 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_5 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_5 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_5 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_5 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_5 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_5 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnToXLSX10 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtBeginRpt10 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt10 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_4 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_4 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtBeginRpt_4 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_4 = new DevExpress.XtraEditors.SimpleButton();
+            this.startlabel_4 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnToXLSX9 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt9 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt9 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt9 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_3 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_3 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_3 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_3 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_3 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_3 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_3 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnToXLSX8 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt8 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt8 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt8 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_2 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_2 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_2 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_2 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_2 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_2 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_2 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnToXLSX7 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt7 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt7 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt7 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl6 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnToXLSX6 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt6 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt6 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt6 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl4 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnToXLSX4 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt4 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt4 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt4 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl3 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnToXLSX3 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt3 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt3 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt3 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnToXLSX2 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt2 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt2 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt2 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.tbRpt1 = new DevExpress.XtraTab.XtraTabPage();
+            this.report_label_1 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_1 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_1 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_1 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_1 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_1 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage28 = new DevExpress.XtraTab.XtraTabPage();
+            this.report_panel_28 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_28 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_28 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_28 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_28 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_28 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_28 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage27 = new DevExpress.XtraTab.XtraTabPage();
+            this.report_panel_27 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_27 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_27 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_27 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_27 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_27 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_27 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage26 = new DevExpress.XtraTab.XtraTabPage();
+            this.report_panel_26 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_26 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_26 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_26 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_26 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_26 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_26 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage25 = new DevExpress.XtraTab.XtraTabPage();
+            this.report_panel_25 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_25 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_25 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_25 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_25 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_25 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_25 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage24 = new DevExpress.XtraTab.XtraTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnToXLSX1 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt1 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt1 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.panel23 = new DevExpress.XtraTab.XtraTabControl();
+            this.report_panel_24 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_24 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_24 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_24 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_24 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_24 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_24 = new DevExpress.XtraEditors.LabelControl();
+            this.xtratabcontrol_report = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage18 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl25 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_18 = new DevExpress.XtraGrid.GridControl();
             this.gridView34 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn59 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -553,15 +558,15 @@ namespace DReport
             this.gridColumn270 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn271 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn272 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.btnToXLSX23 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt23 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt23 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt23 = new DevExpress.XtraEditors.SimpleButton();
+            this.report_panel_18 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_18 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_18 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_18 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_18 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl42 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_18 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage19 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl26 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_19 = new DevExpress.XtraGrid.GridControl();
             this.gridView38 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn284 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn285 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -574,15 +579,15 @@ namespace DReport
             this.gridView39 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView40 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView41 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.dtEndRpt24 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt24 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnToXLSX24 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtBeginRpt24 = new System.Windows.Forms.DateTimePicker();
-            this.labelControl43 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl44 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_19 = new System.Windows.Forms.Panel();
+            this.dtEndRpt_19 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_19 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnToXLSX_19 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtBeginRpt_19 = new System.Windows.Forms.DateTimePicker();
+            this.endlabel_19 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_19 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage20 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl27 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_20 = new DevExpress.XtraGrid.GridControl();
             this.gridView35 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn273 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn274 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -598,15 +603,15 @@ namespace DReport
             this.gridView36 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView37 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView42 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.dtEndRpt25 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt25 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnToXLSX25 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtBeginRpt25 = new System.Windows.Forms.DateTimePicker();
-            this.labelControl45 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl46 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_20 = new System.Windows.Forms.Panel();
+            this.dtEndRpt_20 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_20 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnToXLSX_20 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtBeginRpt_20 = new System.Windows.Forms.DateTimePicker();
+            this.endlabel_20 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_20 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage21 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl28 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_21 = new DevExpress.XtraGrid.GridControl();
             this.gridView43 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn296 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn298 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -619,15 +624,15 @@ namespace DReport
             this.gridView44 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView45 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView46 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.dtEndRpt26 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt26 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnToXLSX26 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtBeginRpt26 = new System.Windows.Forms.DateTimePicker();
-            this.labelControl47 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl48 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_21 = new System.Windows.Forms.Panel();
+            this.dtEndRpt_21 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_21 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnToXLSX_21 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtBeginRpt_21 = new System.Windows.Forms.DateTimePicker();
+            this.endlabel_21 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_21 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage22 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl29 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_22 = new DevExpress.XtraGrid.GridControl();
             this.gridView47 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn307 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn308 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -650,145 +655,189 @@ namespace DReport
             this.gridView48 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView49 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView50 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.btnToXLSX27 = new DevExpress.XtraEditors.SimpleButton();
-            this.dtEndRpt27 = new System.Windows.Forms.DateTimePicker();
-            this.dtBeginRpt27 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchRpt27 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl49 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl50 = new DevExpress.XtraEditors.LabelControl();
+            this.report_panel_22 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_22 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_22 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_22 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_22 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_22 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_22 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage23 = new DevExpress.XtraTab.XtraTabPage();
+            this.gridControl_23 = new DevExpress.XtraGrid.GridControl();
+            this.gridView51 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn326 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn327 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn328 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn329 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn330 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn331 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn332 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn333 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn334 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn335 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn336 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn337 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn338 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridView52 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView53 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView54 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.report_panel_23 = new System.Windows.Forms.Panel();
+            this.btnToXLSX_23 = new DevExpress.XtraEditors.SimpleButton();
+            this.dtEndRpt_23 = new System.Windows.Forms.DateTimePicker();
+            this.dtBeginRpt_23 = new System.Windows.Forms.DateTimePicker();
+            this.btnSearchRpt_23 = new DevExpress.XtraEditors.SimpleButton();
+            this.endlabel_23 = new DevExpress.XtraEditors.LabelControl();
+            this.startlabel_23 = new DevExpress.XtraEditors.LabelControl();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.user_greetings = new System.Windows.Forms.Label();
+            this.user_panel = new DevExpress.XtraEditors.SidePanel();
+            this.user_myregimage = new DevExpress.XtraEditors.SvgImageBox();
+            this.user_label_myreg = new System.Windows.Forms.Label();
+            this.user_time = new System.Windows.Forms.Label();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.xtraTabPage17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView25)).BeginInit();
-            this.panel22.SuspendLayout();
+            this.report_panel_17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView32)).BeginInit();
             this.xtraTabPage16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView24)).BeginInit();
-            this.panel21.SuspendLayout();
+            this.report_panel_16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView31)).BeginInit();
             this.xtraTabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView23)).BeginInit();
-            this.panel20.SuspendLayout();
+            this.report_panel_15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView30)).BeginInit();
             this.xtraTabPage14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView22)).BeginInit();
-            this.panel19.SuspendLayout();
+            this.report_panel_14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_4)).BeginInit();
             this.xtraTabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView21)).BeginInit();
-            this.panel18.SuspendLayout();
+            this.report_panel_13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView29)).BeginInit();
             this.xtraTabPage12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView20)).BeginInit();
-            this.panel17.SuspendLayout();
+            this.report_panel_12.SuspendLayout();
             this.xtraTabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView19)).BeginInit();
-            this.panel16.SuspendLayout();
+            this.report_panel_10.SuspendLayout();
             this.xtraTabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView18)).BeginInit();
-            this.panel15.SuspendLayout();
+            this.report_panel_9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridRpt1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView33)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView17)).BeginInit();
-            this.panel14.SuspendLayout();
+            this.report_panel_8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView28)).BeginInit();
             this.xtraTabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).BeginInit();
-            this.panel13.SuspendLayout();
+            this.report_panel_7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView27)).BeginInit();
             this.xtraTabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView15)).BeginInit();
-            this.panel12.SuspendLayout();
+            this.report_panel_6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView26)).BeginInit();
             this.xtraTabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView14)).BeginInit();
-            this.panel11.SuspendLayout();
+            this.report_panel_5.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.report_panel_4.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.report_panel_3.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.report_panel_2.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.gridControl6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.gridControl4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.gridControl3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.xtraTabControl2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.tbRpt1.SuspendLayout();
+            this.report_label_1.SuspendLayout();
+            this.xtraTabPage28.SuspendLayout();
+            this.report_panel_28.SuspendLayout();
+            this.xtraTabPage27.SuspendLayout();
+            this.report_panel_27.SuspendLayout();
+            this.xtraTabPage26.SuspendLayout();
+            this.report_panel_26.SuspendLayout();
+            this.xtraTabPage25.SuspendLayout();
+            this.report_panel_25.SuspendLayout();
+            this.xtraTabPage24.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panel23)).BeginInit();
-            this.panel23.SuspendLayout();
+            this.report_panel_24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtratabcontrol_report)).BeginInit();
+            this.xtratabcontrol_report.SuspendLayout();
             this.xtraTabPage18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView34)).BeginInit();
-            this.panel24.SuspendLayout();
+            this.report_panel_18.SuspendLayout();
             this.xtraTabPage19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView41)).BeginInit();
-            this.panel25.SuspendLayout();
+            this.report_panel_19.SuspendLayout();
             this.xtraTabPage20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView42)).BeginInit();
-            this.panel26.SuspendLayout();
+            this.report_panel_20.SuspendLayout();
             this.xtraTabPage21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView46)).BeginInit();
-            this.panel27.SuspendLayout();
+            this.report_panel_21.SuspendLayout();
             this.xtraTabPage22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView50)).BeginInit();
-            this.panel28.SuspendLayout();
+            this.report_panel_22.SuspendLayout();
+            this.xtraTabPage23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView54)).BeginInit();
+            this.report_panel_23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            this.user_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_myregimage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn72
@@ -843,7 +892,7 @@ namespace DReport
             this.gridColumn82.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "STATUS", "{0}")});
             this.gridColumn82.Visible = true;
-            this.gridColumn82.VisibleIndex = 16;
+            this.gridColumn82.VisibleIndex = 17;
             // 
             // gridColumn323
             // 
@@ -862,24 +911,24 @@ namespace DReport
             // 
             // xtraTabPage17
             // 
-            this.xtraTabPage17.Controls.Add(this.gridControl24);
-            this.xtraTabPage17.Controls.Add(this.panel22);
+            this.xtraTabPage17.Controls.Add(this.gridControl_17);
+            this.xtraTabPage17.Controls.Add(this.report_panel_17);
             this.xtraTabPage17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabPage17.Name = "xtraTabPage17";
-            this.xtraTabPage17.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage17.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage17.Text = "Флаш лизингийн төлөлт";
             // 
-            // gridControl24
+            // gridControl_17
             // 
-            this.gridControl24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl24.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl24.Location = new System.Drawing.Point(0, 74);
-            this.gridControl24.MainView = this.gridView25;
-            this.gridControl24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl24.Name = "gridControl24";
-            this.gridControl24.Size = new System.Drawing.Size(835, 407);
-            this.gridControl24.TabIndex = 15;
-            this.gridControl24.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_17.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_17.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_17.MainView = this.gridView25;
+            this.gridControl_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_17.Name = "gridControl_17";
+            this.gridControl_17.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_17.TabIndex = 15;
+            this.gridControl_17.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView25});
             // 
             // gridView25
@@ -900,7 +949,7 @@ namespace DReport
             this.gridColumn269});
             this.gridView25.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView25.DetailHeight = 284;
-            this.gridView25.GridControl = this.gridControl24;
+            this.gridView25.GridControl = this.gridControl_17;
             this.gridView25.Name = "gridView25";
             this.gridView25.OptionsBehavior.Editable = false;
             this.gridView25.OptionsMenu.EnableGroupPanelMenu = false;
@@ -1039,78 +1088,78 @@ namespace DReport
             this.gridColumn269.VisibleIndex = 12;
             this.gridColumn269.Width = 338;
             // 
-            // panel22
+            // report_panel_17
             // 
-            this.panel22.Controls.Add(this.btnToXLSX22);
-            this.panel22.Controls.Add(this.dtEndRpt22);
-            this.panel22.Controls.Add(this.dtBeginRpt22);
-            this.panel22.Controls.Add(this.btnSearchRpt22);
-            this.panel22.Controls.Add(this.labelControl39);
-            this.panel22.Controls.Add(this.labelControl41);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 0);
-            this.panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(835, 74);
-            this.panel22.TabIndex = 14;
+            this.report_panel_17.Controls.Add(this.btnToXLSX_17);
+            this.report_panel_17.Controls.Add(this.dtEndRpt_17);
+            this.report_panel_17.Controls.Add(this.dtBeginRpt_17);
+            this.report_panel_17.Controls.Add(this.btnSearchRpt_17);
+            this.report_panel_17.Controls.Add(this.endlabel_17);
+            this.report_panel_17.Controls.Add(this.startlabel_17);
+            this.report_panel_17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_17.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_17.Name = "report_panel_17";
+            this.report_panel_17.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_17.TabIndex = 14;
             // 
-            // btnToXLSX22
+            // btnToXLSX_17
             // 
-            this.btnToXLSX22.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX22.Name = "btnToXLSX22";
-            this.btnToXLSX22.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX22.TabIndex = 5;
-            this.btnToXLSX22.Text = "XLSX";
-            this.btnToXLSX22.Click += new System.EventHandler(this.btnToXLSX22_Click);
+            this.btnToXLSX_17.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_17.Name = "btnToXLSX_17";
+            this.btnToXLSX_17.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_17.TabIndex = 5;
+            this.btnToXLSX_17.Text = "XLSX";
+            this.btnToXLSX_17.Click += new System.EventHandler(this.btnToXLSX_17_Click);
             // 
-            // dtEndRpt22
+            // dtEndRpt_17
             // 
-            this.dtEndRpt22.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt22.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt22.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt22.Name = "dtEndRpt22";
-            this.dtEndRpt22.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt22.TabIndex = 4;
+            this.dtEndRpt_17.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_17.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_17.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_17.Name = "dtEndRpt_17";
+            this.dtEndRpt_17.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_17.TabIndex = 4;
             // 
-            // dtBeginRpt22
+            // dtBeginRpt_17
             // 
-            this.dtBeginRpt22.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt22.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt22.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt22.Name = "dtBeginRpt22";
-            this.dtBeginRpt22.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt22.TabIndex = 3;
+            this.dtBeginRpt_17.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_17.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_17.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_17.Name = "dtBeginRpt_17";
+            this.dtBeginRpt_17.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_17.TabIndex = 3;
             // 
-            // btnSearchRpt22
+            // btnSearchRpt_17
             // 
-            this.btnSearchRpt22.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt22.Name = "btnSearchRpt22";
-            this.btnSearchRpt22.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt22.TabIndex = 2;
-            this.btnSearchRpt22.Text = "Хайх";
-            this.btnSearchRpt22.Click += new System.EventHandler(this.btnSearchRpt22_Click);
+            this.btnSearchRpt_17.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_17.Name = "btnSearchRpt_17";
+            this.btnSearchRpt_17.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_17.TabIndex = 2;
+            this.btnSearchRpt_17.Text = "Хайх";
+            this.btnSearchRpt_17.Click += new System.EventHandler(this.btnSearchRpt_17_Click);
             // 
-            // labelControl39
+            // endlabel_17
             // 
-            this.labelControl39.Location = new System.Drawing.Point(285, 16);
-            this.labelControl39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl39.Name = "labelControl39";
-            this.labelControl39.Size = new System.Drawing.Size(70, 13);
-            this.labelControl39.TabIndex = 1;
-            this.labelControl39.Text = "Төгсөх огноо:";
+            this.endlabel_17.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_17.Name = "endlabel_17";
+            this.endlabel_17.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_17.TabIndex = 1;
+            this.endlabel_17.Text = "Төгсөх огноо:";
             // 
-            // labelControl41
+            // startlabel_17
             // 
-            this.labelControl41.Location = new System.Drawing.Point(24, 16);
-            this.labelControl41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl41.Name = "labelControl41";
-            this.labelControl41.Size = new System.Drawing.Size(66, 13);
-            this.labelControl41.TabIndex = 1;
-            this.labelControl41.Text = "Эхлэх огноо:";
+            this.startlabel_17.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_17.Name = "startlabel_17";
+            this.startlabel_17.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_17.TabIndex = 1;
+            this.startlabel_17.Text = "Эхлэх огноо:";
             // 
             // gridView1
             // 
@@ -1133,17 +1182,17 @@ namespace DReport
             this.gridColumn131});
             this.gridView1.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView1.DetailHeight = 284;
-            gridFormatRule10.ApplyToRow = true;
-            gridFormatRule10.Column = this.gridColumn72;
-            gridFormatRule10.ColumnApplyTo = this.gridColumn72;
-            gridFormatRule10.Name = "Format0";
-            formatConditionRuleValue10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue10.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue10.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue10.Value1 = "INACTIVE";
-            gridFormatRule10.Rule = formatConditionRuleValue10;
-            this.gridView1.FormatRules.Add(gridFormatRule10);
-            this.gridView1.GridControl = this.gridControl2;
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Column = this.gridColumn72;
+            gridFormatRule1.ColumnApplyTo = this.gridColumn72;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue1.Value1 = "INACTIVE";
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView1.FormatRules.Add(gridFormatRule1);
+            this.gridView1.GridControl = this.gridControl_25;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsMenu.EnableGroupPanelMenu = false;
@@ -1300,17 +1349,17 @@ namespace DReport
             this.gridColumn131.Visible = true;
             this.gridColumn131.VisibleIndex = 15;
             // 
-            // gridControl2
+            // gridControl_25
             // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl2.Location = new System.Drawing.Point(0, 74);
-            this.gridControl2.MainView = this.gridView1;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(835, 407);
-            this.gridControl2.TabIndex = 2;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_25.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_25.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_25.MainView = this.gridView1;
+            this.gridControl_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_25.Name = "gridControl_25";
+            this.gridControl_25.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_25.TabIndex = 2;
+            this.gridControl_25.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1,
             this.gridView7,
             this.gridView12,
@@ -1318,39 +1367,39 @@ namespace DReport
             // 
             // gridView7
             // 
-            this.gridView7.GridControl = this.gridControl2;
+            this.gridView7.GridControl = this.gridControl_25;
             this.gridView7.Name = "gridView7";
             // 
             // gridView12
             // 
-            this.gridView12.GridControl = this.gridControl2;
+            this.gridView12.GridControl = this.gridControl_25;
             this.gridView12.Name = "gridView12";
             // 
             // gridView32
             // 
             this.gridView32.DetailHeight = 284;
-            this.gridView32.GridControl = this.gridControl2;
+            this.gridView32.GridControl = this.gridControl_25;
             this.gridView32.Name = "gridView32";
             // 
             // xtraTabPage16
             // 
-            this.xtraTabPage16.Controls.Add(this.gridControl23);
-            this.xtraTabPage16.Controls.Add(this.panel21);
+            this.xtraTabPage16.Controls.Add(this.gridControl_16);
+            this.xtraTabPage16.Controls.Add(this.report_panel_16);
             this.xtraTabPage16.Name = "xtraTabPage16";
-            this.xtraTabPage16.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage16.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage16.Text = "Гэр дүүрэн INVOICE";
             // 
-            // gridControl23
+            // gridControl_16
             // 
-            this.gridControl23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl23.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl23.Location = new System.Drawing.Point(0, 74);
-            this.gridControl23.MainView = this.gridView24;
-            this.gridControl23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl23.Name = "gridControl23";
-            this.gridControl23.Size = new System.Drawing.Size(835, 407);
-            this.gridControl23.TabIndex = 14;
-            this.gridControl23.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_16.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_16.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_16.MainView = this.gridView24;
+            this.gridControl_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_16.Name = "gridControl_16";
+            this.gridControl_16.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_16.TabIndex = 14;
+            this.gridControl_16.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView24});
             // 
             // gridView24
@@ -1366,7 +1415,7 @@ namespace DReport
             this.gridColumn254});
             this.gridView24.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView24.DetailHeight = 284;
-            this.gridView24.GridControl = this.gridControl23;
+            this.gridView24.GridControl = this.gridControl_16;
             this.gridView24.Name = "gridView24";
             this.gridView24.OptionsBehavior.Editable = false;
             this.gridView24.OptionsMenu.EnableGroupPanelMenu = false;
@@ -1449,57 +1498,57 @@ namespace DReport
             this.gridColumn254.Visible = true;
             this.gridColumn254.VisibleIndex = 7;
             // 
-            // panel21
+            // report_panel_16
             // 
-            this.panel21.Controls.Add(this.btnToXLSX21);
-            this.panel21.Controls.Add(this.dtBeginRpt21);
-            this.panel21.Controls.Add(this.btnSearchRpt21);
-            this.panel21.Controls.Add(this.labelControl40);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 0);
-            this.panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(835, 74);
-            this.panel21.TabIndex = 13;
+            this.report_panel_16.Controls.Add(this.btnToXLSX_16);
+            this.report_panel_16.Controls.Add(this.dtBeginRpt_16);
+            this.report_panel_16.Controls.Add(this.btnSearchRpt_16);
+            this.report_panel_16.Controls.Add(this.startlabel_16);
+            this.report_panel_16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_16.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_16.Name = "report_panel_16";
+            this.report_panel_16.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_16.TabIndex = 13;
             // 
-            // btnToXLSX21
+            // btnToXLSX_16
             // 
-            this.btnToXLSX21.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX21.Name = "btnToXLSX21";
-            this.btnToXLSX21.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX21.TabIndex = 5;
-            this.btnToXLSX21.Text = "XLSX";
-            this.btnToXLSX21.Click += new System.EventHandler(this.btnToXLSX21_Click);
+            this.btnToXLSX_16.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_16.Name = "btnToXLSX_16";
+            this.btnToXLSX_16.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_16.TabIndex = 5;
+            this.btnToXLSX_16.Text = "XLSX";
+            this.btnToXLSX_16.Click += new System.EventHandler(this.btnToXLSX_16_Click);
             // 
-            // dtBeginRpt21
+            // dtBeginRpt_16
             // 
-            this.dtBeginRpt21.CustomFormat = "yyyyMM";
-            this.dtBeginRpt21.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt21.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt21.Name = "dtBeginRpt21";
-            this.dtBeginRpt21.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt21.TabIndex = 3;
+            this.dtBeginRpt_16.CustomFormat = "yyyyMM";
+            this.dtBeginRpt_16.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_16.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_16.Name = "dtBeginRpt_16";
+            this.dtBeginRpt_16.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_16.TabIndex = 3;
             // 
-            // btnSearchRpt21
+            // btnSearchRpt_16
             // 
-            this.btnSearchRpt21.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt21.Name = "btnSearchRpt21";
-            this.btnSearchRpt21.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt21.TabIndex = 2;
-            this.btnSearchRpt21.Text = "Хайх";
-            this.btnSearchRpt21.Click += new System.EventHandler(this.btnSearchRpt21_Click);
+            this.btnSearchRpt_16.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_16.Name = "btnSearchRpt_16";
+            this.btnSearchRpt_16.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_16.TabIndex = 2;
+            this.btnSearchRpt_16.Text = "Хайх";
+            this.btnSearchRpt_16.Click += new System.EventHandler(this.btnSearchRpt_16_Click);
             // 
-            // labelControl40
+            // startlabel_16
             // 
-            this.labelControl40.Location = new System.Drawing.Point(24, 16);
-            this.labelControl40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl40.Name = "labelControl40";
-            this.labelControl40.Size = new System.Drawing.Size(66, 13);
-            this.labelControl40.TabIndex = 1;
-            this.labelControl40.Text = "Эхлэх огноо:";
+            this.startlabel_16.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_16.Name = "startlabel_16";
+            this.startlabel_16.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_16.TabIndex = 1;
+            this.startlabel_16.Text = "Эхлэх огноо:";
             // 
             // gridView2
             // 
@@ -1526,17 +1575,17 @@ namespace DReport
             this.gridColumn88});
             this.gridView2.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView2.DetailHeight = 284;
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Column = this.gridColumn88;
-            gridFormatRule1.ColumnApplyTo = this.gridColumn88;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue1.Value1 = "INACTIVE";
-            gridFormatRule1.Rule = formatConditionRuleValue1;
-            this.gridView2.FormatRules.Add(gridFormatRule1);
-            this.gridView2.GridControl = this.gridControl7;
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Column = this.gridColumn88;
+            gridFormatRule2.ColumnApplyTo = this.gridColumn88;
+            gridFormatRule2.Name = "Format0";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue2.Value1 = "INACTIVE";
+            gridFormatRule2.Rule = formatConditionRuleValue2;
+            this.gridView2.FormatRules.Add(gridFormatRule2);
+            this.gridView2.GridControl = this.gridControl_26;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsBehavior.Editable = false;
             this.gridView2.OptionsMenu.EnableGroupPanelMenu = false;
@@ -1716,51 +1765,51 @@ namespace DReport
             this.gridColumn87.Visible = true;
             this.gridColumn87.VisibleIndex = 18;
             // 
-            // gridControl7
+            // gridControl_26
             // 
-            this.gridControl7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl7.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl7.Location = new System.Drawing.Point(0, 74);
-            this.gridControl7.MainView = this.gridView2;
-            this.gridControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl7.Name = "gridControl7";
-            this.gridControl7.Size = new System.Drawing.Size(835, 407);
-            this.gridControl7.TabIndex = 3;
-            this.gridControl7.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_26.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_26.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_26.MainView = this.gridView2;
+            this.gridControl_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_26.Name = "gridControl_26";
+            this.gridControl_26.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_26.TabIndex = 3;
+            this.gridControl_26.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2,
             this.gridView6,
             this.gridView31});
             // 
             // gridView6
             // 
-            this.gridView6.GridControl = this.gridControl7;
+            this.gridView6.GridControl = this.gridControl_26;
             this.gridView6.Name = "gridView6";
             // 
             // gridView31
             // 
             this.gridView31.DetailHeight = 284;
-            this.gridView31.GridControl = this.gridControl7;
+            this.gridView31.GridControl = this.gridControl_26;
             this.gridView31.Name = "gridView31";
             // 
             // xtraTabPage15
             // 
-            this.xtraTabPage15.Controls.Add(this.gridControl22);
-            this.xtraTabPage15.Controls.Add(this.panel20);
+            this.xtraTabPage15.Controls.Add(this.gridControl_15);
+            this.xtraTabPage15.Controls.Add(this.report_panel_15);
             this.xtraTabPage15.Name = "xtraTabPage15";
-            this.xtraTabPage15.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage15.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage15.Text = "Гэр дүүрэн гүйлгээ";
             // 
-            // gridControl22
+            // gridControl_15
             // 
-            this.gridControl22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl22.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl22.Location = new System.Drawing.Point(0, 74);
-            this.gridControl22.MainView = this.gridView23;
-            this.gridControl22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl22.Name = "gridControl22";
-            this.gridControl22.Size = new System.Drawing.Size(835, 407);
-            this.gridControl22.TabIndex = 14;
-            this.gridControl22.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_15.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_15.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_15.MainView = this.gridView23;
+            this.gridControl_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_15.Name = "gridControl_15";
+            this.gridControl_15.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_15.TabIndex = 14;
+            this.gridControl_15.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView23});
             // 
             // gridView23
@@ -1787,7 +1836,7 @@ namespace DReport
             this.gridColumn246});
             this.gridView23.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView23.DetailHeight = 284;
-            this.gridView23.GridControl = this.gridControl22;
+            this.gridView23.GridControl = this.gridControl_15;
             this.gridView23.Name = "gridView23";
             this.gridView23.OptionsBehavior.Editable = false;
             this.gridView23.OptionsMenu.EnableGroupPanelMenu = false;
@@ -1962,78 +2011,78 @@ namespace DReport
             this.gridColumn246.Visible = true;
             this.gridColumn246.VisibleIndex = 18;
             // 
-            // panel20
+            // report_panel_15
             // 
-            this.panel20.Controls.Add(this.btnToXLSX20);
-            this.panel20.Controls.Add(this.dtEndRpt20);
-            this.panel20.Controls.Add(this.dtBeginRpt20);
-            this.panel20.Controls.Add(this.btnSearchRpt20);
-            this.panel20.Controls.Add(this.labelControl37);
-            this.panel20.Controls.Add(this.labelControl38);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(835, 74);
-            this.panel20.TabIndex = 13;
+            this.report_panel_15.Controls.Add(this.btnToXLSX_15);
+            this.report_panel_15.Controls.Add(this.dtEndRpt_15);
+            this.report_panel_15.Controls.Add(this.dtBeginRpt_15);
+            this.report_panel_15.Controls.Add(this.btnSearchRpt_15);
+            this.report_panel_15.Controls.Add(this.endlabel_15);
+            this.report_panel_15.Controls.Add(this.startlabel_15);
+            this.report_panel_15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_15.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_15.Name = "report_panel_15";
+            this.report_panel_15.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_15.TabIndex = 13;
             // 
-            // btnToXLSX20
+            // btnToXLSX_15
             // 
-            this.btnToXLSX20.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX20.Name = "btnToXLSX20";
-            this.btnToXLSX20.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX20.TabIndex = 5;
-            this.btnToXLSX20.Text = "XLSX";
-            this.btnToXLSX20.Click += new System.EventHandler(this.btnToXLSX20_Click);
+            this.btnToXLSX_15.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_15.Name = "btnToXLSX_15";
+            this.btnToXLSX_15.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_15.TabIndex = 5;
+            this.btnToXLSX_15.Text = "XLSX";
+            this.btnToXLSX_15.Click += new System.EventHandler(this.btnToXLSX_15_Click);
             // 
-            // dtEndRpt20
+            // dtEndRpt_15
             // 
-            this.dtEndRpt20.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt20.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt20.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt20.Name = "dtEndRpt20";
-            this.dtEndRpt20.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt20.TabIndex = 4;
+            this.dtEndRpt_15.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_15.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_15.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_15.Name = "dtEndRpt_15";
+            this.dtEndRpt_15.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_15.TabIndex = 4;
             // 
-            // dtBeginRpt20
+            // dtBeginRpt_15
             // 
-            this.dtBeginRpt20.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt20.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt20.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt20.Name = "dtBeginRpt20";
-            this.dtBeginRpt20.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt20.TabIndex = 3;
+            this.dtBeginRpt_15.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_15.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_15.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_15.Name = "dtBeginRpt_15";
+            this.dtBeginRpt_15.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_15.TabIndex = 3;
             // 
-            // btnSearchRpt20
+            // btnSearchRpt_15
             // 
-            this.btnSearchRpt20.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt20.Name = "btnSearchRpt20";
-            this.btnSearchRpt20.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt20.TabIndex = 2;
-            this.btnSearchRpt20.Text = "Хайх";
-            this.btnSearchRpt20.Click += new System.EventHandler(this.btnSearchRpt20_Click);
+            this.btnSearchRpt_15.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_15.Name = "btnSearchRpt_15";
+            this.btnSearchRpt_15.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_15.TabIndex = 2;
+            this.btnSearchRpt_15.Text = "Хайх";
+            this.btnSearchRpt_15.Click += new System.EventHandler(this.btnSearchRpt_15_Click);
             // 
-            // labelControl37
+            // endlabel_15
             // 
-            this.labelControl37.Location = new System.Drawing.Point(285, 16);
-            this.labelControl37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl37.Name = "labelControl37";
-            this.labelControl37.Size = new System.Drawing.Size(70, 13);
-            this.labelControl37.TabIndex = 1;
-            this.labelControl37.Text = "Төгсөх огноо:";
+            this.endlabel_15.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_15.Name = "endlabel_15";
+            this.endlabel_15.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_15.TabIndex = 1;
+            this.endlabel_15.Text = "Төгсөх огноо:";
             // 
-            // labelControl38
+            // startlabel_15
             // 
-            this.labelControl38.Location = new System.Drawing.Point(24, 16);
-            this.labelControl38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl38.Name = "labelControl38";
-            this.labelControl38.Size = new System.Drawing.Size(66, 13);
-            this.labelControl38.TabIndex = 1;
-            this.labelControl38.Text = "Эхлэх огноо:";
+            this.startlabel_15.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_15.Name = "startlabel_15";
+            this.startlabel_15.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_15.TabIndex = 1;
+            this.startlabel_15.Text = "Эхлэх огноо:";
             // 
             // gridView3
             // 
@@ -2059,17 +2108,17 @@ namespace DReport
             this.gridColumn61});
             this.gridView3.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView3.DetailHeight = 284;
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Column = this.gridColumn61;
-            gridFormatRule2.ColumnApplyTo = this.gridColumn61;
-            gridFormatRule2.Name = "Format0";
-            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue2.Value1 = "INACTIVE";
-            gridFormatRule2.Rule = formatConditionRuleValue2;
-            this.gridView3.FormatRules.Add(gridFormatRule2);
-            this.gridView3.GridControl = this.gridControl8;
+            gridFormatRule3.ApplyToRow = true;
+            gridFormatRule3.Column = this.gridColumn61;
+            gridFormatRule3.ColumnApplyTo = this.gridColumn61;
+            gridFormatRule3.Name = "Format0";
+            formatConditionRuleValue3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue3.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue3.Value1 = "INACTIVE";
+            gridFormatRule3.Rule = formatConditionRuleValue3;
+            this.gridView3.FormatRules.Add(gridFormatRule3);
+            this.gridView3.GridControl = this.gridControl_27;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsBehavior.Editable = false;
             this.gridView3.OptionsMenu.EnableGroupPanelMenu = false;
@@ -2245,45 +2294,45 @@ namespace DReport
             this.gridColumn58.VisibleIndex = 17;
             this.gridColumn58.Width = 24;
             // 
-            // gridControl8
+            // gridControl_27
             // 
-            this.gridControl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl8.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl8.Location = new System.Drawing.Point(0, 74);
-            this.gridControl8.MainView = this.gridView3;
-            this.gridControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl8.Name = "gridControl8";
-            this.gridControl8.Size = new System.Drawing.Size(835, 407);
-            this.gridControl8.TabIndex = 3;
-            this.gridControl8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_27.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_27.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_27.MainView = this.gridView3;
+            this.gridControl_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_27.Name = "gridControl_27";
+            this.gridControl_27.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_27.TabIndex = 3;
+            this.gridControl_27.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3,
             this.gridView30});
             // 
             // gridView30
             // 
             this.gridView30.DetailHeight = 284;
-            this.gridView30.GridControl = this.gridControl8;
+            this.gridView30.GridControl = this.gridControl_27;
             this.gridView30.Name = "gridView30";
             // 
             // xtraTabPage14
             // 
-            this.xtraTabPage14.Controls.Add(this.gridControl21);
-            this.xtraTabPage14.Controls.Add(this.panel19);
+            this.xtraTabPage14.Controls.Add(this.gridControl_14);
+            this.xtraTabPage14.Controls.Add(this.report_panel_14);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage14.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage14.Text = "Гэр дүүрэн банк";
             // 
-            // gridControl21
+            // gridControl_14
             // 
-            this.gridControl21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl21.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl21.Location = new System.Drawing.Point(0, 74);
-            this.gridControl21.MainView = this.gridView22;
-            this.gridControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl21.Name = "gridControl21";
-            this.gridControl21.Size = new System.Drawing.Size(835, 407);
-            this.gridControl21.TabIndex = 13;
-            this.gridControl21.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_14.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_14.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_14.MainView = this.gridView22;
+            this.gridControl_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_14.Name = "gridControl_14";
+            this.gridControl_14.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_14.TabIndex = 13;
+            this.gridControl_14.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView22});
             // 
             // gridView22
@@ -2301,7 +2350,7 @@ namespace DReport
             this.gridColumn256});
             this.gridView22.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView22.DetailHeight = 284;
-            this.gridView22.GridControl = this.gridControl21;
+            this.gridView22.GridControl = this.gridControl_14;
             this.gridView22.Name = "gridView22";
             this.gridView22.OptionsBehavior.Editable = false;
             this.gridView22.OptionsMenu.EnableGroupPanelMenu = false;
@@ -2400,78 +2449,78 @@ namespace DReport
             this.gridColumn256.Visible = true;
             this.gridColumn256.VisibleIndex = 9;
             // 
-            // panel19
+            // report_panel_14
             // 
-            this.panel19.Controls.Add(this.btnToXLSX19);
-            this.panel19.Controls.Add(this.dtEndRpt19);
-            this.panel19.Controls.Add(this.dtBeginRpt19);
-            this.panel19.Controls.Add(this.btnSearchRpt19);
-            this.panel19.Controls.Add(this.labelControl35);
-            this.panel19.Controls.Add(this.labelControl36);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(0, 0);
-            this.panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(835, 74);
-            this.panel19.TabIndex = 12;
+            this.report_panel_14.Controls.Add(this.btnToXLSX_14);
+            this.report_panel_14.Controls.Add(this.dtEndRpt_14);
+            this.report_panel_14.Controls.Add(this.dtBeginRpt_14);
+            this.report_panel_14.Controls.Add(this.btnSearchRpt_14);
+            this.report_panel_14.Controls.Add(this.endlabel_14);
+            this.report_panel_14.Controls.Add(this.startlabel_14);
+            this.report_panel_14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_14.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_14.Name = "report_panel_14";
+            this.report_panel_14.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_14.TabIndex = 12;
             // 
-            // btnToXLSX19
+            // btnToXLSX_14
             // 
-            this.btnToXLSX19.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX19.Name = "btnToXLSX19";
-            this.btnToXLSX19.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX19.TabIndex = 5;
-            this.btnToXLSX19.Text = "XLSX";
-            this.btnToXLSX19.Click += new System.EventHandler(this.btnToXLSX19_Click);
+            this.btnToXLSX_14.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_14.Name = "btnToXLSX_14";
+            this.btnToXLSX_14.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_14.TabIndex = 5;
+            this.btnToXLSX_14.Text = "XLSX";
+            this.btnToXLSX_14.Click += new System.EventHandler(this.btnToXLSX_14_Click);
             // 
-            // dtEndRpt19
+            // dtEndRpt_14
             // 
-            this.dtEndRpt19.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt19.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt19.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt19.Name = "dtEndRpt19";
-            this.dtEndRpt19.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt19.TabIndex = 4;
+            this.dtEndRpt_14.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_14.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_14.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_14.Name = "dtEndRpt_14";
+            this.dtEndRpt_14.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_14.TabIndex = 4;
             // 
-            // dtBeginRpt19
+            // dtBeginRpt_14
             // 
-            this.dtBeginRpt19.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt19.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt19.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt19.Name = "dtBeginRpt19";
-            this.dtBeginRpt19.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt19.TabIndex = 3;
+            this.dtBeginRpt_14.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_14.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_14.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_14.Name = "dtBeginRpt_14";
+            this.dtBeginRpt_14.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_14.TabIndex = 3;
             // 
-            // btnSearchRpt19
+            // btnSearchRpt_14
             // 
-            this.btnSearchRpt19.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt19.Name = "btnSearchRpt19";
-            this.btnSearchRpt19.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt19.TabIndex = 2;
-            this.btnSearchRpt19.Text = "Хайх";
-            this.btnSearchRpt19.Click += new System.EventHandler(this.btnSearchRpt19_Click);
+            this.btnSearchRpt_14.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_14.Name = "btnSearchRpt_14";
+            this.btnSearchRpt_14.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_14.TabIndex = 2;
+            this.btnSearchRpt_14.Text = "Хайх";
+            this.btnSearchRpt_14.Click += new System.EventHandler(this.btnSearchRpt_14_Click);
             // 
-            // labelControl35
+            // endlabel_14
             // 
-            this.labelControl35.Location = new System.Drawing.Point(285, 16);
-            this.labelControl35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl35.Name = "labelControl35";
-            this.labelControl35.Size = new System.Drawing.Size(70, 13);
-            this.labelControl35.TabIndex = 1;
-            this.labelControl35.Text = "Төгсөх огноо:";
+            this.endlabel_14.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_14.Name = "endlabel_14";
+            this.endlabel_14.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_14.TabIndex = 1;
+            this.endlabel_14.Text = "Төгсөх огноо:";
             // 
-            // labelControl36
+            // startlabel_14
             // 
-            this.labelControl36.Location = new System.Drawing.Point(24, 16);
-            this.labelControl36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl36.Name = "labelControl36";
-            this.labelControl36.Size = new System.Drawing.Size(66, 13);
-            this.labelControl36.TabIndex = 1;
-            this.labelControl36.Text = "Эхлэх огноо:";
+            this.startlabel_14.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_14.Name = "startlabel_14";
+            this.startlabel_14.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_14.TabIndex = 1;
+            this.startlabel_14.Text = "Эхлэх огноо:";
             // 
             // gridView4
             // 
@@ -2483,7 +2532,7 @@ namespace DReport
             this.gridColumn35});
             this.gridView4.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView4.DetailHeight = 284;
-            this.gridView4.GridControl = this.gridControl5;
+            this.gridView4.GridControl = this.gridControl_4;
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsBehavior.Editable = false;
             this.gridView4.OptionsMenu.EnableGroupPanelMenu = false;
@@ -2542,38 +2591,38 @@ namespace DReport
             this.gridColumn35.VisibleIndex = 4;
             this.gridColumn35.Width = 125;
             // 
-            // gridControl5
+            // gridControl_4
             // 
-            this.gridControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl5.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl5.Location = new System.Drawing.Point(0, 74);
-            this.gridControl5.MainView = this.gridView4;
-            this.gridControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl5.Name = "gridControl5";
-            this.gridControl5.Size = new System.Drawing.Size(835, 407);
-            this.gridControl5.TabIndex = 7;
-            this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_4.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_4.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_4.MainView = this.gridView4;
+            this.gridControl_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_4.Name = "gridControl_4";
+            this.gridControl_4.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_4.TabIndex = 7;
+            this.gridControl_4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
             // 
             // xtraTabPage13
             // 
-            this.xtraTabPage13.Controls.Add(this.gridControl20);
-            this.xtraTabPage13.Controls.Add(this.panel18);
+            this.xtraTabPage13.Controls.Add(this.gridControl_13);
+            this.xtraTabPage13.Controls.Add(this.report_panel_13);
             this.xtraTabPage13.Name = "xtraTabPage13";
-            this.xtraTabPage13.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage13.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage13.Text = "Гэр дүүрэн";
             // 
-            // gridControl20
+            // gridControl_13
             // 
-            this.gridControl20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl20.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl20.Location = new System.Drawing.Point(0, 74);
-            this.gridControl20.MainView = this.gridView21;
-            this.gridControl20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl20.Name = "gridControl20";
-            this.gridControl20.Size = new System.Drawing.Size(835, 407);
-            this.gridControl20.TabIndex = 14;
-            this.gridControl20.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_13.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_13.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_13.MainView = this.gridView21;
+            this.gridControl_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_13.Name = "gridControl_13";
+            this.gridControl_13.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_13.TabIndex = 14;
+            this.gridControl_13.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView21});
             // 
             // gridView21
@@ -2603,7 +2652,7 @@ namespace DReport
             this.gridColumn231});
             this.gridView21.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView21.DetailHeight = 284;
-            this.gridView21.GridControl = this.gridControl20;
+            this.gridView21.GridControl = this.gridControl_13;
             this.gridView21.Name = "gridView21";
             this.gridView21.OptionsBehavior.Editable = false;
             this.gridView21.OptionsMenu.EnableGroupPanelMenu = false;
@@ -2832,78 +2881,78 @@ namespace DReport
             this.gridColumn231.VisibleIndex = 21;
             this.gridColumn231.Width = 45;
             // 
-            // panel18
+            // report_panel_13
             // 
-            this.panel18.Controls.Add(this.btnToXLSX18);
-            this.panel18.Controls.Add(this.dtEndRpt18);
-            this.panel18.Controls.Add(this.dtBeginRpt18);
-            this.panel18.Controls.Add(this.btnSearchRpt18);
-            this.panel18.Controls.Add(this.labelControl33);
-            this.panel18.Controls.Add(this.labelControl34);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(835, 74);
-            this.panel18.TabIndex = 1;
+            this.report_panel_13.Controls.Add(this.btnToXLSX_13);
+            this.report_panel_13.Controls.Add(this.dtEndRpt_13);
+            this.report_panel_13.Controls.Add(this.dtBeginRpt_13);
+            this.report_panel_13.Controls.Add(this.btnSearchRpt_13);
+            this.report_panel_13.Controls.Add(this.endlabel_13);
+            this.report_panel_13.Controls.Add(this.startlabel_13);
+            this.report_panel_13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_13.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_13.Name = "report_panel_13";
+            this.report_panel_13.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_13.TabIndex = 1;
             // 
-            // btnToXLSX18
+            // btnToXLSX_13
             // 
-            this.btnToXLSX18.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX18.Name = "btnToXLSX18";
-            this.btnToXLSX18.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX18.TabIndex = 5;
-            this.btnToXLSX18.Text = "XLSX";
-            this.btnToXLSX18.Click += new System.EventHandler(this.btnToXLSX18_Click);
+            this.btnToXLSX_13.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_13.Name = "btnToXLSX_13";
+            this.btnToXLSX_13.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_13.TabIndex = 5;
+            this.btnToXLSX_13.Text = "XLSX";
+            this.btnToXLSX_13.Click += new System.EventHandler(this.btnToXLSX_13_Click);
             // 
-            // dtEndRpt18
+            // dtEndRpt_13
             // 
-            this.dtEndRpt18.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt18.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt18.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt18.Name = "dtEndRpt18";
-            this.dtEndRpt18.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt18.TabIndex = 4;
+            this.dtEndRpt_13.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_13.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_13.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_13.Name = "dtEndRpt_13";
+            this.dtEndRpt_13.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_13.TabIndex = 4;
             // 
-            // dtBeginRpt18
+            // dtBeginRpt_13
             // 
-            this.dtBeginRpt18.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt18.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt18.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt18.Name = "dtBeginRpt18";
-            this.dtBeginRpt18.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt18.TabIndex = 3;
+            this.dtBeginRpt_13.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_13.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_13.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_13.Name = "dtBeginRpt_13";
+            this.dtBeginRpt_13.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_13.TabIndex = 3;
             // 
-            // btnSearchRpt18
+            // btnSearchRpt_13
             // 
-            this.btnSearchRpt18.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt18.Name = "btnSearchRpt18";
-            this.btnSearchRpt18.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt18.TabIndex = 2;
-            this.btnSearchRpt18.Text = "Хайх";
-            this.btnSearchRpt18.Click += new System.EventHandler(this.btnSearchRpt18_Click);
+            this.btnSearchRpt_13.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_13.Name = "btnSearchRpt_13";
+            this.btnSearchRpt_13.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_13.TabIndex = 2;
+            this.btnSearchRpt_13.Text = "Хайх";
+            this.btnSearchRpt_13.Click += new System.EventHandler(this.btnSearchRpt_13_Click);
             // 
-            // labelControl33
+            // endlabel_13
             // 
-            this.labelControl33.Location = new System.Drawing.Point(285, 16);
-            this.labelControl33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl33.Name = "labelControl33";
-            this.labelControl33.Size = new System.Drawing.Size(70, 13);
-            this.labelControl33.TabIndex = 1;
-            this.labelControl33.Text = "Төгсөх огноо:";
+            this.endlabel_13.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_13.Name = "endlabel_13";
+            this.endlabel_13.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_13.TabIndex = 1;
+            this.endlabel_13.Text = "Төгсөх огноо:";
             // 
-            // labelControl34
+            // startlabel_13
             // 
-            this.labelControl34.Location = new System.Drawing.Point(24, 16);
-            this.labelControl34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(66, 13);
-            this.labelControl34.TabIndex = 1;
-            this.labelControl34.Text = "Эхлэх огноо:";
+            this.startlabel_13.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_13.Name = "startlabel_13";
+            this.startlabel_13.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_13.TabIndex = 1;
+            this.startlabel_13.Text = "Эхлэх огноо:";
             // 
             // gridView5
             // 
@@ -2924,17 +2973,17 @@ namespace DReport
             this.gridColumn79});
             this.gridView5.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView5.DetailHeight = 284;
-            gridFormatRule3.ApplyToRow = true;
-            gridFormatRule3.Column = this.gridColumn64;
-            gridFormatRule3.ColumnApplyTo = this.gridColumn64;
-            gridFormatRule3.Name = "Format0";
-            formatConditionRuleValue3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue3.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue3.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue3.Value1 = "INACTIVE";
-            gridFormatRule3.Rule = formatConditionRuleValue3;
-            this.gridView5.FormatRules.Add(gridFormatRule3);
-            this.gridView5.GridControl = this.gridControl10;
+            gridFormatRule4.ApplyToRow = true;
+            gridFormatRule4.Column = this.gridColumn64;
+            gridFormatRule4.ColumnApplyTo = this.gridColumn64;
+            gridFormatRule4.Name = "Format0";
+            formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue4.Value1 = "INACTIVE";
+            gridFormatRule4.Rule = formatConditionRuleValue4;
+            this.gridView5.FormatRules.Add(gridFormatRule4);
+            this.gridView5.GridControl = this.gridControl_28;
             this.gridView5.Name = "gridView5";
             this.gridView5.OptionsBehavior.Editable = false;
             this.gridView5.OptionsMenu.EnableGroupPanelMenu = false;
@@ -3072,45 +3121,45 @@ namespace DReport
             this.gridColumn79.Visible = true;
             this.gridColumn79.VisibleIndex = 13;
             // 
-            // gridControl10
+            // gridControl_28
             // 
-            this.gridControl10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl10.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl10.Location = new System.Drawing.Point(0, 74);
-            this.gridControl10.MainView = this.gridView5;
-            this.gridControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl10.Name = "gridControl10";
-            this.gridControl10.Size = new System.Drawing.Size(835, 407);
-            this.gridControl10.TabIndex = 3;
-            this.gridControl10.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_28.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_28.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_28.MainView = this.gridView5;
+            this.gridControl_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_28.Name = "gridControl_28";
+            this.gridControl_28.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_28.TabIndex = 3;
+            this.gridControl_28.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5,
             this.gridView29});
             // 
             // gridView29
             // 
             this.gridView29.DetailHeight = 284;
-            this.gridView29.GridControl = this.gridControl10;
+            this.gridView29.GridControl = this.gridControl_28;
             this.gridView29.Name = "gridView29";
             // 
             // xtraTabPage12
             // 
-            this.xtraTabPage12.Controls.Add(this.gridControl19);
-            this.xtraTabPage12.Controls.Add(this.panel17);
+            this.xtraTabPage12.Controls.Add(this.gridControl_12);
+            this.xtraTabPage12.Controls.Add(this.report_panel_12);
             this.xtraTabPage12.Name = "xtraTabPage12";
-            this.xtraTabPage12.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage12.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage12.Text = "Лизинг үлдэгдэл";
             // 
-            // gridControl19
+            // gridControl_12
             // 
-            this.gridControl19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl19.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl19.Location = new System.Drawing.Point(0, 74);
-            this.gridControl19.MainView = this.gridView20;
-            this.gridControl19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl19.Name = "gridControl19";
-            this.gridControl19.Size = new System.Drawing.Size(835, 407);
-            this.gridControl19.TabIndex = 14;
-            this.gridControl19.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_12.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_12.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_12.MainView = this.gridView20;
+            this.gridControl_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_12.Name = "gridControl_12";
+            this.gridControl_12.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_12.TabIndex = 14;
+            this.gridControl_12.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView20});
             // 
             // gridView20
@@ -3131,7 +3180,7 @@ namespace DReport
             this.gridColumn214});
             this.gridView20.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView20.DetailHeight = 284;
-            this.gridView20.GridControl = this.gridControl19;
+            this.gridView20.GridControl = this.gridControl_12;
             this.gridView20.Name = "gridView20";
             this.gridView20.OptionsBehavior.Editable = false;
             this.gridView20.OptionsMenu.EnableGroupPanelMenu = false;
@@ -3270,98 +3319,98 @@ namespace DReport
             this.gridColumn214.VisibleIndex = 12;
             this.gridColumn214.Width = 77;
             // 
-            // panel17
+            // report_panel_12
             // 
-            this.panel17.Controls.Add(this.btnToXLSX17);
-            this.panel17.Controls.Add(this.dtEndRpt17);
-            this.panel17.Controls.Add(this.dtBeginRpt17);
-            this.panel17.Controls.Add(this.btnSearchRpt17);
-            this.panel17.Controls.Add(this.labelControl31);
-            this.panel17.Controls.Add(this.labelControl32);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(835, 74);
-            this.panel17.TabIndex = 13;
+            this.report_panel_12.Controls.Add(this.btnToXLSX_12);
+            this.report_panel_12.Controls.Add(this.dtEndRpt_12);
+            this.report_panel_12.Controls.Add(this.dtBeginRpt_12);
+            this.report_panel_12.Controls.Add(this.btnSearchRpt_12);
+            this.report_panel_12.Controls.Add(this.endlabel_12);
+            this.report_panel_12.Controls.Add(this.startlabel_12);
+            this.report_panel_12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_12.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_12.Name = "report_panel_12";
+            this.report_panel_12.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_12.TabIndex = 13;
             // 
-            // btnToXLSX17
+            // btnToXLSX_12
             // 
-            this.btnToXLSX17.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX17.Name = "btnToXLSX17";
-            this.btnToXLSX17.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX17.TabIndex = 5;
-            this.btnToXLSX17.Text = "XLSX";
-            this.btnToXLSX17.Click += new System.EventHandler(this.btnToXLSX17_Click);
+            this.btnToXLSX_12.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_12.Name = "btnToXLSX_12";
+            this.btnToXLSX_12.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_12.TabIndex = 5;
+            this.btnToXLSX_12.Text = "XLSX";
+            this.btnToXLSX_12.Click += new System.EventHandler(this.btnToXLSX_12_Click);
             // 
-            // dtEndRpt17
+            // dtEndRpt_12
             // 
-            this.dtEndRpt17.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt17.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt17.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt17.Name = "dtEndRpt17";
-            this.dtEndRpt17.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt17.TabIndex = 4;
+            this.dtEndRpt_12.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_12.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_12.Name = "dtEndRpt_12";
+            this.dtEndRpt_12.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_12.TabIndex = 4;
             // 
-            // dtBeginRpt17
+            // dtBeginRpt_12
             // 
-            this.dtBeginRpt17.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt17.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt17.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt17.Name = "dtBeginRpt17";
-            this.dtBeginRpt17.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt17.TabIndex = 3;
+            this.dtBeginRpt_12.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_12.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_12.Name = "dtBeginRpt_12";
+            this.dtBeginRpt_12.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_12.TabIndex = 3;
             // 
-            // btnSearchRpt17
+            // btnSearchRpt_12
             // 
-            this.btnSearchRpt17.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt17.Name = "btnSearchRpt17";
-            this.btnSearchRpt17.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt17.TabIndex = 2;
-            this.btnSearchRpt17.Text = "Хайх";
-            this.btnSearchRpt17.Click += new System.EventHandler(this.btnSearchRpt17_Click);
+            this.btnSearchRpt_12.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_12.Name = "btnSearchRpt_12";
+            this.btnSearchRpt_12.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_12.TabIndex = 2;
+            this.btnSearchRpt_12.Text = "Хайх";
+            this.btnSearchRpt_12.Click += new System.EventHandler(this.btnSearchRpt_12_Click);
             // 
-            // labelControl31
+            // endlabel_12
             // 
-            this.labelControl31.Location = new System.Drawing.Point(285, 16);
-            this.labelControl31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(70, 13);
-            this.labelControl31.TabIndex = 1;
-            this.labelControl31.Text = "Төгсөх огноо:";
+            this.endlabel_12.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_12.Name = "endlabel_12";
+            this.endlabel_12.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_12.TabIndex = 1;
+            this.endlabel_12.Text = "Төгсөх огноо:";
             // 
-            // labelControl32
+            // startlabel_12
             // 
-            this.labelControl32.Location = new System.Drawing.Point(24, 16);
-            this.labelControl32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl32.Name = "labelControl32";
-            this.labelControl32.Size = new System.Drawing.Size(66, 13);
-            this.labelControl32.TabIndex = 1;
-            this.labelControl32.Text = "Эхлэх огноо:";
+            this.startlabel_12.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_12.Name = "startlabel_12";
+            this.startlabel_12.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_12.TabIndex = 1;
+            this.startlabel_12.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage10
             // 
-            this.xtraTabPage10.Controls.Add(this.gridControl18);
-            this.xtraTabPage10.Controls.Add(this.panel16);
+            this.xtraTabPage10.Controls.Add(this.gridControl_10);
+            this.xtraTabPage10.Controls.Add(this.report_panel_10);
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage10.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage10.Text = "Лизинг үүсгэлтийн тайлан";
             // 
-            // gridControl18
+            // gridControl_10
             // 
-            this.gridControl18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl18.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl18.Location = new System.Drawing.Point(0, 74);
-            this.gridControl18.MainView = this.gridView19;
-            this.gridControl18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl18.Name = "gridControl18";
-            this.gridControl18.Size = new System.Drawing.Size(835, 407);
-            this.gridControl18.TabIndex = 13;
-            this.gridControl18.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_10.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_10.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_10.MainView = this.gridView19;
+            this.gridControl_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_10.Name = "gridControl_10";
+            this.gridControl_10.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_10.TabIndex = 13;
+            this.gridControl_10.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView19});
             // 
             // gridView19
@@ -3381,7 +3430,7 @@ namespace DReport
             this.gridColumn187});
             this.gridView19.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView19.DetailHeight = 284;
-            this.gridView19.GridControl = this.gridControl18;
+            this.gridView19.GridControl = this.gridControl_10;
             this.gridView19.Name = "gridView19";
             this.gridView19.OptionsBehavior.Editable = false;
             this.gridView19.OptionsMenu.EnableGroupPanelMenu = false;
@@ -3503,98 +3552,98 @@ namespace DReport
             this.gridColumn187.Visible = true;
             this.gridColumn187.VisibleIndex = 11;
             // 
-            // panel16
+            // report_panel_10
             // 
-            this.panel16.Controls.Add(this.btnToXLSX16);
-            this.panel16.Controls.Add(this.dtEndRpt16);
-            this.panel16.Controls.Add(this.dtBeginRpt16);
-            this.panel16.Controls.Add(this.btnSearchRpt16);
-            this.panel16.Controls.Add(this.labelControl29);
-            this.panel16.Controls.Add(this.labelControl30);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 0);
-            this.panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(835, 74);
-            this.panel16.TabIndex = 12;
+            this.report_panel_10.Controls.Add(this.btnToXLSX_10);
+            this.report_panel_10.Controls.Add(this.dtEndRpt_10);
+            this.report_panel_10.Controls.Add(this.dtBeginRpt_10);
+            this.report_panel_10.Controls.Add(this.btnSearchRpt_10);
+            this.report_panel_10.Controls.Add(this.endlabel_10);
+            this.report_panel_10.Controls.Add(this.startlabel_10);
+            this.report_panel_10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_10.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_10.Name = "report_panel_10";
+            this.report_panel_10.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_10.TabIndex = 12;
             // 
-            // btnToXLSX16
+            // btnToXLSX_10
             // 
-            this.btnToXLSX16.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX16.Name = "btnToXLSX16";
-            this.btnToXLSX16.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX16.TabIndex = 5;
-            this.btnToXLSX16.Text = "XLSX";
-            this.btnToXLSX16.Click += new System.EventHandler(this.btnToXLSX16_Click);
+            this.btnToXLSX_10.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_10.Name = "btnToXLSX_10";
+            this.btnToXLSX_10.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_10.TabIndex = 5;
+            this.btnToXLSX_10.Text = "XLSX";
+            this.btnToXLSX_10.Click += new System.EventHandler(this.btnToXLSX_10_Click);
             // 
-            // dtEndRpt16
+            // dtEndRpt_10
             // 
-            this.dtEndRpt16.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt16.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt16.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt16.Name = "dtEndRpt16";
-            this.dtEndRpt16.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt16.TabIndex = 4;
+            this.dtEndRpt_10.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_10.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_10.Name = "dtEndRpt_10";
+            this.dtEndRpt_10.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_10.TabIndex = 4;
             // 
-            // dtBeginRpt16
+            // dtBeginRpt_10
             // 
-            this.dtBeginRpt16.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt16.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt16.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt16.Name = "dtBeginRpt16";
-            this.dtBeginRpt16.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt16.TabIndex = 3;
+            this.dtBeginRpt_10.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_10.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_10.Name = "dtBeginRpt_10";
+            this.dtBeginRpt_10.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_10.TabIndex = 3;
             // 
-            // btnSearchRpt16
+            // btnSearchRpt_10
             // 
-            this.btnSearchRpt16.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt16.Name = "btnSearchRpt16";
-            this.btnSearchRpt16.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt16.TabIndex = 2;
-            this.btnSearchRpt16.Text = "Хайх";
-            this.btnSearchRpt16.Click += new System.EventHandler(this.btnSearchRpt16_Click);
+            this.btnSearchRpt_10.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_10.Name = "btnSearchRpt_10";
+            this.btnSearchRpt_10.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_10.TabIndex = 2;
+            this.btnSearchRpt_10.Text = "Хайх";
+            this.btnSearchRpt_10.Click += new System.EventHandler(this.btnSearchRpt_10_Click);
             // 
-            // labelControl29
+            // endlabel_10
             // 
-            this.labelControl29.Location = new System.Drawing.Point(285, 16);
-            this.labelControl29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(70, 13);
-            this.labelControl29.TabIndex = 1;
-            this.labelControl29.Text = "Төгсөх огноо:";
+            this.endlabel_10.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_10.Name = "endlabel_10";
+            this.endlabel_10.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_10.TabIndex = 1;
+            this.endlabel_10.Text = "Төгсөх огноо:";
             // 
-            // labelControl30
+            // startlabel_10
             // 
-            this.labelControl30.Location = new System.Drawing.Point(24, 16);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(66, 13);
-            this.labelControl30.TabIndex = 1;
-            this.labelControl30.Text = "Эхлэх огноо:";
+            this.startlabel_10.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_10.Name = "startlabel_10";
+            this.startlabel_10.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_10.TabIndex = 1;
+            this.startlabel_10.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage9
             // 
-            this.xtraTabPage9.Controls.Add(this.gridControl17);
-            this.xtraTabPage9.Controls.Add(this.panel15);
+            this.xtraTabPage9.Controls.Add(this.gridControl_9);
+            this.xtraTabPage9.Controls.Add(this.report_panel_9);
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage9.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage9.Text = "Суурьлуулагч урамшуулал";
             // 
-            // gridControl17
+            // gridControl_9
             // 
-            this.gridControl17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl17.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl17.Location = new System.Drawing.Point(0, 74);
-            this.gridControl17.MainView = this.gridView18;
-            this.gridControl17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl17.Name = "gridControl17";
-            this.gridControl17.Size = new System.Drawing.Size(835, 407);
-            this.gridControl17.TabIndex = 12;
-            this.gridControl17.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_9.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_9.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_9.MainView = this.gridView18;
+            this.gridControl_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_9.Name = "gridControl_9";
+            this.gridControl_9.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_9.TabIndex = 12;
+            this.gridControl_9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView18});
             // 
             // gridView18
@@ -3607,7 +3656,7 @@ namespace DReport
             this.gridColumn175});
             this.gridView18.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView18.DetailHeight = 284;
-            this.gridView18.GridControl = this.gridControl17;
+            this.gridView18.GridControl = this.gridControl_9;
             this.gridView18.Name = "gridView18";
             this.gridView18.OptionsBehavior.Editable = false;
             this.gridView18.OptionsMenu.EnableGroupPanelMenu = false;
@@ -3666,95 +3715,95 @@ namespace DReport
             this.gridColumn175.VisibleIndex = 4;
             this.gridColumn175.Width = 199;
             // 
-            // panel15
+            // report_panel_9
             // 
-            this.panel15.Controls.Add(this.btnToXLSX15);
-            this.panel15.Controls.Add(this.dtEndRpt15);
-            this.panel15.Controls.Add(this.dtBeginRpt15);
-            this.panel15.Controls.Add(this.btnSearchRpt15);
-            this.panel15.Controls.Add(this.labelControl27);
-            this.panel15.Controls.Add(this.labelControl28);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(835, 74);
-            this.panel15.TabIndex = 11;
+            this.report_panel_9.Controls.Add(this.btnToXLSX_9);
+            this.report_panel_9.Controls.Add(this.dtEndRpt_9);
+            this.report_panel_9.Controls.Add(this.dtBeginRpt_9);
+            this.report_panel_9.Controls.Add(this.btnSearchRpt_9);
+            this.report_panel_9.Controls.Add(this.endlabel_9);
+            this.report_panel_9.Controls.Add(this.startlabel_9);
+            this.report_panel_9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_9.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_9.Name = "report_panel_9";
+            this.report_panel_9.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_9.TabIndex = 11;
             // 
-            // btnToXLSX15
+            // btnToXLSX_9
             // 
-            this.btnToXLSX15.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX15.Name = "btnToXLSX15";
-            this.btnToXLSX15.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX15.TabIndex = 5;
-            this.btnToXLSX15.Text = "XLSX";
-            this.btnToXLSX15.Click += new System.EventHandler(this.btnToXLSX15_Click);
+            this.btnToXLSX_9.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_9.Name = "btnToXLSX_9";
+            this.btnToXLSX_9.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_9.TabIndex = 5;
+            this.btnToXLSX_9.Text = "XLSX";
+            this.btnToXLSX_9.Click += new System.EventHandler(this.btnToXLSX_9_Click);
             // 
-            // dtEndRpt15
+            // dtEndRpt_9
             // 
-            this.dtEndRpt15.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt15.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt15.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt15.Name = "dtEndRpt15";
-            this.dtEndRpt15.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt15.TabIndex = 4;
+            this.dtEndRpt_9.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_9.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_9.Name = "dtEndRpt_9";
+            this.dtEndRpt_9.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_9.TabIndex = 4;
             // 
-            // dtBeginRpt15
+            // dtBeginRpt_9
             // 
-            this.dtBeginRpt15.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt15.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt15.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt15.Name = "dtBeginRpt15";
-            this.dtBeginRpt15.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt15.TabIndex = 3;
+            this.dtBeginRpt_9.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_9.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_9.Name = "dtBeginRpt_9";
+            this.dtBeginRpt_9.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_9.TabIndex = 3;
             // 
-            // btnSearchRpt15
+            // btnSearchRpt_9
             // 
-            this.btnSearchRpt15.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt15.Name = "btnSearchRpt15";
-            this.btnSearchRpt15.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt15.TabIndex = 2;
-            this.btnSearchRpt15.Text = "Хайх";
-            this.btnSearchRpt15.Click += new System.EventHandler(this.btnSearchRpt15_Click);
+            this.btnSearchRpt_9.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_9.Name = "btnSearchRpt_9";
+            this.btnSearchRpt_9.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_9.TabIndex = 2;
+            this.btnSearchRpt_9.Text = "Хайх";
+            this.btnSearchRpt_9.Click += new System.EventHandler(this.btnSearchRpt_9_Click);
             // 
-            // labelControl27
+            // endlabel_9
             // 
-            this.labelControl27.Location = new System.Drawing.Point(285, 16);
-            this.labelControl27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(70, 13);
-            this.labelControl27.TabIndex = 1;
-            this.labelControl27.Text = "Төгсөх огноо:";
+            this.endlabel_9.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_9.Name = "endlabel_9";
+            this.endlabel_9.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_9.TabIndex = 1;
+            this.endlabel_9.Text = "Төгсөх огноо:";
             // 
-            // labelControl28
+            // startlabel_9
             // 
-            this.labelControl28.Location = new System.Drawing.Point(24, 16);
-            this.labelControl28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(66, 13);
-            this.labelControl28.TabIndex = 1;
-            this.labelControl28.Text = "Эхлэх огноо:";
+            this.startlabel_9.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_9.Name = "startlabel_9";
+            this.startlabel_9.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_9.TabIndex = 1;
+            this.startlabel_9.Text = "Эхлэх огноо:";
             // 
             // gridView8
             // 
-            this.gridView8.GridControl = this.gridControl1;
+            this.gridView8.GridControl = this.gridControl_24;
             this.gridView8.Name = "gridView8";
             // 
-            // gridControl1
+            // gridControl_24
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.gridRpt1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(835, 407);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_24.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_24.Location = new System.Drawing.Point(0, 0);
+            this.gridControl_24.MainView = this.gridRpt1;
+            this.gridControl_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_24.Name = "gridControl_24";
+            this.gridControl_24.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_24.TabIndex = 0;
+            this.gridControl_24.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridRpt1,
             this.gridView13,
             this.gridView33,
@@ -3765,6 +3814,7 @@ namespace DReport
             this.gridRpt1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
+            this.gridColumn339,
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
@@ -3784,17 +3834,17 @@ namespace DReport
             this.gridColumn98});
             this.gridRpt1.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridRpt1.DetailHeight = 284;
-            gridFormatRule4.ApplyToRow = true;
-            gridFormatRule4.Column = this.gridColumn82;
-            gridFormatRule4.ColumnApplyTo = this.gridColumn82;
-            gridFormatRule4.Name = "Format0";
-            formatConditionRuleValue4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue4.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue4.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue4.Value1 = "INACTIVE";
-            gridFormatRule4.Rule = formatConditionRuleValue4;
-            this.gridRpt1.FormatRules.Add(gridFormatRule4);
-            this.gridRpt1.GridControl = this.gridControl1;
+            gridFormatRule5.ApplyToRow = true;
+            gridFormatRule5.Column = this.gridColumn82;
+            gridFormatRule5.ColumnApplyTo = this.gridColumn82;
+            gridFormatRule5.Name = "Format0";
+            formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue5.Value1 = "INACTIVE";
+            gridFormatRule5.Rule = formatConditionRuleValue5;
+            this.gridRpt1.FormatRules.Add(gridFormatRule5);
+            this.gridRpt1.GridControl = this.gridControl_24;
             this.gridRpt1.Name = "gridRpt1";
             this.gridRpt1.OptionsBehavior.Editable = false;
             this.gridRpt1.OptionsMenu.EnableGroupPanelMenu = false;
@@ -3821,6 +3871,14 @@ namespace DReport
             this.gridColumn2.VisibleIndex = 1;
             this.gridColumn2.Width = 84;
             // 
+            // gridColumn339
+            // 
+            this.gridColumn339.Caption = "CALL_TYPE_NAME";
+            this.gridColumn339.FieldName = "CALL_TYPE_NAME";
+            this.gridColumn339.Name = "gridColumn339";
+            this.gridColumn339.Visible = true;
+            this.gridColumn339.VisibleIndex = 2;
+            // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "CHANNEL_NAME";
@@ -3828,7 +3886,7 @@ namespace DReport
             this.gridColumn3.MinWidth = 21;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 3;
             this.gridColumn3.Width = 84;
             // 
             // gridColumn4
@@ -3838,7 +3896,7 @@ namespace DReport
             this.gridColumn4.MinWidth = 21;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.VisibleIndex = 4;
             this.gridColumn4.Width = 84;
             // 
             // gridColumn5
@@ -3848,7 +3906,7 @@ namespace DReport
             this.gridColumn5.MinWidth = 21;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.VisibleIndex = 5;
             this.gridColumn5.Width = 84;
             // 
             // gridColumn6
@@ -3858,7 +3916,7 @@ namespace DReport
             this.gridColumn6.MinWidth = 21;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.VisibleIndex = 6;
             this.gridColumn6.Width = 84;
             // 
             // gridColumn7
@@ -3868,7 +3926,7 @@ namespace DReport
             this.gridColumn7.MinWidth = 21;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn7.VisibleIndex = 7;
             this.gridColumn7.Width = 84;
             // 
             // gridColumn8
@@ -3878,7 +3936,7 @@ namespace DReport
             this.gridColumn8.MinWidth = 21;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
+            this.gridColumn8.VisibleIndex = 8;
             this.gridColumn8.Width = 84;
             // 
             // gridColumn9
@@ -3888,7 +3946,7 @@ namespace DReport
             this.gridColumn9.MinWidth = 21;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
+            this.gridColumn9.VisibleIndex = 9;
             this.gridColumn9.Width = 84;
             // 
             // gridColumn302
@@ -3898,7 +3956,7 @@ namespace DReport
             this.gridColumn302.MinWidth = 21;
             this.gridColumn302.Name = "gridColumn302";
             this.gridColumn302.Visible = true;
-            this.gridColumn302.VisibleIndex = 9;
+            this.gridColumn302.VisibleIndex = 10;
             this.gridColumn302.Width = 81;
             // 
             // gridColumn301
@@ -3908,7 +3966,7 @@ namespace DReport
             this.gridColumn301.MinWidth = 21;
             this.gridColumn301.Name = "gridColumn301";
             this.gridColumn301.Visible = true;
-            this.gridColumn301.VisibleIndex = 10;
+            this.gridColumn301.VisibleIndex = 11;
             this.gridColumn301.Width = 81;
             // 
             // gridColumn10
@@ -3920,7 +3978,7 @@ namespace DReport
             this.gridColumn10.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "AMOUNT", "{0:0.##}")});
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 11;
+            this.gridColumn10.VisibleIndex = 12;
             this.gridColumn10.Width = 84;
             // 
             // gridColumn11
@@ -3930,7 +3988,7 @@ namespace DReport
             this.gridColumn11.MinWidth = 21;
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 12;
+            this.gridColumn11.VisibleIndex = 13;
             this.gridColumn11.Width = 84;
             // 
             // gridColumn62
@@ -3939,7 +3997,7 @@ namespace DReport
             this.gridColumn62.FieldName = "SUNGALT_AJILTAN";
             this.gridColumn62.Name = "gridColumn62";
             this.gridColumn62.Visible = true;
-            this.gridColumn62.VisibleIndex = 13;
+            this.gridColumn62.VisibleIndex = 14;
             // 
             // gridColumn63
             // 
@@ -3947,7 +4005,7 @@ namespace DReport
             this.gridColumn63.FieldName = "TAILBAR";
             this.gridColumn63.Name = "gridColumn63";
             this.gridColumn63.Visible = true;
-            this.gridColumn63.VisibleIndex = 14;
+            this.gridColumn63.VisibleIndex = 15;
             // 
             // gridColumn81
             // 
@@ -3955,7 +4013,7 @@ namespace DReport
             this.gridColumn81.FieldName = "UUSGESEN_AJILTAN";
             this.gridColumn81.Name = "gridColumn81";
             this.gridColumn81.Visible = true;
-            this.gridColumn81.VisibleIndex = 15;
+            this.gridColumn81.VisibleIndex = 16;
             // 
             // gridColumn97
             // 
@@ -3963,7 +4021,7 @@ namespace DReport
             this.gridColumn97.FieldName = "UP_NEMEGDSEN";
             this.gridColumn97.Name = "gridColumn97";
             this.gridColumn97.Visible = true;
-            this.gridColumn97.VisibleIndex = 17;
+            this.gridColumn97.VisibleIndex = 18;
             // 
             // gridColumn98
             // 
@@ -3971,38 +4029,38 @@ namespace DReport
             this.gridColumn98.FieldName = "UP_HASAGDSAN";
             this.gridColumn98.Name = "gridColumn98";
             this.gridColumn98.Visible = true;
-            this.gridColumn98.VisibleIndex = 18;
+            this.gridColumn98.VisibleIndex = 19;
             // 
             // gridView13
             // 
-            this.gridView13.GridControl = this.gridControl1;
+            this.gridView13.GridControl = this.gridControl_24;
             this.gridView13.Name = "gridView13";
             // 
             // gridView33
             // 
             this.gridView33.DetailHeight = 284;
-            this.gridView33.GridControl = this.gridControl1;
+            this.gridView33.GridControl = this.gridControl_24;
             this.gridView33.Name = "gridView33";
             // 
             // xtraTabPage8
             // 
-            this.xtraTabPage8.Controls.Add(this.gridControl16);
-            this.xtraTabPage8.Controls.Add(this.panel14);
+            this.xtraTabPage8.Controls.Add(this.gridControl_8);
+            this.xtraTabPage8.Controls.Add(this.report_panel_8);
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage8.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage8.Text = "Урамшууллын данснаас зарцуулалт";
             // 
-            // gridControl16
+            // gridControl_8
             // 
-            this.gridControl16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl16.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl16.Location = new System.Drawing.Point(0, 74);
-            this.gridControl16.MainView = this.gridView17;
-            this.gridControl16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl16.Name = "gridControl16";
-            this.gridControl16.Size = new System.Drawing.Size(835, 407);
-            this.gridControl16.TabIndex = 11;
-            this.gridControl16.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_8.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_8.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_8.MainView = this.gridView17;
+            this.gridControl_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_8.Name = "gridControl_8";
+            this.gridControl_8.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_8.TabIndex = 11;
+            this.gridControl_8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView17});
             // 
             // gridView17
@@ -4028,7 +4086,7 @@ namespace DReport
             this.gridColumn170});
             this.gridView17.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView17.DetailHeight = 284;
-            this.gridView17.GridControl = this.gridControl16;
+            this.gridView17.GridControl = this.gridControl_8;
             this.gridView17.Name = "gridView17";
             this.gridView17.OptionsBehavior.Editable = false;
             this.gridView17.OptionsMenu.EnableGroupPanelMenu = false;
@@ -4212,78 +4270,78 @@ namespace DReport
             this.gridColumn170.Visible = true;
             this.gridColumn170.VisibleIndex = 17;
             // 
-            // panel14
+            // report_panel_8
             // 
-            this.panel14.Controls.Add(this.btnToXLSX14);
-            this.panel14.Controls.Add(this.dtEndRpt14);
-            this.panel14.Controls.Add(this.dtBeginRpt14);
-            this.panel14.Controls.Add(this.btnSearchRpt14);
-            this.panel14.Controls.Add(this.labelControl25);
-            this.panel14.Controls.Add(this.labelControl26);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(0, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(835, 74);
-            this.panel14.TabIndex = 10;
+            this.report_panel_8.Controls.Add(this.btnToXLSX_8);
+            this.report_panel_8.Controls.Add(this.dtEndRpt_8);
+            this.report_panel_8.Controls.Add(this.dtBeginRpt_8);
+            this.report_panel_8.Controls.Add(this.btnSearchRpt_8);
+            this.report_panel_8.Controls.Add(this.endlabel_8);
+            this.report_panel_8.Controls.Add(this.startlabel_8);
+            this.report_panel_8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_8.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_8.Name = "report_panel_8";
+            this.report_panel_8.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_8.TabIndex = 10;
             // 
-            // btnToXLSX14
+            // btnToXLSX_8
             // 
-            this.btnToXLSX14.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX14.Name = "btnToXLSX14";
-            this.btnToXLSX14.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX14.TabIndex = 5;
-            this.btnToXLSX14.Text = "XLSX";
-            this.btnToXLSX14.Click += new System.EventHandler(this.btnToXLSX14_Click);
+            this.btnToXLSX_8.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_8.Name = "btnToXLSX_8";
+            this.btnToXLSX_8.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_8.TabIndex = 5;
+            this.btnToXLSX_8.Text = "XLSX";
+            this.btnToXLSX_8.Click += new System.EventHandler(this.btnToXLSX_8_Click);
             // 
-            // dtEndRpt14
+            // dtEndRpt_8
             // 
-            this.dtEndRpt14.CustomFormat = "yyyyMMdd";
-            this.dtEndRpt14.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt14.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt14.Name = "dtEndRpt14";
-            this.dtEndRpt14.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt14.TabIndex = 4;
+            this.dtEndRpt_8.CustomFormat = "yyyyMMdd";
+            this.dtEndRpt_8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_8.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_8.Name = "dtEndRpt_8";
+            this.dtEndRpt_8.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_8.TabIndex = 4;
             // 
-            // dtBeginRpt14
+            // dtBeginRpt_8
             // 
-            this.dtBeginRpt14.CustomFormat = "yyyyMMdd";
-            this.dtBeginRpt14.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt14.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt14.Name = "dtBeginRpt14";
-            this.dtBeginRpt14.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt14.TabIndex = 3;
+            this.dtBeginRpt_8.CustomFormat = "yyyyMMdd";
+            this.dtBeginRpt_8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_8.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_8.Name = "dtBeginRpt_8";
+            this.dtBeginRpt_8.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_8.TabIndex = 3;
             // 
-            // btnSearchRpt14
+            // btnSearchRpt_8
             // 
-            this.btnSearchRpt14.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt14.Name = "btnSearchRpt14";
-            this.btnSearchRpt14.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt14.TabIndex = 2;
-            this.btnSearchRpt14.Text = "Хайх";
-            this.btnSearchRpt14.Click += new System.EventHandler(this.btnSearchRpt14_Click);
+            this.btnSearchRpt_8.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_8.Name = "btnSearchRpt_8";
+            this.btnSearchRpt_8.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_8.TabIndex = 2;
+            this.btnSearchRpt_8.Text = "Хайх";
+            this.btnSearchRpt_8.Click += new System.EventHandler(this.btnSearchRpt_8_Click);
             // 
-            // labelControl25
+            // endlabel_8
             // 
-            this.labelControl25.Location = new System.Drawing.Point(285, 16);
-            this.labelControl25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(70, 13);
-            this.labelControl25.TabIndex = 1;
-            this.labelControl25.Text = "Төгсөх огноо:";
+            this.endlabel_8.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_8.Name = "endlabel_8";
+            this.endlabel_8.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_8.TabIndex = 1;
+            this.endlabel_8.Text = "Төгсөх огноо:";
             // 
-            // labelControl26
+            // startlabel_8
             // 
-            this.labelControl26.Location = new System.Drawing.Point(24, 16);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(66, 13);
-            this.labelControl26.TabIndex = 1;
-            this.labelControl26.Text = "Эхлэх огноо:";
+            this.startlabel_8.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_8.Name = "startlabel_8";
+            this.startlabel_8.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_8.TabIndex = 1;
+            this.startlabel_8.Text = "Эхлэх огноо:";
             // 
             // gridView9
             // 
@@ -4302,7 +4360,7 @@ namespace DReport
             this.gridColumn297});
             this.gridView9.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView9.DetailHeight = 284;
-            this.gridView9.GridControl = this.gridControl11;
+            this.gridView9.GridControl = this.gridControl_1;
             this.gridView9.Name = "gridView9";
             this.gridView9.OptionsBehavior.Editable = false;
             this.gridView9.OptionsMenu.EnableGroupPanelMenu = false;
@@ -4428,45 +4486,45 @@ namespace DReport
             this.gridColumn297.VisibleIndex = 11;
             this.gridColumn297.Width = 81;
             // 
-            // gridControl11
+            // gridControl_1
             // 
-            this.gridControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl11.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl11.Location = new System.Drawing.Point(0, 74);
-            this.gridControl11.MainView = this.gridView9;
-            this.gridControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl11.Name = "gridControl11";
-            this.gridControl11.Size = new System.Drawing.Size(835, 407);
-            this.gridControl11.TabIndex = 4;
-            this.gridControl11.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_1.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_1.MainView = this.gridView9;
+            this.gridControl_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_1.Name = "gridControl_1";
+            this.gridControl_1.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_1.TabIndex = 4;
+            this.gridControl_1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView9,
             this.gridView28});
             // 
             // gridView28
             // 
             this.gridView28.DetailHeight = 284;
-            this.gridView28.GridControl = this.gridControl11;
+            this.gridView28.GridControl = this.gridControl_1;
             this.gridView28.Name = "gridView28";
             // 
             // xtraTabPage7
             // 
-            this.xtraTabPage7.Controls.Add(this.gridControl15);
-            this.xtraTabPage7.Controls.Add(this.panel13);
+            this.xtraTabPage7.Controls.Add(this.gridControl_7);
+            this.xtraTabPage7.Controls.Add(this.report_panel_7);
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage7.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage7.Text = "Нэгжээрээ кино үзэх";
             // 
-            // gridControl15
+            // gridControl_7
             // 
-            this.gridControl15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl15.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl15.Location = new System.Drawing.Point(0, 74);
-            this.gridControl15.MainView = this.gridView16;
-            this.gridControl15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl15.Name = "gridControl15";
-            this.gridControl15.Size = new System.Drawing.Size(835, 407);
-            this.gridControl15.TabIndex = 10;
-            this.gridControl15.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_7.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_7.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_7.MainView = this.gridView16;
+            this.gridControl_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_7.Name = "gridControl_7";
+            this.gridControl_7.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_7.TabIndex = 10;
+            this.gridControl_7.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView16});
             // 
             // gridView16
@@ -4487,7 +4545,7 @@ namespace DReport
             this.gridColumn152});
             this.gridView16.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView16.DetailHeight = 284;
-            this.gridView16.GridControl = this.gridControl15;
+            this.gridView16.GridControl = this.gridControl_7;
             this.gridView16.Name = "gridView16";
             this.gridView16.OptionsBehavior.Editable = false;
             this.gridView16.OptionsMenu.EnableGroupPanelMenu = false;
@@ -4626,78 +4684,78 @@ namespace DReport
             this.gridColumn152.VisibleIndex = 12;
             this.gridColumn152.Width = 80;
             // 
-            // panel13
+            // report_panel_7
             // 
-            this.panel13.Controls.Add(this.btnToXLSX13);
-            this.panel13.Controls.Add(this.dtEndRpt13);
-            this.panel13.Controls.Add(this.dtBeginRpt13);
-            this.panel13.Controls.Add(this.btnSearchRpt13);
-            this.panel13.Controls.Add(this.labelControl23);
-            this.panel13.Controls.Add(this.labelControl24);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(835, 74);
-            this.panel13.TabIndex = 9;
+            this.report_panel_7.Controls.Add(this.btnToXLSX_7);
+            this.report_panel_7.Controls.Add(this.dtEndRpt_7);
+            this.report_panel_7.Controls.Add(this.dtBeginRpt_7);
+            this.report_panel_7.Controls.Add(this.btnSearchRpt_7);
+            this.report_panel_7.Controls.Add(this.endlabel_7);
+            this.report_panel_7.Controls.Add(this.startlabel_7);
+            this.report_panel_7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_7.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_7.Name = "report_panel_7";
+            this.report_panel_7.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_7.TabIndex = 9;
             // 
-            // btnToXLSX13
+            // btnToXLSX_7
             // 
-            this.btnToXLSX13.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX13.Name = "btnToXLSX13";
-            this.btnToXLSX13.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX13.TabIndex = 5;
-            this.btnToXLSX13.Text = "XLSX";
-            this.btnToXLSX13.Click += new System.EventHandler(this.btnToXLSX13_Click);
+            this.btnToXLSX_7.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_7.Name = "btnToXLSX_7";
+            this.btnToXLSX_7.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_7.TabIndex = 5;
+            this.btnToXLSX_7.Text = "XLSX";
+            this.btnToXLSX_7.Click += new System.EventHandler(this.btnToXLSX_7_Click);
             // 
-            // dtEndRpt13
+            // dtEndRpt_7
             // 
-            this.dtEndRpt13.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt13.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt13.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt13.Name = "dtEndRpt13";
-            this.dtEndRpt13.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt13.TabIndex = 4;
+            this.dtEndRpt_7.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_7.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_7.Name = "dtEndRpt_7";
+            this.dtEndRpt_7.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_7.TabIndex = 4;
             // 
-            // dtBeginRpt13
+            // dtBeginRpt_7
             // 
-            this.dtBeginRpt13.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt13.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt13.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt13.Name = "dtBeginRpt13";
-            this.dtBeginRpt13.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt13.TabIndex = 3;
+            this.dtBeginRpt_7.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_7.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_7.Name = "dtBeginRpt_7";
+            this.dtBeginRpt_7.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_7.TabIndex = 3;
             // 
-            // btnSearchRpt13
+            // btnSearchRpt_7
             // 
-            this.btnSearchRpt13.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt13.Name = "btnSearchRpt13";
-            this.btnSearchRpt13.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt13.TabIndex = 2;
-            this.btnSearchRpt13.Text = "Хайх";
-            this.btnSearchRpt13.Click += new System.EventHandler(this.btnSearchRpt13_Click);
+            this.btnSearchRpt_7.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_7.Name = "btnSearchRpt_7";
+            this.btnSearchRpt_7.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_7.TabIndex = 2;
+            this.btnSearchRpt_7.Text = "Хайх";
+            this.btnSearchRpt_7.Click += new System.EventHandler(this.btnSearchRpt_7_Click);
             // 
-            // labelControl23
+            // endlabel_7
             // 
-            this.labelControl23.Location = new System.Drawing.Point(285, 16);
-            this.labelControl23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(70, 13);
-            this.labelControl23.TabIndex = 1;
-            this.labelControl23.Text = "Төгсөх огноо:";
+            this.endlabel_7.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_7.Name = "endlabel_7";
+            this.endlabel_7.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_7.TabIndex = 1;
+            this.endlabel_7.Text = "Төгсөх огноо:";
             // 
-            // labelControl24
+            // startlabel_7
             // 
-            this.labelControl24.Location = new System.Drawing.Point(24, 16);
-            this.labelControl24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(66, 13);
-            this.labelControl24.TabIndex = 1;
-            this.labelControl24.Text = "Эхлэх огноо:";
+            this.startlabel_7.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_7.Name = "startlabel_7";
+            this.startlabel_7.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_7.TabIndex = 1;
+            this.startlabel_7.Text = "Эхлэх огноо:";
             // 
             // gridView10
             // 
@@ -4712,7 +4770,7 @@ namespace DReport
             this.gridColumn109});
             this.gridView10.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView10.DetailHeight = 284;
-            this.gridView10.GridControl = this.gridControl12;
+            this.gridView10.GridControl = this.gridControl_2;
             this.gridView10.Name = "gridView10";
             this.gridView10.OptionsBehavior.Editable = false;
             this.gridView10.OptionsMenu.EnableGroupPanelMenu = false;
@@ -4801,45 +4859,45 @@ namespace DReport
             this.gridColumn109.VisibleIndex = 7;
             this.gridColumn109.Width = 91;
             // 
-            // gridControl12
+            // gridControl_2
             // 
-            this.gridControl12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl12.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl12.Location = new System.Drawing.Point(0, 74);
-            this.gridControl12.MainView = this.gridView10;
-            this.gridControl12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl12.Name = "gridControl12";
-            this.gridControl12.Size = new System.Drawing.Size(835, 407);
-            this.gridControl12.TabIndex = 5;
-            this.gridControl12.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_2.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_2.MainView = this.gridView10;
+            this.gridControl_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_2.Name = "gridControl_2";
+            this.gridControl_2.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_2.TabIndex = 5;
+            this.gridControl_2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView10,
             this.gridView27});
             // 
             // gridView27
             // 
             this.gridView27.DetailHeight = 284;
-            this.gridView27.GridControl = this.gridControl12;
+            this.gridView27.GridControl = this.gridControl_2;
             this.gridView27.Name = "gridView27";
             // 
             // xtraTabPage6
             // 
-            this.xtraTabPage6.Controls.Add(this.gridControl14);
-            this.xtraTabPage6.Controls.Add(this.panel12);
+            this.xtraTabPage6.Controls.Add(this.gridControl_6);
+            this.xtraTabPage6.Controls.Add(this.report_panel_6);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage6.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage6.Text = "Дархан ДЭГБ салбарт олгох урамшуулал";
             // 
-            // gridControl14
+            // gridControl_6
             // 
-            this.gridControl14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl14.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl14.Location = new System.Drawing.Point(0, 74);
-            this.gridControl14.MainView = this.gridView15;
-            this.gridControl14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl14.Name = "gridControl14";
-            this.gridControl14.Size = new System.Drawing.Size(835, 407);
-            this.gridControl14.TabIndex = 9;
-            this.gridControl14.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_6.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_6.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_6.MainView = this.gridView15;
+            this.gridControl_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_6.Name = "gridControl_6";
+            this.gridControl_6.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_6.TabIndex = 9;
+            this.gridControl_6.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView15});
             // 
             // gridView15
@@ -4854,7 +4912,7 @@ namespace DReport
             this.gridColumn139});
             this.gridView15.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView15.DetailHeight = 284;
-            this.gridView15.GridControl = this.gridControl14;
+            this.gridView15.GridControl = this.gridControl_6;
             this.gridView15.Name = "gridView15";
             this.gridView15.OptionsBehavior.Editable = false;
             this.gridView15.OptionsMenu.EnableGroupPanelMenu = false;
@@ -4931,78 +4989,78 @@ namespace DReport
             this.gridColumn139.Visible = true;
             this.gridColumn139.VisibleIndex = 6;
             // 
-            // panel12
+            // report_panel_6
             // 
-            this.panel12.Controls.Add(this.btnToXLSX12);
-            this.panel12.Controls.Add(this.dtEndRpt12);
-            this.panel12.Controls.Add(this.dtBeginRpt12);
-            this.panel12.Controls.Add(this.btnSearchRpt12);
-            this.panel12.Controls.Add(this.labelControl21);
-            this.panel12.Controls.Add(this.labelControl22);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(835, 74);
-            this.panel12.TabIndex = 8;
+            this.report_panel_6.Controls.Add(this.btnToXLSX_6);
+            this.report_panel_6.Controls.Add(this.dtEndRpt_6);
+            this.report_panel_6.Controls.Add(this.dtBeginRpt_6);
+            this.report_panel_6.Controls.Add(this.btnSearchRpt_6);
+            this.report_panel_6.Controls.Add(this.endlabel_6);
+            this.report_panel_6.Controls.Add(this.startlabel_6);
+            this.report_panel_6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_6.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_6.Name = "report_panel_6";
+            this.report_panel_6.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_6.TabIndex = 8;
             // 
-            // btnToXLSX12
+            // btnToXLSX_6
             // 
-            this.btnToXLSX12.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX12.Name = "btnToXLSX12";
-            this.btnToXLSX12.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX12.TabIndex = 5;
-            this.btnToXLSX12.Text = "XLSX";
-            this.btnToXLSX12.Click += new System.EventHandler(this.btnToXLSX12_Click);
+            this.btnToXLSX_6.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_6.Name = "btnToXLSX_6";
+            this.btnToXLSX_6.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_6.TabIndex = 5;
+            this.btnToXLSX_6.Text = "XLSX";
+            this.btnToXLSX_6.Click += new System.EventHandler(this.btnToXLSX_6_Click);
             // 
-            // dtEndRpt12
+            // dtEndRpt_6
             // 
-            this.dtEndRpt12.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt12.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt12.Name = "dtEndRpt12";
-            this.dtEndRpt12.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt12.TabIndex = 4;
+            this.dtEndRpt_6.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_6.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_6.Name = "dtEndRpt_6";
+            this.dtEndRpt_6.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_6.TabIndex = 4;
             // 
-            // dtBeginRpt12
+            // dtBeginRpt_6
             // 
-            this.dtBeginRpt12.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt12.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt12.Name = "dtBeginRpt12";
-            this.dtBeginRpt12.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt12.TabIndex = 3;
+            this.dtBeginRpt_6.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_6.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_6.Name = "dtBeginRpt_6";
+            this.dtBeginRpt_6.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_6.TabIndex = 3;
             // 
-            // btnSearchRpt12
+            // btnSearchRpt_6
             // 
-            this.btnSearchRpt12.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt12.Name = "btnSearchRpt12";
-            this.btnSearchRpt12.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt12.TabIndex = 2;
-            this.btnSearchRpt12.Text = "Хайх";
-            this.btnSearchRpt12.Click += new System.EventHandler(this.btnSearchRpt12_Click);
+            this.btnSearchRpt_6.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_6.Name = "btnSearchRpt_6";
+            this.btnSearchRpt_6.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_6.TabIndex = 2;
+            this.btnSearchRpt_6.Text = "Хайх";
+            this.btnSearchRpt_6.Click += new System.EventHandler(this.btnSearchRpt_6_Click);
             // 
-            // labelControl21
+            // endlabel_6
             // 
-            this.labelControl21.Location = new System.Drawing.Point(285, 16);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(70, 13);
-            this.labelControl21.TabIndex = 1;
-            this.labelControl21.Text = "Төгсөх огноо:";
+            this.endlabel_6.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_6.Name = "endlabel_6";
+            this.endlabel_6.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_6.TabIndex = 1;
+            this.endlabel_6.Text = "Төгсөх огноо:";
             // 
-            // labelControl22
+            // startlabel_6
             // 
-            this.labelControl22.Location = new System.Drawing.Point(24, 16);
-            this.labelControl22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(66, 13);
-            this.labelControl22.TabIndex = 1;
-            this.labelControl22.Text = "Эхлэх огноо:";
+            this.startlabel_6.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_6.Name = "startlabel_6";
+            this.startlabel_6.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_6.TabIndex = 1;
+            this.startlabel_6.Text = "Эхлэх огноо:";
             // 
             // gridView11
             // 
@@ -5022,7 +5080,7 @@ namespace DReport
             this.gridColumn122});
             this.gridView11.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView11.DetailHeight = 284;
-            this.gridView11.GridControl = this.gridControl13;
+            this.gridView11.GridControl = this.gridControl_3;
             this.gridView11.Name = "gridView11";
             this.gridView11.OptionsBehavior.Editable = false;
             this.gridView11.OptionsMenu.EnableGroupPanelMenu = false;
@@ -5158,45 +5216,45 @@ namespace DReport
             this.gridColumn122.VisibleIndex = 12;
             this.gridColumn122.Width = 71;
             // 
-            // gridControl13
+            // gridControl_3
             // 
-            this.gridControl13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl13.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl13.Location = new System.Drawing.Point(0, 74);
-            this.gridControl13.MainView = this.gridView11;
-            this.gridControl13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl13.Name = "gridControl13";
-            this.gridControl13.Size = new System.Drawing.Size(835, 407);
-            this.gridControl13.TabIndex = 6;
-            this.gridControl13.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_3.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_3.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_3.MainView = this.gridView11;
+            this.gridControl_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_3.Name = "gridControl_3";
+            this.gridControl_3.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_3.TabIndex = 6;
+            this.gridControl_3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView11,
             this.gridView26});
             // 
             // gridView26
             // 
             this.gridView26.DetailHeight = 284;
-            this.gridView26.GridControl = this.gridControl13;
+            this.gridView26.GridControl = this.gridControl_3;
             this.gridView26.Name = "gridView26";
             // 
             // xtraTabPage5
             // 
-            this.xtraTabPage5.Controls.Add(this.gridControl9);
-            this.xtraTabPage5.Controls.Add(this.panel11);
+            this.xtraTabPage5.Controls.Add(this.gridControl_5);
+            this.xtraTabPage5.Controls.Add(this.report_panel_5);
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage5.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage5.Text = "Дархан салбарын 3 суурилуулагчдад олгох урамшуулал";
             // 
-            // gridControl9
+            // gridControl_5
             // 
-            this.gridControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl9.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl9.Location = new System.Drawing.Point(0, 74);
-            this.gridControl9.MainView = this.gridView14;
-            this.gridControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl9.Name = "gridControl9";
-            this.gridControl9.Size = new System.Drawing.Size(835, 407);
-            this.gridControl9.TabIndex = 8;
-            this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_5.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_5.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_5.MainView = this.gridView14;
+            this.gridControl_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_5.Name = "gridControl_5";
+            this.gridControl_5.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_5.TabIndex = 8;
+            this.gridControl_5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView14});
             // 
             // gridView14
@@ -5211,7 +5269,7 @@ namespace DReport
             this.gridColumn138});
             this.gridView14.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView14.DetailHeight = 284;
-            this.gridView14.GridControl = this.gridControl9;
+            this.gridView14.GridControl = this.gridControl_5;
             this.gridView14.Name = "gridView14";
             this.gridView14.OptionsBehavior.Editable = false;
             this.gridView14.OptionsMenu.EnableGroupPanelMenu = false;
@@ -5288,817 +5346,824 @@ namespace DReport
             this.gridColumn138.Visible = true;
             this.gridColumn138.VisibleIndex = 6;
             // 
-            // panel11
+            // report_panel_5
             // 
-            this.panel11.Controls.Add(this.btnToXLSX11);
-            this.panel11.Controls.Add(this.dtEndRpt5);
-            this.panel11.Controls.Add(this.dtBeginRpt5);
-            this.panel11.Controls.Add(this.btnSearchRpt11);
-            this.panel11.Controls.Add(this.labelControl19);
-            this.panel11.Controls.Add(this.labelControl20);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(835, 74);
-            this.panel11.TabIndex = 7;
+            this.report_panel_5.Controls.Add(this.btnToXLSX_5);
+            this.report_panel_5.Controls.Add(this.dtEndRpt_5);
+            this.report_panel_5.Controls.Add(this.dtBeginRpt_5);
+            this.report_panel_5.Controls.Add(this.btnSearchRpt_5);
+            this.report_panel_5.Controls.Add(this.endlabel_5);
+            this.report_panel_5.Controls.Add(this.startlabel_5);
+            this.report_panel_5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_5.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_5.Name = "report_panel_5";
+            this.report_panel_5.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_5.TabIndex = 7;
             // 
-            // btnToXLSX11
+            // btnToXLSX_5
             // 
-            this.btnToXLSX11.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX11.Name = "btnToXLSX11";
-            this.btnToXLSX11.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX11.TabIndex = 5;
-            this.btnToXLSX11.Text = "XLSX";
-            this.btnToXLSX11.Click += new System.EventHandler(this.btnToXLSX11_Click);
+            this.btnToXLSX_5.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_5.Name = "btnToXLSX_5";
+            this.btnToXLSX_5.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_5.TabIndex = 5;
+            this.btnToXLSX_5.Text = "XLSX";
+            this.btnToXLSX_5.Click += new System.EventHandler(this.btnToXLSX_5_Click);
             // 
-            // dtEndRpt5
+            // dtEndRpt_5
             // 
-            this.dtEndRpt5.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt5.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt5.Name = "dtEndRpt5";
-            this.dtEndRpt5.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt5.TabIndex = 4;
+            this.dtEndRpt_5.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_5.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_5.Name = "dtEndRpt_5";
+            this.dtEndRpt_5.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_5.TabIndex = 4;
             // 
-            // dtBeginRpt5
+            // dtBeginRpt_5
             // 
-            this.dtBeginRpt5.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt5.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt5.Name = "dtBeginRpt5";
-            this.dtBeginRpt5.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt5.TabIndex = 3;
+            this.dtBeginRpt_5.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_5.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_5.Name = "dtBeginRpt_5";
+            this.dtBeginRpt_5.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_5.TabIndex = 3;
             // 
-            // btnSearchRpt11
+            // btnSearchRpt_5
             // 
-            this.btnSearchRpt11.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt11.Name = "btnSearchRpt11";
-            this.btnSearchRpt11.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt11.TabIndex = 2;
-            this.btnSearchRpt11.Text = "Хайх";
-            this.btnSearchRpt11.Click += new System.EventHandler(this.btnSearchRpt11_Click);
+            this.btnSearchRpt_5.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_5.Name = "btnSearchRpt_5";
+            this.btnSearchRpt_5.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_5.TabIndex = 2;
+            this.btnSearchRpt_5.Text = "Хайх";
+            this.btnSearchRpt_5.Click += new System.EventHandler(this.btnSearchRpt_5_Click);
             // 
-            // labelControl19
+            // endlabel_5
             // 
-            this.labelControl19.Location = new System.Drawing.Point(285, 16);
-            this.labelControl19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(70, 13);
-            this.labelControl19.TabIndex = 1;
-            this.labelControl19.Text = "Төгсөх огноо:";
+            this.endlabel_5.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_5.Name = "endlabel_5";
+            this.endlabel_5.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_5.TabIndex = 1;
+            this.endlabel_5.Text = "Төгсөх огноо:";
             // 
-            // labelControl20
+            // startlabel_5
             // 
-            this.labelControl20.Location = new System.Drawing.Point(24, 16);
-            this.labelControl20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(66, 13);
-            this.labelControl20.TabIndex = 1;
-            this.labelControl20.Text = "Эхлэх огноо:";
+            this.startlabel_5.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_5.Name = "startlabel_5";
+            this.startlabel_5.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_5.TabIndex = 1;
+            this.startlabel_5.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage4
             // 
-            this.xtraTabPage4.Controls.Add(this.gridControl5);
-            this.xtraTabPage4.Controls.Add(this.panel6);
+            this.xtraTabPage4.Controls.Add(this.gridControl_4);
+            this.xtraTabPage4.Controls.Add(this.report_panel_4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage4.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage4.Text = "Үндсэн дансны үлдэгдэл";
             // 
-            // panel6
+            // report_panel_4
             // 
-            this.panel6.Controls.Add(this.btnToXLSX10);
-            this.panel6.Controls.Add(this.dtBeginRpt10);
-            this.panel6.Controls.Add(this.btnSearchRpt10);
-            this.panel6.Controls.Add(this.labelControl10);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(835, 74);
-            this.panel6.TabIndex = 6;
+            this.report_panel_4.Controls.Add(this.btnToXLSX_4);
+            this.report_panel_4.Controls.Add(this.dtBeginRpt_4);
+            this.report_panel_4.Controls.Add(this.btnSearchRpt_4);
+            this.report_panel_4.Controls.Add(this.startlabel_4);
+            this.report_panel_4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_4.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_4.Name = "report_panel_4";
+            this.report_panel_4.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_4.TabIndex = 6;
             // 
-            // btnToXLSX10
+            // btnToXLSX_4
             // 
-            this.btnToXLSX10.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX10.Name = "btnToXLSX10";
-            this.btnToXLSX10.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX10.TabIndex = 5;
-            this.btnToXLSX10.Text = "XLSX";
-            this.btnToXLSX10.Click += new System.EventHandler(this.btnToXLSX10_Click);
+            this.btnToXLSX_4.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_4.Name = "btnToXLSX_4";
+            this.btnToXLSX_4.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_4.TabIndex = 5;
+            this.btnToXLSX_4.Text = "XLSX";
+            this.btnToXLSX_4.Click += new System.EventHandler(this.btnToXLSX_4_Click);
             // 
-            // dtBeginRpt10
+            // dtBeginRpt_4
             // 
-            this.dtBeginRpt10.CustomFormat = "yyyyMMdd";
-            this.dtBeginRpt10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt10.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt10.Name = "dtBeginRpt10";
-            this.dtBeginRpt10.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt10.TabIndex = 3;
+            this.dtBeginRpt_4.CustomFormat = "yyyyMMdd";
+            this.dtBeginRpt_4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_4.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_4.Name = "dtBeginRpt_4";
+            this.dtBeginRpt_4.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_4.TabIndex = 3;
             // 
-            // btnSearchRpt10
+            // btnSearchRpt_4
             // 
-            this.btnSearchRpt10.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt10.Name = "btnSearchRpt10";
-            this.btnSearchRpt10.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt10.TabIndex = 2;
-            this.btnSearchRpt10.Text = "Хайх";
-            this.btnSearchRpt10.Click += new System.EventHandler(this.btnSearchRpt10_Click);
+            this.btnSearchRpt_4.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_4.Name = "btnSearchRpt_4";
+            this.btnSearchRpt_4.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_4.TabIndex = 2;
+            this.btnSearchRpt_4.Text = "Хайх";
+            this.btnSearchRpt_4.Click += new System.EventHandler(this.btnSearchRpt_4_Click);
             // 
-            // labelControl10
+            // startlabel_4
             // 
-            this.labelControl10.Location = new System.Drawing.Point(24, 16);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(66, 13);
-            this.labelControl10.TabIndex = 1;
-            this.labelControl10.Text = "Эхлэх огноо:";
+            this.startlabel_4.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_4.Name = "startlabel_4";
+            this.startlabel_4.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_4.TabIndex = 1;
+            this.startlabel_4.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage3
             // 
-            this.xtraTabPage3.Controls.Add(this.gridControl13);
-            this.xtraTabPage3.Controls.Add(this.panel10);
+            this.xtraTabPage3.Controls.Add(this.gridControl_3);
+            this.xtraTabPage3.Controls.Add(this.report_panel_3);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage3.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage3.Text = "UPOINT";
             // 
-            // panel10
+            // report_panel_3
             // 
-            this.panel10.Controls.Add(this.btnToXLSX9);
-            this.panel10.Controls.Add(this.dtEndRpt9);
-            this.panel10.Controls.Add(this.dtBeginRpt9);
-            this.panel10.Controls.Add(this.btnSearchRpt9);
-            this.panel10.Controls.Add(this.labelControl17);
-            this.panel10.Controls.Add(this.labelControl18);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(835, 74);
-            this.panel10.TabIndex = 5;
+            this.report_panel_3.Controls.Add(this.btnToXLSX_3);
+            this.report_panel_3.Controls.Add(this.dtEndRpt_3);
+            this.report_panel_3.Controls.Add(this.dtBeginRpt_3);
+            this.report_panel_3.Controls.Add(this.btnSearchRpt_3);
+            this.report_panel_3.Controls.Add(this.endlabel_3);
+            this.report_panel_3.Controls.Add(this.startlabel_3);
+            this.report_panel_3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_3.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_3.Name = "report_panel_3";
+            this.report_panel_3.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_3.TabIndex = 5;
             // 
-            // btnToXLSX9
+            // btnToXLSX_3
             // 
-            this.btnToXLSX9.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX9.Name = "btnToXLSX9";
-            this.btnToXLSX9.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX9.TabIndex = 5;
-            this.btnToXLSX9.Text = "XLSX";
-            this.btnToXLSX9.Click += new System.EventHandler(this.btnToXLSX9_Click);
+            this.btnToXLSX_3.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_3.Name = "btnToXLSX_3";
+            this.btnToXLSX_3.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_3.TabIndex = 5;
+            this.btnToXLSX_3.Text = "XLSX";
+            this.btnToXLSX_3.Click += new System.EventHandler(this.btnToXLSX_3_Click);
             // 
-            // dtEndRpt9
+            // dtEndRpt_3
             // 
-            this.dtEndRpt9.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt9.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt9.Name = "dtEndRpt9";
-            this.dtEndRpt9.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt9.TabIndex = 4;
+            this.dtEndRpt_3.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_3.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_3.Name = "dtEndRpt_3";
+            this.dtEndRpt_3.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_3.TabIndex = 4;
             // 
-            // dtBeginRpt9
+            // dtBeginRpt_3
             // 
-            this.dtBeginRpt9.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt9.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt9.Name = "dtBeginRpt9";
-            this.dtBeginRpt9.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt9.TabIndex = 3;
+            this.dtBeginRpt_3.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_3.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_3.Name = "dtBeginRpt_3";
+            this.dtBeginRpt_3.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_3.TabIndex = 3;
             // 
-            // btnSearchRpt9
+            // btnSearchRpt_3
             // 
-            this.btnSearchRpt9.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt9.Name = "btnSearchRpt9";
-            this.btnSearchRpt9.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt9.TabIndex = 2;
-            this.btnSearchRpt9.Text = "Хайх";
-            this.btnSearchRpt9.Click += new System.EventHandler(this.btnSearchRpt9_Click);
+            this.btnSearchRpt_3.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_3.Name = "btnSearchRpt_3";
+            this.btnSearchRpt_3.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_3.TabIndex = 2;
+            this.btnSearchRpt_3.Text = "Хайх";
+            this.btnSearchRpt_3.Click += new System.EventHandler(this.btnSearchRpt_3_Click);
             // 
-            // labelControl17
+            // endlabel_3
             // 
-            this.labelControl17.Location = new System.Drawing.Point(285, 16);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(70, 13);
-            this.labelControl17.TabIndex = 1;
-            this.labelControl17.Text = "Төгсөх огноо:";
+            this.endlabel_3.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_3.Name = "endlabel_3";
+            this.endlabel_3.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_3.TabIndex = 1;
+            this.endlabel_3.Text = "Төгсөх огноо:";
             // 
-            // labelControl18
+            // startlabel_3
             // 
-            this.labelControl18.Location = new System.Drawing.Point(24, 16);
-            this.labelControl18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(66, 13);
-            this.labelControl18.TabIndex = 1;
-            this.labelControl18.Text = "Эхлэх огноо:";
+            this.startlabel_3.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_3.Name = "startlabel_3";
+            this.startlabel_3.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_3.TabIndex = 1;
+            this.startlabel_3.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage2
             // 
-            this.xtraTabPage2.Controls.Add(this.gridControl12);
-            this.xtraTabPage2.Controls.Add(this.panel9);
+            this.xtraTabPage2.Controls.Add(this.gridControl_2);
+            this.xtraTabPage2.Controls.Add(this.report_panel_2);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage2.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage2.Text = "НЭЭЛТИЙН ҮНЭГҮЙ САР";
             // 
-            // panel9
+            // report_panel_2
             // 
-            this.panel9.Controls.Add(this.btnToXLSX8);
-            this.panel9.Controls.Add(this.dtEndRpt8);
-            this.panel9.Controls.Add(this.dtBeginRpt8);
-            this.panel9.Controls.Add(this.btnSearchRpt8);
-            this.panel9.Controls.Add(this.labelControl15);
-            this.panel9.Controls.Add(this.labelControl16);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(835, 74);
-            this.panel9.TabIndex = 4;
+            this.report_panel_2.Controls.Add(this.btnToXLSX_2);
+            this.report_panel_2.Controls.Add(this.dtEndRpt_2);
+            this.report_panel_2.Controls.Add(this.dtBeginRpt_2);
+            this.report_panel_2.Controls.Add(this.btnSearchRpt_2);
+            this.report_panel_2.Controls.Add(this.endlabel_2);
+            this.report_panel_2.Controls.Add(this.startlabel_2);
+            this.report_panel_2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_2.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_2.Name = "report_panel_2";
+            this.report_panel_2.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_2.TabIndex = 4;
             // 
-            // btnToXLSX8
+            // btnToXLSX_2
             // 
-            this.btnToXLSX8.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX8.Name = "btnToXLSX8";
-            this.btnToXLSX8.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX8.TabIndex = 5;
-            this.btnToXLSX8.Text = "XLSX";
-            this.btnToXLSX8.Click += new System.EventHandler(this.btnToXLSX8_Click);
+            this.btnToXLSX_2.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_2.Name = "btnToXLSX_2";
+            this.btnToXLSX_2.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_2.TabIndex = 5;
+            this.btnToXLSX_2.Text = "XLSX";
+            this.btnToXLSX_2.Click += new System.EventHandler(this.btnToXLSX_2_Click);
             // 
-            // dtEndRpt8
+            // dtEndRpt_2
             // 
-            this.dtEndRpt8.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt8.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt8.Name = "dtEndRpt8";
-            this.dtEndRpt8.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt8.TabIndex = 4;
+            this.dtEndRpt_2.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_2.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_2.Name = "dtEndRpt_2";
+            this.dtEndRpt_2.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_2.TabIndex = 4;
             // 
-            // dtBeginRpt8
+            // dtBeginRpt_2
             // 
-            this.dtBeginRpt8.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt8.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt8.Name = "dtBeginRpt8";
-            this.dtBeginRpt8.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt8.TabIndex = 3;
+            this.dtBeginRpt_2.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_2.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_2.Name = "dtBeginRpt_2";
+            this.dtBeginRpt_2.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_2.TabIndex = 3;
             // 
-            // btnSearchRpt8
+            // btnSearchRpt_2
             // 
-            this.btnSearchRpt8.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt8.Name = "btnSearchRpt8";
-            this.btnSearchRpt8.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt8.TabIndex = 2;
-            this.btnSearchRpt8.Text = "Хайх";
-            this.btnSearchRpt8.Click += new System.EventHandler(this.btnSearchRpt8_Click);
+            this.btnSearchRpt_2.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_2.Name = "btnSearchRpt_2";
+            this.btnSearchRpt_2.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_2.TabIndex = 2;
+            this.btnSearchRpt_2.Text = "Хайх";
+            this.btnSearchRpt_2.Click += new System.EventHandler(this.btnSearchRpt_2_Click);
             // 
-            // labelControl15
+            // endlabel_2
             // 
-            this.labelControl15.Location = new System.Drawing.Point(285, 16);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(70, 13);
-            this.labelControl15.TabIndex = 1;
-            this.labelControl15.Text = "Төгсөх огноо:";
+            this.endlabel_2.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_2.Name = "endlabel_2";
+            this.endlabel_2.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_2.TabIndex = 1;
+            this.endlabel_2.Text = "Төгсөх огноо:";
             // 
-            // labelControl16
+            // startlabel_2
             // 
-            this.labelControl16.Location = new System.Drawing.Point(24, 16);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(66, 13);
-            this.labelControl16.TabIndex = 1;
-            this.labelControl16.Text = "Эхлэх огноо:";
+            this.startlabel_2.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_2.Name = "startlabel_2";
+            this.startlabel_2.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_2.TabIndex = 1;
+            this.startlabel_2.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage1
             // 
-            this.xtraTabPage1.Controls.Add(this.gridControl11);
-            this.xtraTabPage1.Controls.Add(this.panel8);
+            this.xtraTabPage1.Controls.Add(this.gridControl_1);
+            this.xtraTabPage1.Controls.Add(this.report_label_1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage1.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage1.Text = "ОНЛАЙН СУВАГ ЛИЗИНГ";
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnToXLSX7);
-            this.panel8.Controls.Add(this.dtEndRpt7);
-            this.panel8.Controls.Add(this.dtBeginRpt7);
-            this.panel8.Controls.Add(this.btnSearchRpt7);
-            this.panel8.Controls.Add(this.labelControl13);
-            this.panel8.Controls.Add(this.labelControl14);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(835, 74);
-            this.panel8.TabIndex = 3;
-            // 
-            // btnToXLSX7
-            // 
-            this.btnToXLSX7.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX7.Name = "btnToXLSX7";
-            this.btnToXLSX7.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX7.TabIndex = 5;
-            this.btnToXLSX7.Text = "XLSX";
-            this.btnToXLSX7.Click += new System.EventHandler(this.btnToXLSX7_Click);
-            // 
-            // dtEndRpt7
-            // 
-            this.dtEndRpt7.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt7.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt7.Name = "dtEndRpt7";
-            this.dtEndRpt7.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt7.TabIndex = 4;
-            // 
-            // dtBeginRpt7
-            // 
-            this.dtBeginRpt7.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt7.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt7.Name = "dtBeginRpt7";
-            this.dtBeginRpt7.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt7.TabIndex = 3;
-            // 
-            // btnSearchRpt7
-            // 
-            this.btnSearchRpt7.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt7.Name = "btnSearchRpt7";
-            this.btnSearchRpt7.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt7.TabIndex = 2;
-            this.btnSearchRpt7.Text = "Хайх";
-            this.btnSearchRpt7.Click += new System.EventHandler(this.btnSearchRpt7_Click);
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Location = new System.Drawing.Point(285, 16);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(70, 13);
-            this.labelControl13.TabIndex = 1;
-            this.labelControl13.Text = "Төгсөх огноо:";
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Location = new System.Drawing.Point(24, 16);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(66, 13);
-            this.labelControl14.TabIndex = 1;
-            this.labelControl14.Text = "Эхлэх огноо:";
-            // 
-            // gridControl6
-            // 
-            this.gridControl6.Controls.Add(this.gridControl10);
-            this.gridControl6.Controls.Add(this.panel7);
-            this.gridControl6.Name = "gridControl6";
-            this.gridControl6.Size = new System.Drawing.Size(835, 481);
-            this.gridControl6.Text = "ҮНЭГҮЙ ХОНОГ";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnToXLSX6);
-            this.panel7.Controls.Add(this.dtEndRpt6);
-            this.panel7.Controls.Add(this.dtBeginRpt6);
-            this.panel7.Controls.Add(this.btnSearchRpt6);
-            this.panel7.Controls.Add(this.labelControl11);
-            this.panel7.Controls.Add(this.labelControl12);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(835, 74);
-            this.panel7.TabIndex = 2;
-            // 
-            // btnToXLSX6
-            // 
-            this.btnToXLSX6.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX6.Name = "btnToXLSX6";
-            this.btnToXLSX6.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX6.TabIndex = 5;
-            this.btnToXLSX6.Text = "XLSX";
-            this.btnToXLSX6.Click += new System.EventHandler(this.btnToXLSX6_Click);
-            // 
-            // dtEndRpt6
-            // 
-            this.dtEndRpt6.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt6.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt6.Name = "dtEndRpt6";
-            this.dtEndRpt6.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt6.TabIndex = 4;
-            // 
-            // dtBeginRpt6
-            // 
-            this.dtBeginRpt6.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt6.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt6.Name = "dtBeginRpt6";
-            this.dtBeginRpt6.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt6.TabIndex = 3;
-            // 
-            // btnSearchRpt6
-            // 
-            this.btnSearchRpt6.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt6.Name = "btnSearchRpt6";
-            this.btnSearchRpt6.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt6.TabIndex = 2;
-            this.btnSearchRpt6.Text = "Хайх";
-            this.btnSearchRpt6.Click += new System.EventHandler(this.btnSearchRpt6_Click);
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(285, 16);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(70, 13);
-            this.labelControl11.TabIndex = 1;
-            this.labelControl11.Text = "Төгсөх огноо:";
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Location = new System.Drawing.Point(24, 16);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(66, 13);
-            this.labelControl12.TabIndex = 1;
-            this.labelControl12.Text = "Эхлэх огноо:";
-            // 
-            // gridControl4
-            // 
-            this.gridControl4.Controls.Add(this.gridControl8);
-            this.gridControl4.Controls.Add(this.panel5);
-            this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(835, 481);
-            this.gridControl4.Text = "ҮНДСЭН ДАНСНААС NVOD ҮЗЭЛТ";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnToXLSX4);
-            this.panel5.Controls.Add(this.dtEndRpt4);
-            this.panel5.Controls.Add(this.dtBeginRpt4);
-            this.panel5.Controls.Add(this.btnSearchRpt4);
-            this.panel5.Controls.Add(this.labelControl7);
-            this.panel5.Controls.Add(this.labelControl8);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(835, 74);
-            this.panel5.TabIndex = 2;
-            // 
-            // btnToXLSX4
-            // 
-            this.btnToXLSX4.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX4.Name = "btnToXLSX4";
-            this.btnToXLSX4.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX4.TabIndex = 5;
-            this.btnToXLSX4.Text = "XLSX";
-            this.btnToXLSX4.Click += new System.EventHandler(this.btnToXLSX4_Click);
-            // 
-            // dtEndRpt4
-            // 
-            this.dtEndRpt4.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt4.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt4.Name = "dtEndRpt4";
-            this.dtEndRpt4.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt4.TabIndex = 4;
-            // 
-            // dtBeginRpt4
-            // 
-            this.dtBeginRpt4.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt4.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt4.Name = "dtBeginRpt4";
-            this.dtBeginRpt4.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt4.TabIndex = 3;
-            // 
-            // btnSearchRpt4
-            // 
-            this.btnSearchRpt4.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt4.Name = "btnSearchRpt4";
-            this.btnSearchRpt4.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt4.TabIndex = 2;
-            this.btnSearchRpt4.Text = "Хайх";
-            this.btnSearchRpt4.Click += new System.EventHandler(this.btnSearchRpt4_Click);
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(285, 16);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(70, 13);
-            this.labelControl7.TabIndex = 1;
-            this.labelControl7.Text = "Төгсөх огноо:";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(24, 16);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(66, 13);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "Эхлэх огноо:";
-            // 
-            // gridControl3
-            // 
-            this.gridControl3.Controls.Add(this.gridControl7);
-            this.gridControl3.Controls.Add(this.panel4);
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(835, 481);
-            this.gridControl3.Text = "ҮНДСЭН ДАНСНААС БАГЦ СУНГАЛТ";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnToXLSX3);
-            this.panel4.Controls.Add(this.dtEndRpt3);
-            this.panel4.Controls.Add(this.dtBeginRpt3);
-            this.panel4.Controls.Add(this.btnSearchRpt3);
-            this.panel4.Controls.Add(this.labelControl5);
-            this.panel4.Controls.Add(this.labelControl6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(835, 74);
-            this.panel4.TabIndex = 2;
-            // 
-            // btnToXLSX3
-            // 
-            this.btnToXLSX3.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX3.Name = "btnToXLSX3";
-            this.btnToXLSX3.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX3.TabIndex = 5;
-            this.btnToXLSX3.Text = "XLSX";
-            this.btnToXLSX3.Click += new System.EventHandler(this.btnToXLSX3_Click);
-            // 
-            // dtEndRpt3
-            // 
-            this.dtEndRpt3.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt3.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt3.Name = "dtEndRpt3";
-            this.dtEndRpt3.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt3.TabIndex = 4;
-            // 
-            // dtBeginRpt3
-            // 
-            this.dtBeginRpt3.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt3.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt3.Name = "dtBeginRpt3";
-            this.dtBeginRpt3.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt3.TabIndex = 3;
-            // 
-            // btnSearchRpt3
-            // 
-            this.btnSearchRpt3.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt3.Name = "btnSearchRpt3";
-            this.btnSearchRpt3.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt3.TabIndex = 2;
-            this.btnSearchRpt3.Text = "Хайх";
-            this.btnSearchRpt3.Click += new System.EventHandler(this.btnSearchRpt3_Click);
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(285, 16);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(70, 13);
-            this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "Төгсөх огноо:";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(24, 16);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(66, 13);
-            this.labelControl6.TabIndex = 1;
-            this.labelControl6.Text = "Эхлэх огноо:";
-            // 
-            // xtraTabControl2
-            // 
-            this.xtraTabControl2.Controls.Add(this.gridControl2);
-            this.xtraTabControl2.Controls.Add(this.panel3);
-            this.xtraTabControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.xtraTabControl2.Name = "xtraTabControl2";
-            this.xtraTabControl2.Size = new System.Drawing.Size(835, 481);
-            this.xtraTabControl2.Text = "ҮНДСЭН ДАНС ЦЭНЭГЛЭЛТ";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnToXLSX2);
-            this.panel3.Controls.Add(this.dtEndRpt2);
-            this.panel3.Controls.Add(this.dtBeginRpt2);
-            this.panel3.Controls.Add(this.btnSearchRpt2);
-            this.panel3.Controls.Add(this.labelControl3);
-            this.panel3.Controls.Add(this.labelControl4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(835, 74);
-            this.panel3.TabIndex = 1;
-            // 
-            // btnToXLSX2
-            // 
-            this.btnToXLSX2.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX2.Name = "btnToXLSX2";
-            this.btnToXLSX2.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX2.TabIndex = 5;
-            this.btnToXLSX2.Text = "XLSX";
-            this.btnToXLSX2.Click += new System.EventHandler(this.btnToXLSX2_Click);
-            // 
-            // dtEndRpt2
-            // 
-            this.dtEndRpt2.CustomFormat = "yyyyMMdd";
-            this.dtEndRpt2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt2.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt2.Name = "dtEndRpt2";
-            this.dtEndRpt2.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt2.TabIndex = 4;
-            // 
-            // dtBeginRpt2
-            // 
-            this.dtBeginRpt2.CustomFormat = "yyyyMMdd";
-            this.dtBeginRpt2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt2.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt2.Name = "dtBeginRpt2";
-            this.dtBeginRpt2.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt2.TabIndex = 3;
-            // 
-            // btnSearchRpt2
-            // 
-            this.btnSearchRpt2.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt2.Name = "btnSearchRpt2";
-            this.btnSearchRpt2.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt2.TabIndex = 2;
-            this.btnSearchRpt2.Text = "Хайх";
-            this.btnSearchRpt2.Click += new System.EventHandler(this.btnSearchRpt2_Click);
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(285, 16);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(70, 13);
-            this.labelControl3.TabIndex = 1;
-            this.labelControl3.Text = "Төгсөх огноо:";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(24, 16);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(66, 13);
-            this.labelControl4.TabIndex = 1;
-            this.labelControl4.Text = "Эхлэх огноо:";
-            // 
-            // tbRpt1
-            // 
-            this.tbRpt1.Controls.Add(this.panel2);
-            this.tbRpt1.Controls.Add(this.panel1);
-            this.tbRpt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbRpt1.Name = "tbRpt1";
-            this.tbRpt1.Size = new System.Drawing.Size(835, 481);
-            this.tbRpt1.Text = "БЭЛЭН МӨНГӨ БАГЦ СУНГАЛТ";
+            // report_label_1
+            // 
+            this.report_label_1.Controls.Add(this.btnToXLSX_1);
+            this.report_label_1.Controls.Add(this.dtEndRpt_1);
+            this.report_label_1.Controls.Add(this.dtBeginRpt_1);
+            this.report_label_1.Controls.Add(this.btnSearchRpt_1);
+            this.report_label_1.Controls.Add(this.endlabel_1);
+            this.report_label_1.Controls.Add(this.startlabel_1);
+            this.report_label_1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_label_1.Location = new System.Drawing.Point(0, 0);
+            this.report_label_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_label_1.Name = "report_label_1";
+            this.report_label_1.Size = new System.Drawing.Size(924, 74);
+            this.report_label_1.TabIndex = 3;
+            // 
+            // btnToXLSX_1
+            // 
+            this.btnToXLSX_1.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_1.Name = "btnToXLSX_1";
+            this.btnToXLSX_1.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_1.TabIndex = 5;
+            this.btnToXLSX_1.Text = "XLSX";
+            this.btnToXLSX_1.Click += new System.EventHandler(this.btnToXLSX_1_Click);
+            // 
+            // dtEndRpt_1
+            // 
+            this.dtEndRpt_1.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_1.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_1.Name = "dtEndRpt_1";
+            this.dtEndRpt_1.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_1.TabIndex = 4;
+            // 
+            // dtBeginRpt_1
+            // 
+            this.dtBeginRpt_1.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_1.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_1.Name = "dtBeginRpt_1";
+            this.dtBeginRpt_1.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_1.TabIndex = 3;
+            // 
+            // btnSearchRpt_1
+            // 
+            this.btnSearchRpt_1.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_1.Name = "btnSearchRpt_1";
+            this.btnSearchRpt_1.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_1.TabIndex = 2;
+            this.btnSearchRpt_1.Text = "Хайх";
+            this.btnSearchRpt_1.Click += new System.EventHandler(this.btnSearchRpt_1_Click);
+            // 
+            // endlabel_1
+            // 
+            this.endlabel_1.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_1.Name = "endlabel_1";
+            this.endlabel_1.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_1.TabIndex = 1;
+            this.endlabel_1.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_1
+            // 
+            this.startlabel_1.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_1.Name = "startlabel_1";
+            this.startlabel_1.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_1.TabIndex = 1;
+            this.startlabel_1.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage28
+            // 
+            this.xtraTabPage28.Controls.Add(this.gridControl_28);
+            this.xtraTabPage28.Controls.Add(this.report_panel_28);
+            this.xtraTabPage28.Name = "xtraTabPage28";
+            this.xtraTabPage28.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage28.Text = "ҮНЭГҮЙ ХОНОГ";
+            // 
+            // report_panel_28
+            // 
+            this.report_panel_28.Controls.Add(this.btnToXLSX_28);
+            this.report_panel_28.Controls.Add(this.dtEndRpt_28);
+            this.report_panel_28.Controls.Add(this.dtBeginRpt_28);
+            this.report_panel_28.Controls.Add(this.btnSearchRpt_28);
+            this.report_panel_28.Controls.Add(this.endlabel_28);
+            this.report_panel_28.Controls.Add(this.startlabel_28);
+            this.report_panel_28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_28.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_28.Name = "report_panel_28";
+            this.report_panel_28.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_28.TabIndex = 2;
+            // 
+            // btnToXLSX_28
+            // 
+            this.btnToXLSX_28.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_28.Name = "btnToXLSX_28";
+            this.btnToXLSX_28.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_28.TabIndex = 5;
+            this.btnToXLSX_28.Text = "XLSX";
+            this.btnToXLSX_28.Click += new System.EventHandler(this.btnToXLSX_28_Click);
+            // 
+            // dtEndRpt_28
+            // 
+            this.dtEndRpt_28.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_28.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_28.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_28.Name = "dtEndRpt_28";
+            this.dtEndRpt_28.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_28.TabIndex = 4;
+            // 
+            // dtBeginRpt_28
+            // 
+            this.dtBeginRpt_28.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_28.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_28.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_28.Name = "dtBeginRpt_28";
+            this.dtBeginRpt_28.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_28.TabIndex = 3;
+            // 
+            // btnSearchRpt_28
+            // 
+            this.btnSearchRpt_28.Location = new System.Drawing.Point(585, 11);
+            this.btnSearchRpt_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_28.Name = "btnSearchRpt_28";
+            this.btnSearchRpt_28.Size = new System.Drawing.Size(98, 24);
+            this.btnSearchRpt_28.TabIndex = 2;
+            this.btnSearchRpt_28.Text = "Хайх";
+            this.btnSearchRpt_28.Click += new System.EventHandler(this.btnSearchRpt_28_Click);
+            // 
+            // endlabel_28
+            // 
+            this.endlabel_28.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_28.Name = "endlabel_28";
+            this.endlabel_28.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_28.TabIndex = 1;
+            this.endlabel_28.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_28
+            // 
+            this.startlabel_28.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_28.Name = "startlabel_28";
+            this.startlabel_28.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_28.TabIndex = 1;
+            this.startlabel_28.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage27
+            // 
+            this.xtraTabPage27.Controls.Add(this.gridControl_27);
+            this.xtraTabPage27.Controls.Add(this.report_panel_27);
+            this.xtraTabPage27.Name = "xtraTabPage27";
+            this.xtraTabPage27.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage27.Text = "ҮНДСЭН ДАНСНААС NVOD ҮЗЭЛТ";
+            // 
+            // report_panel_27
+            // 
+            this.report_panel_27.Controls.Add(this.btnToXLSX_27);
+            this.report_panel_27.Controls.Add(this.dtEndRpt_27);
+            this.report_panel_27.Controls.Add(this.dtBeginRpt_27);
+            this.report_panel_27.Controls.Add(this.btnSearchRpt_27);
+            this.report_panel_27.Controls.Add(this.endlabel_27);
+            this.report_panel_27.Controls.Add(this.startlabel_27);
+            this.report_panel_27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_27.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_27.Name = "report_panel_27";
+            this.report_panel_27.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_27.TabIndex = 2;
+            // 
+            // btnToXLSX_27
+            // 
+            this.btnToXLSX_27.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_27.Name = "btnToXLSX_27";
+            this.btnToXLSX_27.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_27.TabIndex = 5;
+            this.btnToXLSX_27.Text = "XLSX";
+            this.btnToXLSX_27.Click += new System.EventHandler(this.btnToXLSX_27_Click);
+            // 
+            // dtEndRpt_27
+            // 
+            this.dtEndRpt_27.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_27.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_27.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_27.Name = "dtEndRpt_27";
+            this.dtEndRpt_27.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_27.TabIndex = 4;
+            // 
+            // dtBeginRpt_27
+            // 
+            this.dtBeginRpt_27.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_27.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_27.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_27.Name = "dtBeginRpt_27";
+            this.dtBeginRpt_27.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_27.TabIndex = 3;
+            // 
+            // btnSearchRpt_27
+            // 
+            this.btnSearchRpt_27.Location = new System.Drawing.Point(585, 11);
+            this.btnSearchRpt_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_27.Name = "btnSearchRpt_27";
+            this.btnSearchRpt_27.Size = new System.Drawing.Size(98, 24);
+            this.btnSearchRpt_27.TabIndex = 2;
+            this.btnSearchRpt_27.Text = "Хайх";
+            this.btnSearchRpt_27.Click += new System.EventHandler(this.btnSearchRpt_27_Click);
+            // 
+            // endlabel_27
+            // 
+            this.endlabel_27.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_27.Name = "endlabel_27";
+            this.endlabel_27.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_27.TabIndex = 1;
+            this.endlabel_27.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_27
+            // 
+            this.startlabel_27.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_27.Name = "startlabel_27";
+            this.startlabel_27.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_27.TabIndex = 1;
+            this.startlabel_27.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage26
+            // 
+            this.xtraTabPage26.Controls.Add(this.gridControl_26);
+            this.xtraTabPage26.Controls.Add(this.report_panel_26);
+            this.xtraTabPage26.Name = "xtraTabPage26";
+            this.xtraTabPage26.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage26.Text = "ҮНДСЭН ДАНСНААС БАГЦ СУНГАЛТ";
+            // 
+            // report_panel_26
+            // 
+            this.report_panel_26.Controls.Add(this.btnToXLSX_26);
+            this.report_panel_26.Controls.Add(this.dtEndRpt_26);
+            this.report_panel_26.Controls.Add(this.dtBeginRpt_26);
+            this.report_panel_26.Controls.Add(this.btnSearchRpt_26);
+            this.report_panel_26.Controls.Add(this.endlabel_26);
+            this.report_panel_26.Controls.Add(this.startlabel_26);
+            this.report_panel_26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_26.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_26.Name = "report_panel_26";
+            this.report_panel_26.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_26.TabIndex = 2;
+            // 
+            // btnToXLSX_26
+            // 
+            this.btnToXLSX_26.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_26.Name = "btnToXLSX_26";
+            this.btnToXLSX_26.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_26.TabIndex = 5;
+            this.btnToXLSX_26.Text = "XLSX";
+            this.btnToXLSX_26.Click += new System.EventHandler(this.btnToXLSX_26_Click);
+            // 
+            // dtEndRpt_26
+            // 
+            this.dtEndRpt_26.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_26.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_26.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_26.Name = "dtEndRpt_26";
+            this.dtEndRpt_26.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_26.TabIndex = 4;
+            // 
+            // dtBeginRpt_26
+            // 
+            this.dtBeginRpt_26.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_26.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_26.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_26.Name = "dtBeginRpt_26";
+            this.dtBeginRpt_26.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_26.TabIndex = 3;
+            // 
+            // btnSearchRpt_26
+            // 
+            this.btnSearchRpt_26.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_26.Name = "btnSearchRpt_26";
+            this.btnSearchRpt_26.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_26.TabIndex = 2;
+            this.btnSearchRpt_26.Text = "Хайх";
+            this.btnSearchRpt_26.Click += new System.EventHandler(this.btnSearchRpt_26_Click);
+            // 
+            // endlabel_26
+            // 
+            this.endlabel_26.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_26.Name = "endlabel_26";
+            this.endlabel_26.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_26.TabIndex = 1;
+            this.endlabel_26.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_26
+            // 
+            this.startlabel_26.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_26.Name = "startlabel_26";
+            this.startlabel_26.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_26.TabIndex = 1;
+            this.startlabel_26.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage25
+            // 
+            this.xtraTabPage25.Controls.Add(this.gridControl_25);
+            this.xtraTabPage25.Controls.Add(this.report_panel_25);
+            this.xtraTabPage25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.xtraTabPage25.Name = "xtraTabPage25";
+            this.xtraTabPage25.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage25.Text = "ҮНДСЭН ДАНС ЦЭНЭГЛЭЛТ";
+            // 
+            // report_panel_25
+            // 
+            this.report_panel_25.Controls.Add(this.btnToXLSX_25);
+            this.report_panel_25.Controls.Add(this.dtEndRpt_25);
+            this.report_panel_25.Controls.Add(this.dtBeginRpt_25);
+            this.report_panel_25.Controls.Add(this.btnSearchRpt_25);
+            this.report_panel_25.Controls.Add(this.endlabel_25);
+            this.report_panel_25.Controls.Add(this.startlabel_25);
+            this.report_panel_25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_25.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_25.Name = "report_panel_25";
+            this.report_panel_25.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_25.TabIndex = 1;
+            // 
+            // btnToXLSX_25
+            // 
+            this.btnToXLSX_25.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_25.Name = "btnToXLSX_25";
+            this.btnToXLSX_25.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_25.TabIndex = 5;
+            this.btnToXLSX_25.Text = "XLSX";
+            this.btnToXLSX_25.Click += new System.EventHandler(this.btnToXLSX_25_Click);
+            // 
+            // dtEndRpt_25
+            // 
+            this.dtEndRpt_25.CustomFormat = "yyyyMMdd";
+            this.dtEndRpt_25.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_25.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_25.Name = "dtEndRpt_25";
+            this.dtEndRpt_25.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_25.TabIndex = 4;
+            // 
+            // dtBeginRpt_25
+            // 
+            this.dtBeginRpt_25.CustomFormat = "yyyyMMdd";
+            this.dtBeginRpt_25.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_25.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_25.Name = "dtBeginRpt_25";
+            this.dtBeginRpt_25.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_25.TabIndex = 3;
+            // 
+            // btnSearchRpt_25
+            // 
+            this.btnSearchRpt_25.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_25.Name = "btnSearchRpt_25";
+            this.btnSearchRpt_25.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_25.TabIndex = 2;
+            this.btnSearchRpt_25.Text = "Хайх";
+            this.btnSearchRpt_25.Click += new System.EventHandler(this.btnSearchRpt_25_Click);
+            // 
+            // endlabel_25
+            // 
+            this.endlabel_25.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_25.Name = "endlabel_25";
+            this.endlabel_25.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_25.TabIndex = 1;
+            this.endlabel_25.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_25
+            // 
+            this.startlabel_25.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_25.Name = "startlabel_25";
+            this.startlabel_25.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_25.TabIndex = 1;
+            this.startlabel_25.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage24
+            // 
+            this.xtraTabPage24.Controls.Add(this.panel2);
+            this.xtraTabPage24.Controls.Add(this.report_panel_24);
+            this.xtraTabPage24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.xtraTabPage24.Name = "xtraTabPage24";
+            this.xtraTabPage24.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage24.Text = "БЭЛЭН МӨНГӨ БАГЦ СУНГАЛТ";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.gridControl1);
+            this.panel2.Controls.Add(this.gridControl_24);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 74);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(835, 407);
+            this.panel2.Size = new System.Drawing.Size(924, 374);
             this.panel2.TabIndex = 1;
             // 
-            // panel1
+            // report_panel_24
             // 
-            this.panel1.Controls.Add(this.btnToXLSX1);
-            this.panel1.Controls.Add(this.dtEndRpt1);
-            this.panel1.Controls.Add(this.dtBeginRpt1);
-            this.panel1.Controls.Add(this.btnSearchRpt1);
-            this.panel1.Controls.Add(this.labelControl2);
-            this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 74);
-            this.panel1.TabIndex = 0;
+            this.report_panel_24.Controls.Add(this.btnToXLSX_24);
+            this.report_panel_24.Controls.Add(this.dtEndRpt_24);
+            this.report_panel_24.Controls.Add(this.dtBeginRpt_24);
+            this.report_panel_24.Controls.Add(this.btnSearchRpt_24);
+            this.report_panel_24.Controls.Add(this.endlabel_24);
+            this.report_panel_24.Controls.Add(this.startlabel_24);
+            this.report_panel_24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_24.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_24.Name = "report_panel_24";
+            this.report_panel_24.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_24.TabIndex = 0;
             // 
-            // btnToXLSX1
+            // btnToXLSX_24
             // 
-            this.btnToXLSX1.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX1.Name = "btnToXLSX1";
-            this.btnToXLSX1.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX1.TabIndex = 5;
-            this.btnToXLSX1.Text = "XLSX";
-            this.btnToXLSX1.Click += new System.EventHandler(this.btnToXLSX1_Click);
+            this.btnToXLSX_24.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_24.Name = "btnToXLSX_24";
+            this.btnToXLSX_24.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_24.TabIndex = 5;
+            this.btnToXLSX_24.Text = "XLSX";
+            this.btnToXLSX_24.Click += new System.EventHandler(this.btnToXLSX_24_Click);
             // 
-            // dtEndRpt1
+            // dtEndRpt_24
             // 
-            this.dtEndRpt1.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt1.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt1.Name = "dtEndRpt1";
-            this.dtEndRpt1.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt1.TabIndex = 4;
+            this.dtEndRpt_24.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_24.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_24.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_24.Name = "dtEndRpt_24";
+            this.dtEndRpt_24.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_24.TabIndex = 4;
             // 
-            // dtBeginRpt1
+            // dtBeginRpt_24
             // 
-            this.dtBeginRpt1.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt1.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt1.Name = "dtBeginRpt1";
-            this.dtBeginRpt1.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt1.TabIndex = 3;
+            this.dtBeginRpt_24.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_24.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_24.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_24.Name = "dtBeginRpt_24";
+            this.dtBeginRpt_24.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_24.TabIndex = 3;
             // 
-            // btnSearchRpt1
+            // btnSearchRpt_24
             // 
-            this.btnSearchRpt1.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt1.Name = "btnSearchRpt1";
-            this.btnSearchRpt1.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt1.TabIndex = 2;
-            this.btnSearchRpt1.Text = "Хайх";
-            this.btnSearchRpt1.Click += new System.EventHandler(this.btnSearchRpt1_Click);
+            this.btnSearchRpt_24.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_24.Name = "btnSearchRpt_24";
+            this.btnSearchRpt_24.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_24.TabIndex = 2;
+            this.btnSearchRpt_24.Text = "Хайх";
+            this.btnSearchRpt_24.Click += new System.EventHandler(this.btnSearchRpt_24_Click);
             // 
-            // labelControl2
+            // endlabel_24
             // 
-            this.labelControl2.Location = new System.Drawing.Point(285, 16);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(70, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Төгсөх огноо:";
+            this.endlabel_24.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_24.Name = "endlabel_24";
+            this.endlabel_24.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_24.TabIndex = 1;
+            this.endlabel_24.Text = "Төгсөх огноо:";
             // 
-            // labelControl1
+            // startlabel_24
             // 
-            this.labelControl1.Location = new System.Drawing.Point(24, 16);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(66, 13);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Эхлэх огноо:";
+            this.startlabel_24.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_24.Name = "startlabel_24";
+            this.startlabel_24.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_24.TabIndex = 1;
+            this.startlabel_24.Text = "Эхлэх огноо:";
             // 
-            // panel23
+            // xtratabcontrol_report
             // 
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel23.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
-            this.panel23.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Horizontal;
-            this.panel23.Location = new System.Drawing.Point(0, 0);
-            this.panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel23.MultiLine = DevExpress.Utils.DefaultBoolean.False;
-            this.panel23.Name = "panel23";
-            this.panel23.SelectedTabPage = this.tbRpt1;
-            this.panel23.Size = new System.Drawing.Size(1139, 483);
-            this.panel23.TabIndex = 0;
-            this.panel23.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tbRpt1,
-            this.xtraTabControl2,
-            this.gridControl3,
-            this.gridControl4,
-            this.gridControl6,
+            this.xtratabcontrol_report.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.xtratabcontrol_report.CustomHeaderButtons.AddRange(new DevExpress.XtraTab.Buttons.CustomHeaderButton[] {
+            new DevExpress.XtraTab.Buttons.CustomHeaderButton()});
+            this.xtratabcontrol_report.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtratabcontrol_report.HeaderButtonsShowMode = DevExpress.XtraTab.TabButtonShowMode.Never;
+            this.xtratabcontrol_report.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
+            this.xtratabcontrol_report.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Horizontal;
+            this.xtratabcontrol_report.Location = new System.Drawing.Point(0, 33);
+            this.xtratabcontrol_report.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.xtratabcontrol_report.MaxTabPageWidth = 200;
+            this.xtratabcontrol_report.MultiLine = DevExpress.Utils.DefaultBoolean.False;
+            this.xtratabcontrol_report.Name = "xtratabcontrol_report";
+            this.xtratabcontrol_report.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Far;
+            this.xtratabcontrol_report.SelectedTabPage = this.xtraTabPage16;
+            this.xtratabcontrol_report.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
+            this.xtratabcontrol_report.Size = new System.Drawing.Size(1139, 450);
+            this.xtratabcontrol_report.TabIndex = 0;
+            this.xtratabcontrol_report.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage24,
+            this.xtraTabPage25,
+            this.xtraTabPage26,
+            this.xtraTabPage27,
+            this.xtraTabPage28,
             this.xtraTabPage1,
             this.xtraTabPage2,
             this.xtraTabPage3,
@@ -6119,28 +6184,29 @@ namespace DReport
             this.xtraTabPage19,
             this.xtraTabPage20,
             this.xtraTabPage21,
-            this.xtraTabPage22});
+            this.xtraTabPage22,
+            this.xtraTabPage23});
             // 
             // xtraTabPage18
             // 
-            this.xtraTabPage18.Controls.Add(this.gridControl25);
-            this.xtraTabPage18.Controls.Add(this.panel24);
+            this.xtraTabPage18.Controls.Add(this.gridControl_18);
+            this.xtraTabPage18.Controls.Add(this.report_panel_18);
             this.xtraTabPage18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabPage18.Name = "xtraTabPage18";
-            this.xtraTabPage18.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage18.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage18.Text = "Installer report";
             // 
-            // gridControl25
+            // gridControl_18
             // 
-            this.gridControl25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl25.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl25.Location = new System.Drawing.Point(0, 47);
-            this.gridControl25.MainView = this.gridView34;
-            this.gridControl25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl25.Name = "gridControl25";
-            this.gridControl25.Size = new System.Drawing.Size(835, 434);
-            this.gridControl25.TabIndex = 16;
-            this.gridControl25.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_18.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_18.Location = new System.Drawing.Point(0, 47);
+            this.gridControl_18.MainView = this.gridView34;
+            this.gridControl_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_18.Name = "gridControl_18";
+            this.gridControl_18.Size = new System.Drawing.Size(924, 401);
+            this.gridControl_18.TabIndex = 16;
+            this.gridControl_18.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView34});
             // 
             // gridView34
@@ -6154,7 +6220,7 @@ namespace DReport
             this.gridColumn272});
             this.gridView34.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView34.DetailHeight = 284;
-            this.gridView34.GridControl = this.gridControl25;
+            this.gridView34.GridControl = this.gridControl_18;
             this.gridView34.Name = "gridView34";
             this.gridView34.OptionsBehavior.Editable = false;
             this.gridView34.OptionsMenu.EnableGroupPanelMenu = false;
@@ -6223,60 +6289,60 @@ namespace DReport
             this.gridColumn272.VisibleIndex = 5;
             this.gridColumn272.Width = 66;
             // 
-            // panel24
+            // report_panel_18
             // 
-            this.panel24.Controls.Add(this.btnToXLSX23);
-            this.panel24.Controls.Add(this.dtEndRpt23);
-            this.panel24.Controls.Add(this.dtBeginRpt23);
-            this.panel24.Controls.Add(this.btnSearchRpt23);
-            this.panel24.Controls.Add(this.labelControl9);
-            this.panel24.Controls.Add(this.labelControl42);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 0);
-            this.panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(835, 47);
-            this.panel24.TabIndex = 15;
+            this.report_panel_18.Controls.Add(this.btnToXLSX_18);
+            this.report_panel_18.Controls.Add(this.dtEndRpt_18);
+            this.report_panel_18.Controls.Add(this.dtBeginRpt_18);
+            this.report_panel_18.Controls.Add(this.btnSearchRpt_18);
+            this.report_panel_18.Controls.Add(this.labelControl9);
+            this.report_panel_18.Controls.Add(this.startlabel_18);
+            this.report_panel_18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_18.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_18.Name = "report_panel_18";
+            this.report_panel_18.Size = new System.Drawing.Size(924, 47);
+            this.report_panel_18.TabIndex = 15;
             // 
-            // btnToXLSX23
+            // btnToXLSX_18
             // 
-            this.btnToXLSX23.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX23.Name = "btnToXLSX23";
-            this.btnToXLSX23.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX23.TabIndex = 5;
-            this.btnToXLSX23.Text = "XLSX";
-            this.btnToXLSX23.Click += new System.EventHandler(this.btnToXLSX23_Click);
+            this.btnToXLSX_18.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_18.Name = "btnToXLSX_18";
+            this.btnToXLSX_18.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_18.TabIndex = 5;
+            this.btnToXLSX_18.Text = "XLSX";
+            this.btnToXLSX_18.Click += new System.EventHandler(this.btnToXLSX_18_Click);
             // 
-            // dtEndRpt23
+            // dtEndRpt_18
             // 
-            this.dtEndRpt23.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt23.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt23.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt23.Name = "dtEndRpt23";
-            this.dtEndRpt23.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt23.TabIndex = 4;
+            this.dtEndRpt_18.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_18.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_18.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_18.Name = "dtEndRpt_18";
+            this.dtEndRpt_18.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_18.TabIndex = 4;
             // 
-            // dtBeginRpt23
+            // dtBeginRpt_18
             // 
-            this.dtBeginRpt23.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt23.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt23.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt23.Name = "dtBeginRpt23";
-            this.dtBeginRpt23.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt23.TabIndex = 3;
+            this.dtBeginRpt_18.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_18.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_18.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_18.Name = "dtBeginRpt_18";
+            this.dtBeginRpt_18.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_18.TabIndex = 3;
             // 
-            // btnSearchRpt23
+            // btnSearchRpt_18
             // 
-            this.btnSearchRpt23.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt23.Name = "btnSearchRpt23";
-            this.btnSearchRpt23.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt23.TabIndex = 2;
-            this.btnSearchRpt23.Text = "Хайх";
-            this.btnSearchRpt23.Click += new System.EventHandler(this.btnSearchRpt23_Click);
+            this.btnSearchRpt_18.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_18.Name = "btnSearchRpt_18";
+            this.btnSearchRpt_18.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_18.TabIndex = 2;
+            this.btnSearchRpt_18.Text = "Хайх";
+            this.btnSearchRpt_18.Click += new System.EventHandler(this.btnSearchRpt_18_Click);
             // 
             // labelControl9
             // 
@@ -6287,35 +6353,35 @@ namespace DReport
             this.labelControl9.TabIndex = 1;
             this.labelControl9.Text = "Төгсөх огноо:";
             // 
-            // labelControl42
+            // startlabel_18
             // 
-            this.labelControl42.Location = new System.Drawing.Point(24, 16);
-            this.labelControl42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl42.Name = "labelControl42";
-            this.labelControl42.Size = new System.Drawing.Size(66, 13);
-            this.labelControl42.TabIndex = 1;
-            this.labelControl42.Text = "Эхлэх огноо:";
+            this.startlabel_18.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_18.Name = "startlabel_18";
+            this.startlabel_18.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_18.TabIndex = 1;
+            this.startlabel_18.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage19
             // 
-            this.xtraTabPage19.Controls.Add(this.gridControl26);
-            this.xtraTabPage19.Controls.Add(this.panel25);
+            this.xtraTabPage19.Controls.Add(this.gridControl_19);
+            this.xtraTabPage19.Controls.Add(this.report_panel_19);
             this.xtraTabPage19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabPage19.Name = "xtraTabPage19";
-            this.xtraTabPage19.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage19.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage19.Text = "Mobile app report";
             // 
-            // gridControl26
+            // gridControl_19
             // 
-            this.gridControl26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl26.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl26.Location = new System.Drawing.Point(0, 47);
-            this.gridControl26.MainView = this.gridView38;
-            this.gridControl26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl26.Name = "gridControl26";
-            this.gridControl26.Size = new System.Drawing.Size(835, 434);
-            this.gridControl26.TabIndex = 17;
-            this.gridControl26.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_19.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_19.Location = new System.Drawing.Point(0, 47);
+            this.gridControl_19.MainView = this.gridView38;
+            this.gridControl_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_19.Name = "gridControl_19";
+            this.gridControl_19.Size = new System.Drawing.Size(924, 401);
+            this.gridControl_19.TabIndex = 17;
+            this.gridControl_19.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView38,
             this.gridView39,
             this.gridView40,
@@ -6334,15 +6400,15 @@ namespace DReport
             this.gridColumn291});
             this.gridView38.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView38.DetailHeight = 284;
-            gridFormatRule9.ApplyToRow = true;
-            gridFormatRule9.Name = "Format0";
-            formatConditionRuleValue9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue9.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue9.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue9.Value1 = "INACTIVE";
-            gridFormatRule9.Rule = formatConditionRuleValue9;
-            this.gridView38.FormatRules.Add(gridFormatRule9);
-            this.gridView38.GridControl = this.gridControl26;
+            gridFormatRule6.ApplyToRow = true;
+            gridFormatRule6.Name = "Format0";
+            formatConditionRuleValue6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue6.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue6.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue6.Value1 = "INACTIVE";
+            gridFormatRule6.Rule = formatConditionRuleValue6;
+            this.gridView38.FormatRules.Add(gridFormatRule6);
+            this.gridView38.GridControl = this.gridControl_19;
             this.gridView38.Name = "gridView38";
             this.gridView38.OptionsBehavior.Editable = false;
             this.gridView38.OptionsMenu.EnableGroupPanelMenu = false;
@@ -6431,113 +6497,113 @@ namespace DReport
             // 
             // gridView39
             // 
-            this.gridView39.GridControl = this.gridControl26;
+            this.gridView39.GridControl = this.gridControl_19;
             this.gridView39.Name = "gridView39";
             // 
             // gridView40
             // 
             this.gridView40.DetailHeight = 284;
-            this.gridView40.GridControl = this.gridControl26;
+            this.gridView40.GridControl = this.gridControl_19;
             this.gridView40.Name = "gridView40";
             // 
             // gridView41
             // 
-            this.gridView41.GridControl = this.gridControl26;
+            this.gridView41.GridControl = this.gridControl_19;
             this.gridView41.Name = "gridView41";
             // 
-            // panel25
+            // report_panel_19
             // 
-            this.panel25.Controls.Add(this.dtEndRpt24);
-            this.panel25.Controls.Add(this.btnSearchRpt24);
-            this.panel25.Controls.Add(this.btnToXLSX24);
-            this.panel25.Controls.Add(this.dtBeginRpt24);
-            this.panel25.Controls.Add(this.labelControl43);
-            this.panel25.Controls.Add(this.labelControl44);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(0, 0);
-            this.panel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(835, 47);
-            this.panel25.TabIndex = 15;
+            this.report_panel_19.Controls.Add(this.dtEndRpt_19);
+            this.report_panel_19.Controls.Add(this.btnSearchRpt_19);
+            this.report_panel_19.Controls.Add(this.btnToXLSX_19);
+            this.report_panel_19.Controls.Add(this.dtBeginRpt_19);
+            this.report_panel_19.Controls.Add(this.endlabel_19);
+            this.report_panel_19.Controls.Add(this.startlabel_19);
+            this.report_panel_19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_19.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_19.Name = "report_panel_19";
+            this.report_panel_19.Size = new System.Drawing.Size(924, 47);
+            this.report_panel_19.TabIndex = 15;
             // 
-            // dtEndRpt24
+            // dtEndRpt_19
             // 
-            this.dtEndRpt24.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt24.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt24.Location = new System.Drawing.Point(367, 14);
-            this.dtEndRpt24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt24.Name = "dtEndRpt24";
-            this.dtEndRpt24.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt24.TabIndex = 8;
+            this.dtEndRpt_19.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_19.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_19.Location = new System.Drawing.Point(367, 14);
+            this.dtEndRpt_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_19.Name = "dtEndRpt_19";
+            this.dtEndRpt_19.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_19.TabIndex = 8;
             // 
-            // btnSearchRpt24
+            // btnSearchRpt_19
             // 
-            this.btnSearchRpt24.Location = new System.Drawing.Point(575, 11);
-            this.btnSearchRpt24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt24.Name = "btnSearchRpt24";
-            this.btnSearchRpt24.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt24.TabIndex = 7;
-            this.btnSearchRpt24.Text = "Хайх";
-            this.btnSearchRpt24.Click += new System.EventHandler(this.btnSearchRpt24_Click);
+            this.btnSearchRpt_19.Location = new System.Drawing.Point(575, 11);
+            this.btnSearchRpt_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_19.Name = "btnSearchRpt_19";
+            this.btnSearchRpt_19.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_19.TabIndex = 7;
+            this.btnSearchRpt_19.Text = "Хайх";
+            this.btnSearchRpt_19.Click += new System.EventHandler(this.btnSearchRpt_19_Click);
             // 
-            // btnToXLSX24
+            // btnToXLSX_19
             // 
-            this.btnToXLSX24.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX24.Name = "btnToXLSX24";
-            this.btnToXLSX24.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX24.TabIndex = 5;
-            this.btnToXLSX24.Text = "XLSX";
-            this.btnToXLSX24.Click += new System.EventHandler(this.btnToXLSX24_Click);
+            this.btnToXLSX_19.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_19.Name = "btnToXLSX_19";
+            this.btnToXLSX_19.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_19.TabIndex = 5;
+            this.btnToXLSX_19.Text = "XLSX";
+            this.btnToXLSX_19.Click += new System.EventHandler(this.btnToXLSX_19_Click);
             // 
-            // dtBeginRpt24
+            // dtBeginRpt_19
             // 
-            this.dtBeginRpt24.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt24.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt24.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt24.Name = "dtBeginRpt24";
-            this.dtBeginRpt24.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt24.TabIndex = 3;
+            this.dtBeginRpt_19.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_19.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_19.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_19.Name = "dtBeginRpt_19";
+            this.dtBeginRpt_19.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_19.TabIndex = 3;
             // 
-            // labelControl43
+            // endlabel_19
             // 
-            this.labelControl43.Location = new System.Drawing.Point(285, 16);
-            this.labelControl43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl43.Name = "labelControl43";
-            this.labelControl43.Size = new System.Drawing.Size(70, 13);
-            this.labelControl43.TabIndex = 1;
-            this.labelControl43.Text = "Төгсөх огноо:";
+            this.endlabel_19.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_19.Name = "endlabel_19";
+            this.endlabel_19.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_19.TabIndex = 1;
+            this.endlabel_19.Text = "Төгсөх огноо:";
             // 
-            // labelControl44
+            // startlabel_19
             // 
-            this.labelControl44.Location = new System.Drawing.Point(24, 16);
-            this.labelControl44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl44.Name = "labelControl44";
-            this.labelControl44.Size = new System.Drawing.Size(66, 13);
-            this.labelControl44.TabIndex = 1;
-            this.labelControl44.Text = "Эхлэх огноо:";
+            this.startlabel_19.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_19.Name = "startlabel_19";
+            this.startlabel_19.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_19.TabIndex = 1;
+            this.startlabel_19.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage20
             // 
-            this.xtraTabPage20.Controls.Add(this.gridControl27);
-            this.xtraTabPage20.Controls.Add(this.panel26);
+            this.xtraTabPage20.Controls.Add(this.gridControl_20);
+            this.xtraTabPage20.Controls.Add(this.report_panel_20);
             this.xtraTabPage20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabPage20.Name = "xtraTabPage20";
-            this.xtraTabPage20.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage20.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage20.Text = "UPSELL report";
             // 
-            // gridControl27
+            // gridControl_20
             // 
-            this.gridControl27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl27.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl27.Location = new System.Drawing.Point(0, 47);
-            this.gridControl27.MainView = this.gridView35;
-            this.gridControl27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl27.Name = "gridControl27";
-            this.gridControl27.Size = new System.Drawing.Size(835, 434);
-            this.gridControl27.TabIndex = 19;
-            this.gridControl27.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_20.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_20.Location = new System.Drawing.Point(0, 47);
+            this.gridControl_20.MainView = this.gridView35;
+            this.gridControl_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_20.Name = "gridControl_20";
+            this.gridControl_20.Size = new System.Drawing.Size(924, 401);
+            this.gridControl_20.TabIndex = 19;
+            this.gridControl_20.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView35,
             this.gridView36,
             this.gridView37,
@@ -6559,15 +6625,15 @@ namespace DReport
             this.gridColumn292});
             this.gridView35.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView35.DetailHeight = 284;
-            gridFormatRule6.ApplyToRow = true;
-            gridFormatRule6.Name = "Format0";
-            formatConditionRuleValue6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue6.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue6.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue6.Value1 = "INACTIVE";
-            gridFormatRule6.Rule = formatConditionRuleValue6;
-            this.gridView35.FormatRules.Add(gridFormatRule6);
-            this.gridView35.GridControl = this.gridControl27;
+            gridFormatRule7.ApplyToRow = true;
+            gridFormatRule7.Name = "Format0";
+            formatConditionRuleValue7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue7.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue7.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue7.Value1 = "INACTIVE";
+            gridFormatRule7.Rule = formatConditionRuleValue7;
+            this.gridView35.FormatRules.Add(gridFormatRule7);
+            this.gridView35.GridControl = this.gridControl_20;
             this.gridView35.Name = "gridView35";
             this.gridView35.OptionsBehavior.Editable = false;
             this.gridView35.OptionsMenu.EnableGroupPanelMenu = false;
@@ -6686,113 +6752,113 @@ namespace DReport
             // 
             // gridView36
             // 
-            this.gridView36.GridControl = this.gridControl27;
+            this.gridView36.GridControl = this.gridControl_20;
             this.gridView36.Name = "gridView36";
             // 
             // gridView37
             // 
             this.gridView37.DetailHeight = 284;
-            this.gridView37.GridControl = this.gridControl27;
+            this.gridView37.GridControl = this.gridControl_20;
             this.gridView37.Name = "gridView37";
             // 
             // gridView42
             // 
-            this.gridView42.GridControl = this.gridControl27;
+            this.gridView42.GridControl = this.gridControl_20;
             this.gridView42.Name = "gridView42";
             // 
-            // panel26
+            // report_panel_20
             // 
-            this.panel26.Controls.Add(this.dtEndRpt25);
-            this.panel26.Controls.Add(this.btnSearchRpt25);
-            this.panel26.Controls.Add(this.btnToXLSX25);
-            this.panel26.Controls.Add(this.dtBeginRpt25);
-            this.panel26.Controls.Add(this.labelControl45);
-            this.panel26.Controls.Add(this.labelControl46);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel26.Location = new System.Drawing.Point(0, 0);
-            this.panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(835, 47);
-            this.panel26.TabIndex = 18;
+            this.report_panel_20.Controls.Add(this.dtEndRpt_20);
+            this.report_panel_20.Controls.Add(this.btnSearchRpt_20);
+            this.report_panel_20.Controls.Add(this.btnToXLSX_20);
+            this.report_panel_20.Controls.Add(this.dtBeginRpt_20);
+            this.report_panel_20.Controls.Add(this.endlabel_20);
+            this.report_panel_20.Controls.Add(this.startlabel_20);
+            this.report_panel_20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_20.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_20.Name = "report_panel_20";
+            this.report_panel_20.Size = new System.Drawing.Size(924, 47);
+            this.report_panel_20.TabIndex = 18;
             // 
-            // dtEndRpt25
+            // dtEndRpt_20
             // 
-            this.dtEndRpt25.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt25.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt25.Location = new System.Drawing.Point(367, 14);
-            this.dtEndRpt25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt25.Name = "dtEndRpt25";
-            this.dtEndRpt25.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt25.TabIndex = 8;
+            this.dtEndRpt_20.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_20.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_20.Location = new System.Drawing.Point(367, 14);
+            this.dtEndRpt_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_20.Name = "dtEndRpt_20";
+            this.dtEndRpt_20.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_20.TabIndex = 8;
             // 
-            // btnSearchRpt25
+            // btnSearchRpt_20
             // 
-            this.btnSearchRpt25.Location = new System.Drawing.Point(575, 11);
-            this.btnSearchRpt25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt25.Name = "btnSearchRpt25";
-            this.btnSearchRpt25.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt25.TabIndex = 7;
-            this.btnSearchRpt25.Text = "Хайх";
-            this.btnSearchRpt25.Click += new System.EventHandler(this.btnSearchRpt25_Click);
+            this.btnSearchRpt_20.Location = new System.Drawing.Point(575, 11);
+            this.btnSearchRpt_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_20.Name = "btnSearchRpt_20";
+            this.btnSearchRpt_20.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_20.TabIndex = 7;
+            this.btnSearchRpt_20.Text = "Хайх";
+            this.btnSearchRpt_20.Click += new System.EventHandler(this.btnSearchRpt_20_Click);
             // 
-            // btnToXLSX25
+            // btnToXLSX_20
             // 
-            this.btnToXLSX25.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX25.Name = "btnToXLSX25";
-            this.btnToXLSX25.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX25.TabIndex = 5;
-            this.btnToXLSX25.Text = "XLSX";
-            this.btnToXLSX25.Click += new System.EventHandler(this.btnToXLSX25_Click);
+            this.btnToXLSX_20.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_20.Name = "btnToXLSX_20";
+            this.btnToXLSX_20.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_20.TabIndex = 5;
+            this.btnToXLSX_20.Text = "XLSX";
+            this.btnToXLSX_20.Click += new System.EventHandler(this.btnToXLSX_20_Click);
             // 
-            // dtBeginRpt25
+            // dtBeginRpt_20
             // 
-            this.dtBeginRpt25.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt25.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt25.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt25.Name = "dtBeginRpt25";
-            this.dtBeginRpt25.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt25.TabIndex = 3;
+            this.dtBeginRpt_20.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_20.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_20.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_20.Name = "dtBeginRpt_20";
+            this.dtBeginRpt_20.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_20.TabIndex = 3;
             // 
-            // labelControl45
+            // endlabel_20
             // 
-            this.labelControl45.Location = new System.Drawing.Point(285, 16);
-            this.labelControl45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl45.Name = "labelControl45";
-            this.labelControl45.Size = new System.Drawing.Size(70, 13);
-            this.labelControl45.TabIndex = 1;
-            this.labelControl45.Text = "Төгсөх огноо:";
+            this.endlabel_20.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_20.Name = "endlabel_20";
+            this.endlabel_20.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_20.TabIndex = 1;
+            this.endlabel_20.Text = "Төгсөх огноо:";
             // 
-            // labelControl46
+            // startlabel_20
             // 
-            this.labelControl46.Location = new System.Drawing.Point(24, 16);
-            this.labelControl46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl46.Name = "labelControl46";
-            this.labelControl46.Size = new System.Drawing.Size(66, 13);
-            this.labelControl46.TabIndex = 1;
-            this.labelControl46.Text = "Эхлэх огноо:";
+            this.startlabel_20.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_20.Name = "startlabel_20";
+            this.startlabel_20.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_20.TabIndex = 1;
+            this.startlabel_20.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage21
             // 
-            this.xtraTabPage21.Controls.Add(this.gridControl28);
-            this.xtraTabPage21.Controls.Add(this.panel27);
+            this.xtraTabPage21.Controls.Add(this.gridControl_21);
+            this.xtraTabPage21.Controls.Add(this.report_panel_21);
             this.xtraTabPage21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xtraTabPage21.Name = "xtraTabPage21";
-            this.xtraTabPage21.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage21.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage21.Text = "Installer General report";
             // 
-            // gridControl28
+            // gridControl_21
             // 
-            this.gridControl28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl28.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl28.Location = new System.Drawing.Point(0, 47);
-            this.gridControl28.MainView = this.gridView43;
-            this.gridControl28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl28.Name = "gridControl28";
-            this.gridControl28.Size = new System.Drawing.Size(835, 434);
-            this.gridControl28.TabIndex = 20;
-            this.gridControl28.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_21.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_21.Location = new System.Drawing.Point(0, 47);
+            this.gridControl_21.MainView = this.gridView43;
+            this.gridControl_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_21.Name = "gridControl_21";
+            this.gridControl_21.Size = new System.Drawing.Size(924, 401);
+            this.gridControl_21.TabIndex = 20;
+            this.gridControl_21.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView43,
             this.gridView44,
             this.gridView45,
@@ -6811,15 +6877,15 @@ namespace DReport
             this.gridColumn306});
             this.gridView43.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView43.DetailHeight = 284;
-            gridFormatRule7.ApplyToRow = true;
-            gridFormatRule7.Name = "Format0";
-            formatConditionRuleValue7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue7.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue7.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue7.Value1 = "INACTIVE";
-            gridFormatRule7.Rule = formatConditionRuleValue7;
-            this.gridView43.FormatRules.Add(gridFormatRule7);
-            this.gridView43.GridControl = this.gridControl28;
+            gridFormatRule8.ApplyToRow = true;
+            gridFormatRule8.Name = "Format0";
+            formatConditionRuleValue8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue8.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue8.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue8.Value1 = "INACTIVE";
+            gridFormatRule8.Rule = formatConditionRuleValue8;
+            this.gridView43.FormatRules.Add(gridFormatRule8);
+            this.gridView43.GridControl = this.gridControl_21;
             this.gridView43.Name = "gridView43";
             this.gridView43.OptionsBehavior.Editable = false;
             this.gridView43.OptionsMenu.EnableGroupPanelMenu = false;
@@ -6908,111 +6974,112 @@ namespace DReport
             // 
             // gridView44
             // 
-            this.gridView44.GridControl = this.gridControl28;
+            this.gridView44.GridControl = this.gridControl_21;
             this.gridView44.Name = "gridView44";
             // 
             // gridView45
             // 
             this.gridView45.DetailHeight = 284;
-            this.gridView45.GridControl = this.gridControl28;
+            this.gridView45.GridControl = this.gridControl_21;
             this.gridView45.Name = "gridView45";
             // 
             // gridView46
             // 
-            this.gridView46.GridControl = this.gridControl28;
+            this.gridView46.GridControl = this.gridControl_21;
             this.gridView46.Name = "gridView46";
             // 
-            // panel27
+            // report_panel_21
             // 
-            this.panel27.Controls.Add(this.dtEndRpt26);
-            this.panel27.Controls.Add(this.btnSearchRpt26);
-            this.panel27.Controls.Add(this.btnToXLSX26);
-            this.panel27.Controls.Add(this.dtBeginRpt26);
-            this.panel27.Controls.Add(this.labelControl47);
-            this.panel27.Controls.Add(this.labelControl48);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 0);
-            this.panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(835, 47);
-            this.panel27.TabIndex = 19;
+            this.report_panel_21.Controls.Add(this.dtEndRpt_21);
+            this.report_panel_21.Controls.Add(this.btnSearchRpt_21);
+            this.report_panel_21.Controls.Add(this.btnToXLSX_21);
+            this.report_panel_21.Controls.Add(this.dtBeginRpt_21);
+            this.report_panel_21.Controls.Add(this.endlabel_21);
+            this.report_panel_21.Controls.Add(this.startlabel_21);
+            this.report_panel_21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_21.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_21.Name = "report_panel_21";
+            this.report_panel_21.Size = new System.Drawing.Size(924, 47);
+            this.report_panel_21.TabIndex = 19;
             // 
-            // dtEndRpt26
+            // dtEndRpt_21
             // 
-            this.dtEndRpt26.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt26.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt26.Location = new System.Drawing.Point(367, 14);
-            this.dtEndRpt26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt26.Name = "dtEndRpt26";
-            this.dtEndRpt26.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt26.TabIndex = 8;
+            this.dtEndRpt_21.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_21.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_21.Location = new System.Drawing.Point(367, 14);
+            this.dtEndRpt_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_21.Name = "dtEndRpt_21";
+            this.dtEndRpt_21.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_21.TabIndex = 8;
             // 
-            // btnSearchRpt26
+            // btnSearchRpt_21
             // 
-            this.btnSearchRpt26.Location = new System.Drawing.Point(575, 11);
-            this.btnSearchRpt26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt26.Name = "btnSearchRpt26";
-            this.btnSearchRpt26.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt26.TabIndex = 7;
-            this.btnSearchRpt26.Text = "Хайх";
-            this.btnSearchRpt26.Click += new System.EventHandler(this.btnSearchRpt26_Click);
+            this.btnSearchRpt_21.Location = new System.Drawing.Point(575, 11);
+            this.btnSearchRpt_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_21.Name = "btnSearchRpt_21";
+            this.btnSearchRpt_21.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_21.TabIndex = 7;
+            this.btnSearchRpt_21.Text = "Хайх";
+            this.btnSearchRpt_21.Click += new System.EventHandler(this.btnSearchRpt_21_Click);
             // 
-            // btnToXLSX26
+            // btnToXLSX_21
             // 
-            this.btnToXLSX26.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX26.Name = "btnToXLSX26";
-            this.btnToXLSX26.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX26.TabIndex = 5;
-            this.btnToXLSX26.Text = "XLSX";
+            this.btnToXLSX_21.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_21.Name = "btnToXLSX_21";
+            this.btnToXLSX_21.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_21.TabIndex = 5;
+            this.btnToXLSX_21.Text = "XLSX";
+            this.btnToXLSX_21.Click += new System.EventHandler(this.btnToXLSX_21_Click);
             // 
-            // dtBeginRpt26
+            // dtBeginRpt_21
             // 
-            this.dtBeginRpt26.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt26.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt26.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt26.Name = "dtBeginRpt26";
-            this.dtBeginRpt26.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt26.TabIndex = 3;
+            this.dtBeginRpt_21.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_21.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_21.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_21.Name = "dtBeginRpt_21";
+            this.dtBeginRpt_21.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_21.TabIndex = 3;
             // 
-            // labelControl47
+            // endlabel_21
             // 
-            this.labelControl47.Location = new System.Drawing.Point(285, 16);
-            this.labelControl47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl47.Name = "labelControl47";
-            this.labelControl47.Size = new System.Drawing.Size(70, 13);
-            this.labelControl47.TabIndex = 1;
-            this.labelControl47.Text = "Төгсөх огноо:";
+            this.endlabel_21.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_21.Name = "endlabel_21";
+            this.endlabel_21.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_21.TabIndex = 1;
+            this.endlabel_21.Text = "Төгсөх огноо:";
             // 
-            // labelControl48
+            // startlabel_21
             // 
-            this.labelControl48.Location = new System.Drawing.Point(24, 16);
-            this.labelControl48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl48.Name = "labelControl48";
-            this.labelControl48.Size = new System.Drawing.Size(66, 13);
-            this.labelControl48.TabIndex = 1;
-            this.labelControl48.Text = "Эхлэх огноо:";
+            this.startlabel_21.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_21.Name = "startlabel_21";
+            this.startlabel_21.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_21.TabIndex = 1;
+            this.startlabel_21.Text = "Эхлэх огноо:";
             // 
             // xtraTabPage22
             // 
-            this.xtraTabPage22.Controls.Add(this.gridControl29);
-            this.xtraTabPage22.Controls.Add(this.panel28);
+            this.xtraTabPage22.Controls.Add(this.gridControl_22);
+            this.xtraTabPage22.Controls.Add(this.report_panel_22);
             this.xtraTabPage22.Name = "xtraTabPage22";
-            this.xtraTabPage22.Size = new System.Drawing.Size(835, 481);
+            this.xtraTabPage22.Size = new System.Drawing.Size(924, 448);
             this.xtraTabPage22.Text = "Мэдээлэл шинэчлэлийн 10К урамшууллын тайлан";
             // 
-            // gridControl29
+            // gridControl_22
             // 
-            this.gridControl29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl29.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl29.Location = new System.Drawing.Point(0, 74);
-            this.gridControl29.MainView = this.gridView47;
-            this.gridControl29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl29.Name = "gridControl29";
-            this.gridControl29.Size = new System.Drawing.Size(835, 407);
-            this.gridControl29.TabIndex = 1;
-            this.gridControl29.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_22.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_22.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_22.MainView = this.gridView47;
+            this.gridControl_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_22.Name = "gridControl_22";
+            this.gridControl_22.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_22.TabIndex = 1;
+            this.gridControl_22.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView47,
             this.gridView48,
             this.gridView49,
@@ -7042,17 +7109,17 @@ namespace DReport
             this.gridColumn325});
             this.gridView47.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
             this.gridView47.DetailHeight = 284;
-            gridFormatRule5.ApplyToRow = true;
-            gridFormatRule5.Column = this.gridColumn323;
-            gridFormatRule5.ColumnApplyTo = this.gridColumn323;
-            gridFormatRule5.Name = "Format0";
-            formatConditionRuleValue5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue5.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue5.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue5.Value1 = "INACTIVE";
-            gridFormatRule5.Rule = formatConditionRuleValue5;
-            this.gridView47.FormatRules.Add(gridFormatRule5);
-            this.gridView47.GridControl = this.gridControl29;
+            gridFormatRule9.ApplyToRow = true;
+            gridFormatRule9.Column = this.gridColumn323;
+            gridFormatRule9.ColumnApplyTo = this.gridColumn323;
+            gridFormatRule9.Name = "Format0";
+            formatConditionRuleValue9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue9.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue9.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue9.Value1 = "INACTIVE";
+            gridFormatRule9.Rule = formatConditionRuleValue9;
+            this.gridView47.FormatRules.Add(gridFormatRule9);
+            this.gridView47.GridControl = this.gridControl_22;
             this.gridView47.Name = "gridView47";
             this.gridView47.OptionsBehavior.Editable = false;
             this.gridView47.OptionsMenu.EnableGroupPanelMenu = false;
@@ -7233,100 +7300,437 @@ namespace DReport
             // 
             // gridView48
             // 
-            this.gridView48.GridControl = this.gridControl29;
+            this.gridView48.GridControl = this.gridControl_22;
             this.gridView48.Name = "gridView48";
             // 
             // gridView49
             // 
             this.gridView49.DetailHeight = 284;
-            this.gridView49.GridControl = this.gridControl29;
+            this.gridView49.GridControl = this.gridControl_22;
             this.gridView49.Name = "gridView49";
             // 
             // gridView50
             // 
-            this.gridView50.GridControl = this.gridControl29;
+            this.gridView50.GridControl = this.gridControl_22;
             this.gridView50.Name = "gridView50";
             // 
-            // panel28
+            // report_panel_22
             // 
-            this.panel28.Controls.Add(this.btnToXLSX27);
-            this.panel28.Controls.Add(this.dtEndRpt27);
-            this.panel28.Controls.Add(this.dtBeginRpt27);
-            this.panel28.Controls.Add(this.btnSearchRpt27);
-            this.panel28.Controls.Add(this.labelControl49);
-            this.panel28.Controls.Add(this.labelControl50);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel28.Location = new System.Drawing.Point(0, 0);
-            this.panel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(835, 74);
-            this.panel28.TabIndex = 2;
+            this.report_panel_22.Controls.Add(this.btnToXLSX_22);
+            this.report_panel_22.Controls.Add(this.dtEndRpt_22);
+            this.report_panel_22.Controls.Add(this.dtBeginRpt_22);
+            this.report_panel_22.Controls.Add(this.btnSearchRpt_22);
+            this.report_panel_22.Controls.Add(this.endlabel_22);
+            this.report_panel_22.Controls.Add(this.startlabel_22);
+            this.report_panel_22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_22.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_22.Name = "report_panel_22";
+            this.report_panel_22.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_22.TabIndex = 2;
             // 
-            // btnToXLSX27
+            // btnToXLSX_22
             // 
-            this.btnToXLSX27.Location = new System.Drawing.Point(705, 11);
-            this.btnToXLSX27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnToXLSX27.Name = "btnToXLSX27";
-            this.btnToXLSX27.Size = new System.Drawing.Size(106, 24);
-            this.btnToXLSX27.TabIndex = 5;
-            this.btnToXLSX27.Text = "XLSX";
-            this.btnToXLSX27.Click += new System.EventHandler(this.btnToXLSX27_Click);
+            this.btnToXLSX_22.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_22.Name = "btnToXLSX_22";
+            this.btnToXLSX_22.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_22.TabIndex = 5;
+            this.btnToXLSX_22.Text = "XLSX";
+            this.btnToXLSX_22.Click += new System.EventHandler(this.btnToXLSX_22_Click);
             // 
-            // dtEndRpt27
+            // dtEndRpt_22
             // 
-            this.dtEndRpt27.CustomFormat = "yyyyMMdd235959";
-            this.dtEndRpt27.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEndRpt27.Location = new System.Drawing.Point(360, 14);
-            this.dtEndRpt27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtEndRpt27.Name = "dtEndRpt27";
-            this.dtEndRpt27.Size = new System.Drawing.Size(172, 21);
-            this.dtEndRpt27.TabIndex = 4;
+            this.dtEndRpt_22.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_22.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_22.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_22.Name = "dtEndRpt_22";
+            this.dtEndRpt_22.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_22.TabIndex = 4;
             // 
-            // dtBeginRpt27
+            // dtBeginRpt_22
             // 
-            this.dtBeginRpt27.CustomFormat = "yyyyMMdd000000";
-            this.dtBeginRpt27.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtBeginRpt27.Location = new System.Drawing.Point(93, 14);
-            this.dtBeginRpt27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtBeginRpt27.Name = "dtBeginRpt27";
-            this.dtBeginRpt27.Size = new System.Drawing.Size(172, 21);
-            this.dtBeginRpt27.TabIndex = 3;
+            this.dtBeginRpt_22.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_22.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_22.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_22.Name = "dtBeginRpt_22";
+            this.dtBeginRpt_22.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_22.TabIndex = 3;
             // 
-            // btnSearchRpt27
+            // btnSearchRpt_22
             // 
-            this.btnSearchRpt27.Location = new System.Drawing.Point(577, 11);
-            this.btnSearchRpt27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchRpt27.Name = "btnSearchRpt27";
-            this.btnSearchRpt27.Size = new System.Drawing.Size(106, 24);
-            this.btnSearchRpt27.TabIndex = 2;
-            this.btnSearchRpt27.Text = "Хайх";
-            this.btnSearchRpt27.Click += new System.EventHandler(this.btnSearchRpt27_Click);
+            this.btnSearchRpt_22.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_22.Name = "btnSearchRpt_22";
+            this.btnSearchRpt_22.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_22.TabIndex = 2;
+            this.btnSearchRpt_22.Text = "Хайх";
+            this.btnSearchRpt_22.Click += new System.EventHandler(this.btnSearchRpt_22_Click);
             // 
-            // labelControl49
+            // endlabel_22
             // 
-            this.labelControl49.Location = new System.Drawing.Point(285, 16);
-            this.labelControl49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl49.Name = "labelControl49";
-            this.labelControl49.Size = new System.Drawing.Size(70, 13);
-            this.labelControl49.TabIndex = 1;
-            this.labelControl49.Text = "Төгсөх огноо:";
+            this.endlabel_22.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_22.Name = "endlabel_22";
+            this.endlabel_22.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_22.TabIndex = 1;
+            this.endlabel_22.Text = "Төгсөх огноо:";
             // 
-            // labelControl50
+            // startlabel_22
             // 
-            this.labelControl50.Location = new System.Drawing.Point(24, 16);
-            this.labelControl50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl50.Name = "labelControl50";
-            this.labelControl50.Size = new System.Drawing.Size(66, 13);
-            this.labelControl50.TabIndex = 1;
-            this.labelControl50.Text = "Эхлэх огноо:";
+            this.startlabel_22.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_22.Name = "startlabel_22";
+            this.startlabel_22.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_22.TabIndex = 1;
+            this.startlabel_22.Text = "Эхлэх огноо:";
+            // 
+            // xtraTabPage23
+            // 
+            this.xtraTabPage23.Controls.Add(this.gridControl_23);
+            this.xtraTabPage23.Controls.Add(this.report_panel_23);
+            this.xtraTabPage23.Name = "xtraTabPage23";
+            this.xtraTabPage23.Size = new System.Drawing.Size(924, 448);
+            this.xtraTabPage23.Text = "ӨНҮХ-ийн тайлан";
+            // 
+            // gridControl_23
+            // 
+            this.gridControl_23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_23.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_23.Location = new System.Drawing.Point(0, 74);
+            this.gridControl_23.MainView = this.gridView51;
+            this.gridControl_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl_23.Name = "gridControl_23";
+            this.gridControl_23.Size = new System.Drawing.Size(924, 374);
+            this.gridControl_23.TabIndex = 4;
+            this.gridControl_23.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView51,
+            this.gridView52,
+            this.gridView53,
+            this.gridView54});
+            // 
+            // gridView51
+            // 
+            this.gridView51.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn326,
+            this.gridColumn327,
+            this.gridColumn328,
+            this.gridColumn329,
+            this.gridColumn330,
+            this.gridColumn331,
+            this.gridColumn332,
+            this.gridColumn333,
+            this.gridColumn334,
+            this.gridColumn335,
+            this.gridColumn336,
+            this.gridColumn337,
+            this.gridColumn338});
+            this.gridView51.CustomizationFormBounds = new System.Drawing.Rectangle(1003, 355, 252, 266);
+            this.gridView51.DetailHeight = 284;
+            gridFormatRule10.ApplyToRow = true;
+            gridFormatRule10.Name = "Format0";
+            formatConditionRuleValue10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue10.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue10.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue10.Value1 = "INACTIVE";
+            gridFormatRule10.Rule = formatConditionRuleValue10;
+            this.gridView51.FormatRules.Add(gridFormatRule10);
+            this.gridView51.GridControl = this.gridControl_23;
+            this.gridView51.Name = "gridView51";
+            this.gridView51.OptionsBehavior.Editable = false;
+            this.gridView51.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridView51.OptionsView.ShowFooter = true;
+            this.gridView51.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn326
+            // 
+            this.gridColumn326.Caption = "TRANS_ID";
+            this.gridColumn326.FieldName = "TRANS_ID";
+            this.gridColumn326.MinWidth = 21;
+            this.gridColumn326.Name = "gridColumn326";
+            this.gridColumn326.Visible = true;
+            this.gridColumn326.VisibleIndex = 0;
+            this.gridColumn326.Width = 84;
+            // 
+            // gridColumn327
+            // 
+            this.gridColumn327.Caption = "PAYMENT_DATE";
+            this.gridColumn327.FieldName = "PAYMENT_DATE";
+            this.gridColumn327.MinWidth = 21;
+            this.gridColumn327.Name = "gridColumn327";
+            this.gridColumn327.Visible = true;
+            this.gridColumn327.VisibleIndex = 1;
+            this.gridColumn327.Width = 84;
+            // 
+            // gridColumn328
+            // 
+            this.gridColumn328.Caption = "CARD_NO";
+            this.gridColumn328.FieldName = "CARD_NO";
+            this.gridColumn328.MinWidth = 21;
+            this.gridColumn328.Name = "gridColumn328";
+            this.gridColumn328.Visible = true;
+            this.gridColumn328.VisibleIndex = 2;
+            this.gridColumn328.Width = 84;
+            // 
+            // gridColumn329
+            // 
+            this.gridColumn329.Caption = "CHANNEL_NAME";
+            this.gridColumn329.FieldName = "CHANNEL_NAME";
+            this.gridColumn329.MinWidth = 21;
+            this.gridColumn329.Name = "gridColumn329";
+            this.gridColumn329.Visible = true;
+            this.gridColumn329.VisibleIndex = 3;
+            this.gridColumn329.Width = 84;
+            // 
+            // gridColumn330
+            // 
+            this.gridColumn330.Caption = "TOPUP_TYPE";
+            this.gridColumn330.FieldName = "TOPUP_TYPE";
+            this.gridColumn330.MinWidth = 21;
+            this.gridColumn330.Name = "gridColumn330";
+            this.gridColumn330.Visible = true;
+            this.gridColumn330.VisibleIndex = 4;
+            this.gridColumn330.Width = 84;
+            // 
+            // gridColumn331
+            // 
+            this.gridColumn331.Caption = "STARTDATE";
+            this.gridColumn331.FieldName = "STARTDATE";
+            this.gridColumn331.MinWidth = 21;
+            this.gridColumn331.Name = "gridColumn331";
+            this.gridColumn331.Visible = true;
+            this.gridColumn331.VisibleIndex = 5;
+            this.gridColumn331.Width = 84;
+            // 
+            // gridColumn332
+            // 
+            this.gridColumn332.Caption = "ENDDATE";
+            this.gridColumn332.FieldName = "ENDDATE";
+            this.gridColumn332.MinWidth = 21;
+            this.gridColumn332.Name = "gridColumn332";
+            this.gridColumn332.Visible = true;
+            this.gridColumn332.VisibleIndex = 6;
+            this.gridColumn332.Width = 84;
+            // 
+            // gridColumn333
+            // 
+            this.gridColumn333.Caption = "MTFEE";
+            this.gridColumn333.FieldName = "MTFEE";
+            this.gridColumn333.MinWidth = 21;
+            this.gridColumn333.Name = "gridColumn333";
+            this.gridColumn333.Visible = true;
+            this.gridColumn333.VisibleIndex = 7;
+            this.gridColumn333.Width = 84;
+            // 
+            // gridColumn334
+            // 
+            this.gridColumn334.Caption = "PRODUCT_NAME";
+            this.gridColumn334.FieldName = "PRODUCT_NAME";
+            this.gridColumn334.MinWidth = 21;
+            this.gridColumn334.Name = "gridColumn334";
+            this.gridColumn334.Visible = true;
+            this.gridColumn334.VisibleIndex = 8;
+            this.gridColumn334.Width = 84;
+            // 
+            // gridColumn335
+            // 
+            this.gridColumn335.Caption = "SUBSCRIBER_FNAME";
+            this.gridColumn335.FieldName = "SUBSCRIBER_FNAME";
+            this.gridColumn335.MinWidth = 21;
+            this.gridColumn335.Name = "gridColumn335";
+            this.gridColumn335.Visible = true;
+            this.gridColumn335.VisibleIndex = 9;
+            this.gridColumn335.Width = 81;
+            // 
+            // gridColumn336
+            // 
+            this.gridColumn336.Caption = "USER_TYPE";
+            this.gridColumn336.FieldName = "USER_TYPE";
+            this.gridColumn336.MinWidth = 21;
+            this.gridColumn336.Name = "gridColumn336";
+            this.gridColumn336.Visible = true;
+            this.gridColumn336.VisibleIndex = 10;
+            this.gridColumn336.Width = 81;
+            // 
+            // gridColumn337
+            // 
+            this.gridColumn337.Caption = "REVERSE_TRANS_ID";
+            this.gridColumn337.FieldName = "REVERSE_TRANS_ID";
+            this.gridColumn337.MinWidth = 21;
+            this.gridColumn337.Name = "gridColumn337";
+            this.gridColumn337.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "AMOUNT", "{0:0.##}")});
+            this.gridColumn337.Visible = true;
+            this.gridColumn337.VisibleIndex = 11;
+            this.gridColumn337.Width = 84;
+            // 
+            // gridColumn338
+            // 
+            this.gridColumn338.Caption = "REVERSE_DATE";
+            this.gridColumn338.FieldName = "REVERSE_DATE";
+            this.gridColumn338.MinWidth = 21;
+            this.gridColumn338.Name = "gridColumn338";
+            this.gridColumn338.Visible = true;
+            this.gridColumn338.VisibleIndex = 12;
+            this.gridColumn338.Width = 84;
+            // 
+            // gridView52
+            // 
+            this.gridView52.GridControl = this.gridControl_23;
+            this.gridView52.Name = "gridView52";
+            // 
+            // gridView53
+            // 
+            this.gridView53.DetailHeight = 284;
+            this.gridView53.GridControl = this.gridControl_23;
+            this.gridView53.Name = "gridView53";
+            // 
+            // gridView54
+            // 
+            this.gridView54.GridControl = this.gridControl_23;
+            this.gridView54.Name = "gridView54";
+            // 
+            // report_panel_23
+            // 
+            this.report_panel_23.Controls.Add(this.btnToXLSX_23);
+            this.report_panel_23.Controls.Add(this.dtEndRpt_23);
+            this.report_panel_23.Controls.Add(this.dtBeginRpt_23);
+            this.report_panel_23.Controls.Add(this.btnSearchRpt_23);
+            this.report_panel_23.Controls.Add(this.endlabel_23);
+            this.report_panel_23.Controls.Add(this.startlabel_23);
+            this.report_panel_23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_panel_23.Location = new System.Drawing.Point(0, 0);
+            this.report_panel_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.report_panel_23.Name = "report_panel_23";
+            this.report_panel_23.Size = new System.Drawing.Size(924, 74);
+            this.report_panel_23.TabIndex = 3;
+            // 
+            // btnToXLSX_23
+            // 
+            this.btnToXLSX_23.Location = new System.Drawing.Point(705, 11);
+            this.btnToXLSX_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnToXLSX_23.Name = "btnToXLSX_23";
+            this.btnToXLSX_23.Size = new System.Drawing.Size(106, 24);
+            this.btnToXLSX_23.TabIndex = 5;
+            this.btnToXLSX_23.Text = "XLSX";
+            this.btnToXLSX_23.Click += new System.EventHandler(this.btnToXLSX_23_Click);
+            // 
+            // dtEndRpt_23
+            // 
+            this.dtEndRpt_23.CustomFormat = "yyyyMMdd235959";
+            this.dtEndRpt_23.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEndRpt_23.Location = new System.Drawing.Point(360, 14);
+            this.dtEndRpt_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtEndRpt_23.Name = "dtEndRpt_23";
+            this.dtEndRpt_23.Size = new System.Drawing.Size(172, 21);
+            this.dtEndRpt_23.TabIndex = 4;
+            // 
+            // dtBeginRpt_23
+            // 
+            this.dtBeginRpt_23.CustomFormat = "yyyyMMdd000000";
+            this.dtBeginRpt_23.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBeginRpt_23.Location = new System.Drawing.Point(93, 14);
+            this.dtBeginRpt_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtBeginRpt_23.Name = "dtBeginRpt_23";
+            this.dtBeginRpt_23.Size = new System.Drawing.Size(172, 21);
+            this.dtBeginRpt_23.TabIndex = 3;
+            // 
+            // btnSearchRpt_23
+            // 
+            this.btnSearchRpt_23.Location = new System.Drawing.Point(577, 11);
+            this.btnSearchRpt_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchRpt_23.Name = "btnSearchRpt_23";
+            this.btnSearchRpt_23.Size = new System.Drawing.Size(106, 24);
+            this.btnSearchRpt_23.TabIndex = 2;
+            this.btnSearchRpt_23.Text = "Хайх";
+            this.btnSearchRpt_23.Click += new System.EventHandler(this.btnSearchRpt_23_Click);
+            // 
+            // endlabel_23
+            // 
+            this.endlabel_23.Location = new System.Drawing.Point(285, 16);
+            this.endlabel_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.endlabel_23.Name = "endlabel_23";
+            this.endlabel_23.Size = new System.Drawing.Size(70, 13);
+            this.endlabel_23.TabIndex = 1;
+            this.endlabel_23.Text = "Төгсөх огноо:";
+            // 
+            // startlabel_23
+            // 
+            this.startlabel_23.Location = new System.Drawing.Point(24, 16);
+            this.startlabel_23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.startlabel_23.Name = "startlabel_23";
+            this.startlabel_23.Size = new System.Drawing.Size(66, 13);
+            this.startlabel_23.TabIndex = 1;
+            this.startlabel_23.Text = "Эхлэх огноо:";
+            // 
+            // user_greetings
+            // 
+            this.user_greetings.AutoSize = true;
+            this.user_greetings.Location = new System.Drawing.Point(12, 9);
+            this.user_greetings.Name = "user_greetings";
+            this.user_greetings.Size = new System.Drawing.Size(47, 13);
+            this.user_greetings.TabIndex = 1;
+            this.user_greetings.Text = "Сайн уу";
+            // 
+            // user_panel
+            // 
+            this.user_panel.Controls.Add(this.user_myregimage);
+            this.user_panel.Controls.Add(this.user_label_myreg);
+            this.user_panel.Controls.Add(this.user_time);
+            this.user_panel.Controls.Add(this.user_greetings);
+            this.user_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.user_panel.Location = new System.Drawing.Point(0, 0);
+            this.user_panel.Name = "user_panel";
+            this.user_panel.Size = new System.Drawing.Size(1139, 33);
+            this.user_panel.TabIndex = 3;
+            this.user_panel.Text = "sidePanel1";
+            // 
+            // user_myregimage
+            // 
+            this.user_myregimage.Dock = System.Windows.Forms.DockStyle.Right;
+            this.user_myregimage.Location = new System.Drawing.Point(1102, 0);
+            this.user_myregimage.Name = "user_myregimage";
+            this.user_myregimage.Size = new System.Drawing.Size(37, 32);
+            this.user_myregimage.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("user_myregimage.SvgImage")));
+            this.user_myregimage.TabIndex = 4;
+            this.user_myregimage.Text = "svgImageBox1";
+            // 
+            // user_label_myreg
+            // 
+            this.user_label_myreg.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.user_label_myreg.AutoSize = true;
+            this.user_label_myreg.Location = new System.Drawing.Point(1015, 9);
+            this.user_label_myreg.Name = "user_label_myreg";
+            this.user_label_myreg.Size = new System.Drawing.Size(81, 13);
+            this.user_label_myreg.TabIndex = 3;
+            this.user_label_myreg.Text = "Миний бүртгэл";
+            this.user_label_myreg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.user_label_myreg.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // user_time
+            // 
+            this.user_time.AutoSize = true;
+            this.user_time.Location = new System.Drawing.Point(211, 9);
+            this.user_time.Name = "user_time";
+            this.user_time.Size = new System.Drawing.Size(29, 13);
+            this.user_time.TabIndex = 2;
+            this.user_time.Text = "Time";
+            // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.MdiParent = this;
             // 
             // MainReportViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 483);
-            this.Controls.Add(this.panel23);
+            this.Controls.Add(this.xtratabcontrol_report);
+            this.Controls.Add(this.user_panel);
             this.IconOptions.Image = global::DReport.Properties.Resources.epgTool;
+            this.IsMdiContainer = true;
             this.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -7336,163 +7740,176 @@ namespace DReport
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainReportViewer_FormClosing);
             this.xtraTabPage17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView25)).EndInit();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
+            this.report_panel_17.ResumeLayout(false);
+            this.report_panel_17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView32)).EndInit();
             this.xtraTabPage16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView24)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
+            this.report_panel_16.ResumeLayout(false);
+            this.report_panel_16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView31)).EndInit();
             this.xtraTabPage15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView23)).EndInit();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
+            this.report_panel_15.ResumeLayout(false);
+            this.report_panel_15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView30)).EndInit();
             this.xtraTabPage14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView22)).EndInit();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
+            this.report_panel_14.ResumeLayout(false);
+            this.report_panel_14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_4)).EndInit();
             this.xtraTabPage13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView21)).EndInit();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
+            this.report_panel_13.ResumeLayout(false);
+            this.report_panel_13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView29)).EndInit();
             this.xtraTabPage12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView20)).EndInit();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
+            this.report_panel_12.ResumeLayout(false);
+            this.report_panel_12.PerformLayout();
             this.xtraTabPage10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView19)).EndInit();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
+            this.report_panel_10.ResumeLayout(false);
+            this.report_panel_10.PerformLayout();
             this.xtraTabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView18)).EndInit();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            this.report_panel_9.ResumeLayout(false);
+            this.report_panel_9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridRpt1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView33)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView17)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
+            this.report_panel_8.ResumeLayout(false);
+            this.report_panel_8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView28)).EndInit();
             this.xtraTabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView16)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
+            this.report_panel_7.ResumeLayout(false);
+            this.report_panel_7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView27)).EndInit();
             this.xtraTabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView15)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
+            this.report_panel_6.ResumeLayout(false);
+            this.report_panel_6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView26)).EndInit();
             this.xtraTabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView14)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            this.report_panel_5.ResumeLayout(false);
+            this.report_panel_5.PerformLayout();
             this.xtraTabPage4.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.report_panel_4.ResumeLayout(false);
+            this.report_panel_4.PerformLayout();
             this.xtraTabPage3.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.report_panel_3.ResumeLayout(false);
+            this.report_panel_3.PerformLayout();
             this.xtraTabPage2.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.report_panel_2.ResumeLayout(false);
+            this.report_panel_2.PerformLayout();
             this.xtraTabPage1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.gridControl6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.gridControl4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.gridControl3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.xtraTabControl2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.tbRpt1.ResumeLayout(false);
+            this.report_label_1.ResumeLayout(false);
+            this.report_label_1.PerformLayout();
+            this.xtraTabPage28.ResumeLayout(false);
+            this.report_panel_28.ResumeLayout(false);
+            this.report_panel_28.PerformLayout();
+            this.xtraTabPage27.ResumeLayout(false);
+            this.report_panel_27.ResumeLayout(false);
+            this.report_panel_27.PerformLayout();
+            this.xtraTabPage26.ResumeLayout(false);
+            this.report_panel_26.ResumeLayout(false);
+            this.report_panel_26.PerformLayout();
+            this.xtraTabPage25.ResumeLayout(false);
+            this.report_panel_25.ResumeLayout(false);
+            this.report_panel_25.PerformLayout();
+            this.xtraTabPage24.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panel23)).EndInit();
-            this.panel23.ResumeLayout(false);
+            this.report_panel_24.ResumeLayout(false);
+            this.report_panel_24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtratabcontrol_report)).EndInit();
+            this.xtratabcontrol_report.ResumeLayout(false);
             this.xtraTabPage18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView34)).EndInit();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
+            this.report_panel_18.ResumeLayout(false);
+            this.report_panel_18.PerformLayout();
             this.xtraTabPage19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView41)).EndInit();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
+            this.report_panel_19.ResumeLayout(false);
+            this.report_panel_19.PerformLayout();
             this.xtraTabPage20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView42)).EndInit();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
+            this.report_panel_20.ResumeLayout(false);
+            this.report_panel_20.PerformLayout();
             this.xtraTabPage21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView46)).EndInit();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
+            this.report_panel_21.ResumeLayout(false);
+            this.report_panel_21.PerformLayout();
             this.xtraTabPage22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView50)).EndInit();
-            this.panel28.ResumeLayout(false);
-            this.panel28.PerformLayout();
+            this.report_panel_22.ResumeLayout(false);
+            this.report_panel_22.PerformLayout();
+            this.xtraTabPage23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView54)).EndInit();
+            this.report_panel_23.ResumeLayout(false);
+            this.report_panel_23.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            this.user_panel.ResumeLayout(false);
+            this.user_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_myregimage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7500,7 +7917,7 @@ namespace DReport
         #endregion
         private DevExpress.XtraTab.XtraTabPage xtraTabPage11;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage17;
-        private DevExpress.XtraGrid.GridControl gridControl24;
+        private DevExpress.XtraGrid.GridControl gridControl_17;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView25;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn257;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn258;
@@ -7515,13 +7932,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn267;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn268;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn269;
-        private System.Windows.Forms.Panel panel22;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX22;
-        private System.Windows.Forms.DateTimePicker dtEndRpt22;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt22;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt22;
-        private DevExpress.XtraEditors.LabelControl labelControl39;
-        private DevExpress.XtraEditors.LabelControl labelControl41;
+        private System.Windows.Forms.Panel report_panel_17;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_17;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_17;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_17;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_17;
+        private DevExpress.XtraEditors.LabelControl endlabel_17;
+        private DevExpress.XtraEditors.LabelControl startlabel_17;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
@@ -7539,12 +7956,12 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn73;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn130;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn131;
-        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.GridControl gridControl_25;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView7;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView12;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView32;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage16;
-        private DevExpress.XtraGrid.GridControl gridControl23;
+        private DevExpress.XtraGrid.GridControl gridControl_16;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView24;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn247;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn248;
@@ -7554,11 +7971,11 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn252;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn253;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn254;
-        private System.Windows.Forms.Panel panel21;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX21;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt21;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt21;
-        private DevExpress.XtraEditors.LabelControl labelControl40;
+        private System.Windows.Forms.Panel report_panel_16;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_16;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_16;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_16;
+        private DevExpress.XtraEditors.LabelControl startlabel_16;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
@@ -7578,11 +7995,11 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn86;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn87;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn88;
-        private DevExpress.XtraGrid.GridControl gridControl7;
+        private DevExpress.XtraGrid.GridControl gridControl_26;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView31;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage15;
-        private DevExpress.XtraGrid.GridControl gridControl22;
+        private DevExpress.XtraGrid.GridControl gridControl_15;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView23;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn196;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn197;
@@ -7601,13 +8018,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn244;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn245;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn246;
-        private System.Windows.Forms.Panel panel20;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX20;
-        private System.Windows.Forms.DateTimePicker dtEndRpt20;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt20;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt20;
-        private DevExpress.XtraEditors.LabelControl labelControl37;
-        private DevExpress.XtraEditors.LabelControl labelControl38;
+        private System.Windows.Forms.Panel report_panel_15;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_15;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_15;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_15;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_15;
+        private DevExpress.XtraEditors.LabelControl endlabel_15;
+        private DevExpress.XtraEditors.LabelControl startlabel_15;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn25;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
@@ -7628,10 +8045,10 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn57;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn58;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn61;
-        private DevExpress.XtraGrid.GridControl gridControl8;
+        private DevExpress.XtraGrid.GridControl gridControl_27;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView30;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage14;
-        private DevExpress.XtraGrid.GridControl gridControl21;
+        private DevExpress.XtraGrid.GridControl gridControl_14;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView22;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn188;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn189;
@@ -7643,22 +8060,22 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn195;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn255;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn256;
-        private System.Windows.Forms.Panel panel19;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX19;
-        private System.Windows.Forms.DateTimePicker dtEndRpt19;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt19;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt19;
-        private DevExpress.XtraEditors.LabelControl labelControl35;
-        private DevExpress.XtraEditors.LabelControl labelControl36;
+        private System.Windows.Forms.Panel report_panel_14;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_14;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_14;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_14;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_14;
+        private DevExpress.XtraEditors.LabelControl endlabel_14;
+        private DevExpress.XtraEditors.LabelControl startlabel_14;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn31;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn32;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn34;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn35;
-        private DevExpress.XtraGrid.GridControl gridControl5;
+        private DevExpress.XtraGrid.GridControl gridControl_4;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage13;
-        private DevExpress.XtraGrid.GridControl gridControl20;
+        private DevExpress.XtraGrid.GridControl gridControl_13;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView21;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn110;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn198;
@@ -7682,13 +8099,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn229;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn230;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn231;
-        private System.Windows.Forms.Panel panel18;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX18;
-        private System.Windows.Forms.DateTimePicker dtEndRpt18;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt18;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt18;
-        private DevExpress.XtraEditors.LabelControl labelControl33;
-        private DevExpress.XtraEditors.LabelControl labelControl34;
+        private System.Windows.Forms.Panel report_panel_13;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_13;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_13;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_13;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_13;
+        private DevExpress.XtraEditors.LabelControl endlabel_13;
+        private DevExpress.XtraEditors.LabelControl startlabel_13;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn37;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn38;
@@ -7704,10 +8121,10 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn69;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn70;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn79;
-        private DevExpress.XtraGrid.GridControl gridControl10;
+        private DevExpress.XtraGrid.GridControl gridControl_28;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView29;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage12;
-        private DevExpress.XtraGrid.GridControl gridControl19;
+        private DevExpress.XtraGrid.GridControl gridControl_12;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView20;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn202;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn203;
@@ -7722,15 +8139,15 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn212;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn213;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn214;
-        private System.Windows.Forms.Panel panel17;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX17;
-        private System.Windows.Forms.DateTimePicker dtEndRpt17;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt17;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt17;
-        private DevExpress.XtraEditors.LabelControl labelControl31;
-        private DevExpress.XtraEditors.LabelControl labelControl32;
+        private System.Windows.Forms.Panel report_panel_12;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_12;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_12;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_12;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_12;
+        private DevExpress.XtraEditors.LabelControl endlabel_12;
+        private DevExpress.XtraEditors.LabelControl startlabel_12;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage10;
-        private DevExpress.XtraGrid.GridControl gridControl18;
+        private DevExpress.XtraGrid.GridControl gridControl_10;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView19;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn176;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn177;
@@ -7744,30 +8161,30 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn185;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn186;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn187;
-        private System.Windows.Forms.Panel panel16;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX16;
-        private System.Windows.Forms.DateTimePicker dtEndRpt16;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt16;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt16;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
-        private DevExpress.XtraEditors.LabelControl labelControl30;
+        private System.Windows.Forms.Panel report_panel_10;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_10;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_10;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_10;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_10;
+        private DevExpress.XtraEditors.LabelControl endlabel_10;
+        private DevExpress.XtraEditors.LabelControl startlabel_10;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage9;
-        private DevExpress.XtraGrid.GridControl gridControl17;
+        private DevExpress.XtraGrid.GridControl gridControl_9;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn171;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn172;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn173;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn174;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn175;
-        private System.Windows.Forms.Panel panel15;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX15;
-        private System.Windows.Forms.DateTimePicker dtEndRpt15;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt15;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt15;
-        private DevExpress.XtraEditors.LabelControl labelControl27;
-        private DevExpress.XtraEditors.LabelControl labelControl28;
+        private System.Windows.Forms.Panel report_panel_9;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_9;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_9;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_9;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_9;
+        private DevExpress.XtraEditors.LabelControl endlabel_9;
+        private DevExpress.XtraEditors.LabelControl startlabel_9;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView8;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridControl_24;
         private DevExpress.XtraGrid.Views.Grid.GridView gridRpt1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
@@ -7789,7 +8206,7 @@ namespace DReport
         private DevExpress.XtraGrid.Views.Grid.GridView gridView13;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView33;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage8;
-        private DevExpress.XtraGrid.GridControl gridControl16;
+        private DevExpress.XtraGrid.GridControl gridControl_8;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView17;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn153;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn154;
@@ -7809,13 +8226,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn168;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn169;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn170;
-        private System.Windows.Forms.Panel panel14;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX14;
-        private System.Windows.Forms.DateTimePicker dtEndRpt14;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt14;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt14;
-        private DevExpress.XtraEditors.LabelControl labelControl25;
-        private DevExpress.XtraEditors.LabelControl labelControl26;
+        private System.Windows.Forms.Panel report_panel_8;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_8;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_8;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_8;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_8;
+        private DevExpress.XtraEditors.LabelControl endlabel_8;
+        private DevExpress.XtraEditors.LabelControl startlabel_8;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn89;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn90;
@@ -7828,10 +8245,10 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn99;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn100;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn101;
-        private DevExpress.XtraGrid.GridControl gridControl11;
+        private DevExpress.XtraGrid.GridControl gridControl_1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView28;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage7;
-        private DevExpress.XtraGrid.GridControl gridControl15;
+        private DevExpress.XtraGrid.GridControl gridControl_7;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView16;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn140;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn141;
@@ -7846,13 +8263,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn150;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn151;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn152;
-        private System.Windows.Forms.Panel panel13;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX13;
-        private System.Windows.Forms.DateTimePicker dtEndRpt13;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt13;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt13;
-        private DevExpress.XtraEditors.LabelControl labelControl23;
-        private DevExpress.XtraEditors.LabelControl labelControl24;
+        private System.Windows.Forms.Panel report_panel_7;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_7;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_7;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_7;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_7;
+        private DevExpress.XtraEditors.LabelControl endlabel_7;
+        private DevExpress.XtraEditors.LabelControl startlabel_7;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn102;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn103;
@@ -7862,10 +8279,10 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn107;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn108;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn109;
-        private DevExpress.XtraGrid.GridControl gridControl12;
+        private DevExpress.XtraGrid.GridControl gridControl_2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView27;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
-        private DevExpress.XtraGrid.GridControl gridControl14;
+        private DevExpress.XtraGrid.GridControl gridControl_6;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView15;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn132;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn133;
@@ -7874,13 +8291,13 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn136;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn137;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn139;
-        private System.Windows.Forms.Panel panel12;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX12;
-        private System.Windows.Forms.DateTimePicker dtEndRpt12;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt12;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt12;
-        private DevExpress.XtraEditors.LabelControl labelControl21;
-        private DevExpress.XtraEditors.LabelControl labelControl22;
+        private System.Windows.Forms.Panel report_panel_6;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_6;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_6;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_6;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_6;
+        private DevExpress.XtraEditors.LabelControl endlabel_6;
+        private DevExpress.XtraEditors.LabelControl startlabel_6;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn111;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn112;
@@ -7895,10 +8312,10 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn120;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn121;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn122;
-        private DevExpress.XtraGrid.GridControl gridControl13;
+        private DevExpress.XtraGrid.GridControl gridControl_3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView26;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
-        private DevExpress.XtraGrid.GridControl gridControl9;
+        private DevExpress.XtraGrid.GridControl gridControl_5;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn124;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn125;
@@ -7907,88 +8324,88 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn128;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn129;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn138;
-        private System.Windows.Forms.Panel panel11;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX11;
-        private System.Windows.Forms.DateTimePicker dtEndRpt5;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt5;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt11;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private System.Windows.Forms.Panel report_panel_5;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_5;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_5;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_5;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_5;
+        private DevExpress.XtraEditors.LabelControl endlabel_5;
+        private DevExpress.XtraEditors.LabelControl startlabel_5;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
-        private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX10;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt10;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt10;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private System.Windows.Forms.Panel report_panel_4;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_4;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_4;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_4;
+        private DevExpress.XtraEditors.LabelControl startlabel_4;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private System.Windows.Forms.Panel panel10;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX9;
-        private System.Windows.Forms.DateTimePicker dtEndRpt9;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt9;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt9;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private System.Windows.Forms.Panel report_panel_3;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_3;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_3;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_3;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_3;
+        private DevExpress.XtraEditors.LabelControl endlabel_3;
+        private DevExpress.XtraEditors.LabelControl startlabel_3;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private System.Windows.Forms.Panel panel9;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX8;
-        private System.Windows.Forms.DateTimePicker dtEndRpt8;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt8;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt8;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private System.Windows.Forms.Panel report_panel_2;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_2;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_2;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_2;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_2;
+        private DevExpress.XtraEditors.LabelControl endlabel_2;
+        private DevExpress.XtraEditors.LabelControl startlabel_2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private System.Windows.Forms.Panel panel8;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX7;
-        private System.Windows.Forms.DateTimePicker dtEndRpt7;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt7;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt7;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraTab.XtraTabPage gridControl6;
-        private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX6;
-        private System.Windows.Forms.DateTimePicker dtEndRpt6;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt6;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt6;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraTab.XtraTabPage gridControl4;
-        private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX4;
-        private System.Windows.Forms.DateTimePicker dtEndRpt4;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt4;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt4;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraTab.XtraTabPage gridControl3;
-        private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX3;
-        private System.Windows.Forms.DateTimePicker dtEndRpt3;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt3;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt3;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraTab.XtraTabPage xtraTabControl2;
-        private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX2;
-        private System.Windows.Forms.DateTimePicker dtEndRpt2;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt2;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraTab.XtraTabPage tbRpt1;
+        private System.Windows.Forms.Panel report_label_1;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_1;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_1;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_1;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_1;
+        private DevExpress.XtraEditors.LabelControl endlabel_1;
+        private DevExpress.XtraEditors.LabelControl startlabel_1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage28;
+        private System.Windows.Forms.Panel report_panel_28;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_28;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_28;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_28;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_28;
+        private DevExpress.XtraEditors.LabelControl endlabel_28;
+        private DevExpress.XtraEditors.LabelControl startlabel_28;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage27;
+        private System.Windows.Forms.Panel report_panel_27;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_27;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_27;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_27;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_27;
+        private DevExpress.XtraEditors.LabelControl endlabel_27;
+        private DevExpress.XtraEditors.LabelControl startlabel_27;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage26;
+        private System.Windows.Forms.Panel report_panel_26;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_26;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_26;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_26;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_26;
+        private DevExpress.XtraEditors.LabelControl endlabel_26;
+        private DevExpress.XtraEditors.LabelControl startlabel_26;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage25;
+        private System.Windows.Forms.Panel report_panel_25;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_25;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_25;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_25;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_25;
+        private DevExpress.XtraEditors.LabelControl endlabel_25;
+        private DevExpress.XtraEditors.LabelControl startlabel_25;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage24;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX1;
-        private System.Windows.Forms.DateTimePicker dtEndRpt1;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt1;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraTab.XtraTabControl panel23;
+        private System.Windows.Forms.Panel report_panel_24;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_24;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_24;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_24;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_24;
+        private DevExpress.XtraEditors.LabelControl endlabel_24;
+        private DevExpress.XtraEditors.LabelControl startlabel_24;
+        private DevExpress.XtraTab.XtraTabControl xtratabcontrol_report;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage18;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage19;
-        private DevExpress.XtraGrid.GridControl gridControl26;
+        private DevExpress.XtraGrid.GridControl gridControl_19;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView38;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn284;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn285;
@@ -8001,14 +8418,14 @@ namespace DReport
         private DevExpress.XtraGrid.Views.Grid.GridView gridView39;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView40;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView41;
-        private System.Windows.Forms.Panel panel25;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX24;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt24;
-        private DevExpress.XtraEditors.LabelControl labelControl43;
-        private DevExpress.XtraEditors.LabelControl labelControl44;
+        private System.Windows.Forms.Panel report_panel_19;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_19;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_19;
+        private DevExpress.XtraEditors.LabelControl endlabel_19;
+        private DevExpress.XtraEditors.LabelControl startlabel_19;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn302;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn301;
-        private DevExpress.XtraGrid.GridControl gridControl25;
+        private DevExpress.XtraGrid.GridControl gridControl_18;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView34;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn36;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn59;
@@ -8016,19 +8433,19 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn270;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn271;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn272;
-        private System.Windows.Forms.Panel panel24;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX23;
-        private System.Windows.Forms.DateTimePicker dtEndRpt23;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt23;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt23;
+        private System.Windows.Forms.Panel report_panel_18;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_18;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_18;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_18;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_18;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl42;
+        private DevExpress.XtraEditors.LabelControl startlabel_18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn281;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn280;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt24;
-        private System.Windows.Forms.DateTimePicker dtEndRpt24;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_19;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_19;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage20;
-        private DevExpress.XtraGrid.GridControl gridControl27;
+        private DevExpress.XtraGrid.GridControl gridControl_20;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView35;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn274;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn275;
@@ -8040,13 +8457,13 @@ namespace DReport
         private DevExpress.XtraGrid.Views.Grid.GridView gridView36;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView37;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView42;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.DateTimePicker dtEndRpt25;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt25;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX25;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt25;
-        private DevExpress.XtraEditors.LabelControl labelControl45;
-        private DevExpress.XtraEditors.LabelControl labelControl46;
+        private System.Windows.Forms.Panel report_panel_20;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_20;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_20;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_20;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_20;
+        private DevExpress.XtraEditors.LabelControl endlabel_20;
+        private DevExpress.XtraEditors.LabelControl startlabel_20;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn273;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn283;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn292;
@@ -8055,7 +8472,7 @@ namespace DReport
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn295;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn297;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage21;
-        private DevExpress.XtraGrid.GridControl gridControl28;
+        private DevExpress.XtraGrid.GridControl gridControl_21;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView43;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn296;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn298;
@@ -8068,15 +8485,15 @@ namespace DReport
         private DevExpress.XtraGrid.Views.Grid.GridView gridView44;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView45;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView46;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.DateTimePicker dtEndRpt26;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt26;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX26;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt26;
-        private DevExpress.XtraEditors.LabelControl labelControl47;
-        private DevExpress.XtraEditors.LabelControl labelControl48;
+        private System.Windows.Forms.Panel report_panel_21;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_21;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_21;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_21;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_21;
+        private DevExpress.XtraEditors.LabelControl endlabel_21;
+        private DevExpress.XtraEditors.LabelControl startlabel_21;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage22;
-        private DevExpress.XtraGrid.GridControl gridControl29;
+        private DevExpress.XtraGrid.GridControl gridControl_22;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView47;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn307;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn308;
@@ -8100,12 +8517,46 @@ namespace DReport
         private DevExpress.XtraGrid.Views.Grid.GridView gridView48;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView49;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView50;
-        private System.Windows.Forms.Panel panel28;
-        private DevExpress.XtraEditors.SimpleButton btnToXLSX27;
-        private System.Windows.Forms.DateTimePicker dtEndRpt27;
-        private System.Windows.Forms.DateTimePicker dtBeginRpt27;
-        private DevExpress.XtraEditors.SimpleButton btnSearchRpt27;
-        private DevExpress.XtraEditors.LabelControl labelControl49;
-        private DevExpress.XtraEditors.LabelControl labelControl50;
+        private System.Windows.Forms.Panel report_panel_22;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_22;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_22;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_22;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_22;
+        private DevExpress.XtraEditors.LabelControl endlabel_22;
+        private DevExpress.XtraEditors.LabelControl startlabel_22;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage23;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private System.Windows.Forms.Label user_greetings;
+        private DevExpress.XtraEditors.SidePanel user_panel;
+        private System.Windows.Forms.Label user_time;
+        private DevExpress.XtraEditors.SvgImageBox user_myregimage;
+        private System.Windows.Forms.Label user_label_myreg;
+        private DevExpress.XtraGrid.GridControl gridControl_23;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView51;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn326;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn327;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn328;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn329;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn330;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn331;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn332;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn333;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn334;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn335;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn336;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn337;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn338;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView52;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView53;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView54;
+        private System.Windows.Forms.Panel report_panel_23;
+        private DevExpress.XtraEditors.SimpleButton btnToXLSX_23;
+        private System.Windows.Forms.DateTimePicker dtEndRpt_23;
+        private System.Windows.Forms.DateTimePicker dtBeginRpt_23;
+        private DevExpress.XtraEditors.SimpleButton btnSearchRpt_23;
+        private DevExpress.XtraEditors.LabelControl startlabel_23;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn339;
+        private DevExpress.XtraEditors.LabelControl endlabel_23;
     }
 }

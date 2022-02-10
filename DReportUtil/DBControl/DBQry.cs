@@ -9,9 +9,9 @@ namespace DReportUtil.DBControl
 {
     public class DBQry
     {
-        public static string rpt1(string begin, string end)
+        public static string rpt_24(string begin, string end)
         {
-            string qry = string.Format(@"SELECT * FROM ((SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA, AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN , DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
+            string qry = string.Format(@"SELECT * FROM ((SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, EE.CALL_TYPE_NAME , GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA, AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN , DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
         SELECT ORGACC.*,P.TOTAL_POINT,P.SPEND_POINT FROM (
         SELECT * FROM ACCOUNT_TRANSACTION WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND PRODUCT_ID IN  (SELECT PRODUCT_ID FROM PRODUCT_CATALOG WHERE ISREPORT =1) AND AMOUNT !=0 AND CARD_NUMBER NOT IN ('8097603536532789', '2130152015', '2130139200') AND SUBSTR(CARD_NUMBER, 0,3) !='100' AND CALL_TYPE NOT IN (101,5,40)
         UNION ALL
@@ -26,9 +26,11 @@ LEFT JOIN T_DISH_CUSTOM BB ON AA.CARD_NUMBER = BB.CARD_NO
 LEFT JOIN SYSTEM_BRANCH_LOCATION DD ON AA.BRANCH = DD.BRANCH_ID AND AA.CHANNEL_TYPE IN (9,8)
 LEFT JOIN TYPE_CHANNEL GG ON AA.CHANNEL_TYPE = GG.CHANNEL_ID
 LEFT JOIN PRODUCT_CATALOG HH ON AA.PRODUCT_ID = HH.PRODUCT_ID
-LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID)
+LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID
+LEFT JOIN TYPE_CALL_TYPE EE ON EE.CALL_TYPE_ID = AA.CALL_TYPE
+WHERE EE.CALL_TYPE_ID NOT IN (13,14,15,16,17))
 UNION ALL
-(SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA, AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN, DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
+(SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, EE.CALL_TYPE_NAME , GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA, AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN, DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
         SELECT ORGACC.*,P.TOTAL_POINT,P.SPEND_POINT FROM (
         SELECT * FROM ACCOUNT_TRANSACTION WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND PRODUCT_ID IN  (SELECT PRODUCT_ID FROM PRODUCT_CATALOG WHERE ISREPORT =1) AND AMOUNT !=0 AND CARD_NUMBER NOT IN ('8097603536532789', '2130152015', '2130139200') AND SUBSTR(CARD_NUMBER, 0,3) !='100' AND CALL_TYPE NOT IN (101,5,40)
         UNION ALL
@@ -43,9 +45,11 @@ LEFT JOIN T_DISH_CUSTOM BB ON AA.CARD_NUMBER = BB.CARD_NO
 LEFT JOIN SYSTEM_BRANCH_LOCATION DD ON AA.BRANCH = DD.BRANCH_ID AND AA.CHANNEL_TYPE IN (9,8)
 LEFT JOIN TYPE_CHANNEL GG ON AA.CHANNEL_TYPE = GG.CHANNEL_ID
 LEFT JOIN PRODUCT_CATALOG HH ON AA.PRODUCT_ID = HH.PRODUCT_ID
-LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID) 
+LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID
+LEFT JOIN TYPE_CALL_TYPE EE ON EE.CALL_TYPE_ID = AA.CALL_TYPE
+WHERE EE.CALL_TYPE_ID NOT IN (13,14,15,16,17)) 
 UNION ALL
-(SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA,AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN, DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
+(SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, EE.CALL_TYPE_NAME , GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA,AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN, DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
         SELECT ORGACC.*,P.TOTAL_POINT,P.SPEND_POINT FROM (
         SELECT * FROM ACCOUNT_TRANSACTION WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND PRODUCT_ID IN  (SELECT PRODUCT_ID FROM PRODUCT_CATALOG WHERE ISREPORT =1) AND AMOUNT !=0 AND CARD_NUMBER NOT IN ('8097603536532789', '2130152015', '2130139200') AND SUBSTR(CARD_NUMBER, 0,3) !='100' AND CALL_TYPE NOT IN (101,5,40)
         UNION ALL
@@ -60,11 +64,13 @@ LEFT JOIN T_DISH_CUSTOM BB ON AA.CARD_NUMBER = BB.CARD_NO
 LEFT JOIN SYSTEM_BRANCH_LOCATION DD ON AA.BRANCH = DD.BRANCH_ID AND AA.CHANNEL_TYPE IN (9,8)
 LEFT JOIN TYPE_CHANNEL GG ON AA.CHANNEL_TYPE = GG.CHANNEL_ID
 LEFT JOIN PRODUCT_CATALOG HH ON AA.PRODUCT_ID = HH.PRODUCT_ID
-LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID)) 
+LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID
+LEFT JOIN TYPE_CALL_TYPE EE ON EE.CALL_TYPE_ID = AA.CALL_TYPE
+WHERE EE.CALL_TYPE_ID NOT IN (13,14,15,16,17))) 
 WHERE TRANS_ID NOT IN (SELECT TRANS_ID FROM FLASH_LEASING_CDR) AND TRANS_ID NOT IN (SELECT TRANS_ID FROM ACCOUNT_TRANSACTION WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND PROMOTION_ID = 161)", begin, end);
             return qry;
         }
-        public static string rpt2(string begin, string end)
+        public static string rpt_25(string begin, string end)
         {
             string qry = string.Format(@"SELECT CC.REVERSE_TRANS_ID, GG.CHANNEL_NAME, AA.REGDATE, SUBSTR((AA.REGTIME+1000000),2,6) AS REGTIME, FF.NAME, AA.CARD_NO, BB.SUBSCRIBER_FNAME, 
 DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, AA.BEFORE_REMAINS, CC.AMOUNT, AA.AFTER_REMAINS,CASE WHEN CHANNEL_TYPE IN (8,9) THEN DD.BRANCH_NAME END AS BRANCH_NAME, AA.USERNAME, CC.DESCR,TOTAL_POINT AS UP_NEMEGDSEN,SPEND_POINT AS UP_HASAGDSAN FROM 
@@ -77,7 +83,7 @@ LEFT JOIN TYPE_CHANNEL GG ON AA.CHANNEL_NAME = GG.CHANNEL_ID
 LEFT JOIN (SELECT * FROM UPOINT_TRANSACTION WHERE LENGTH(BILL_NUMBER)='24') UU ON UU.TRANS_ID = AA.TRANS_ID", begin, end);
             return qry;
         }
-        public static string rpt6(string begin, string end)
+        public static string rpt_28(string begin, string end)
         {
             string qry = string.Format(@"SELECT AA.REVERSE_TRANS_ID, HH.PRODUCT_NAME, GG.CHANNEL_NAME, AA.REGDATE, AA.CARD_NUMBER, BB.SUBSCRIBER_FNAME, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME, AA.STARTDATE, AA.ENDDATE, AA.AMOUNT, DD.BRANCH_NAME, AA.USER_NAME, AA.DESCR, BB.OPERATION_ID FROM (SELECT * FROM ACCOUNT_TRANSACTION 
         WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND CALL_TYPE =9 AND CHANNEL_TYPE=9 AND AMOUNT=0 AND CARD_NUMBER NOT IN ('8097603536532789') AND DESCR LIKE 'Үнэгүй%' ORDER BY TRANS_ID ASC) AA
@@ -88,7 +94,7 @@ LEFT JOIN (SELECT * FROM UPOINT_TRANSACTION WHERE LENGTH(BILL_NUMBER)='24') UU O
         LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID", begin, end);
             return qry;
         }
-        public static string rpt3(string begin, string end)
+        public static string rpt_26(string begin, string end)
         {
             string qry = string.Format(@"SELECT CC.REVERSE_TRANS_ID, NN.PRODUCT_NAME, FF.CHANNEL_NAME, AA.CDR_REGDATE, VV.NAME, AA.CARD_NO, BB.SUBSCRIBER_FNAME, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, CC.STARTDATE, CC.ENDDATE, AA.CDR_BEFORE_BALANCE, CC.AMOUNT AS TOTAL_AMOUNT,
              MT_FEE,CC.AMOUNT - MT_FEE AS CDR_USED_AMOUNT, AA.CDR_AFTER_BALANCE, CT.CALL_TYPE_NAME, DD.BRANCH_NAME, CC.USER_NAME, CC.DESCR, 
@@ -105,7 +111,7 @@ LEFT JOIN (SELECT * FROM UPOINT_TRANSACTION WHERE LENGTH(BILL_NUMBER)='24') UU O
             return qry;
         }
 
-        public static string rpt5(string begin, string end)
+        public static string rpt_5(string begin, string end)
         {
             string qry = string.Format(@"select installer, a.CARD_NO, amount, DECODE(a.amount, 500,'Илүү багц', 1000,'Үлэмж багц') Bagtsiin_ner, c.name, a.INSERT_DATE, b.CREATE_DATE from installer_promotion_tbl_new a
             left join t_dish_custom b on a.CARD_NO = b.CARD_NO
@@ -118,7 +124,7 @@ LEFT JOIN (SELECT * FROM UPOINT_TRANSACTION WHERE LENGTH(BILL_NUMBER)='24') UU O
             return qry;
         }
 
-        public static string rpt4(string begin, string end)
+        public static string rpt_27(string begin, string end)
         {
             string qry = string.Format(@"SELECT CC.REVERSE_TRANS_ID, CC.TRANS_ID, NN.PRODUCT_NAME, FF.CHANNEL_NAME, AA.CDR_REGDATE, VV.NAME, AA.CARD_NO, BB.SUBSCRIBER_FNAME, 
 DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, CC.STARTDATE, CC.ENDDATE, AA.CDR_BEFORE_BALANCE, AA.CDR_USED_AMOUNT, AA.CDR_AFTER_BALANCE, CT.CALL_TYPE_NAME, DD.BRANCH_NAME, 
@@ -135,7 +141,7 @@ LEFT JOIN TV_CONTENT OO ON CC.CONTENT_ID = OO.ID WHERE CC.CALL_TYPE =10", begin,
             return qry;
         }
 
-        public static string rpt7(string begin, string end)
+        public static string rpt_1(string begin, string end)
         {
             string qry = string.Format(@"SELECT NAME AS PACKAGE_NAME,X.CARD_NO,GEREENII_HUGATSAA,PRICE ,LIZING_AMOUNT  , DISCOUNT ,  
     DECODE (DISCOUNT , 60000, 12000, 12900,31900) AS TERMINAL_AMOUNT ,DECODE (DISCOUNT , 60000, 10400, 12900,10500) AS PACKAGE_AMOUNT , INSTALLER_FEE ,CREATE_DATE , BRANCH_NAME, USER_NAME  FROM (
@@ -240,33 +246,29 @@ LEFT JOIN (SELECT CARD_NO ,COUNT(0) AS GEREENII_HUGATSAA FROM D_PRODUCT_PLAN WHE
             return qry;
         }
 
-        public static string rpt8(string begin, string end)
+        public static string rpt_2(string begin, string end)
         {
             string qry = string.Format(@"select  CARD_NUMBER, AMOUNT, b.PRODUCT_NAME, a.STARTDATE, enddate, REGDATE,  USER_NAME, DESCR from uni_dish.account_transaction a
-left join PRODUCT_CATALOG b on a.PRODUCT_ID = b.PRODUCT_ID
-where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') and amount = 0 and DESCR like 'нээлтийн%' and a.CARD_NUMBER not like '100%'", begin, end);
+                                         left join PRODUCT_CATALOG b on a.PRODUCT_ID = b.PRODUCT_ID
+                                         where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') and amount = 0 and DESCR like 'нээлтийн%' and a.CARD_NUMBER not like '100%'", begin, end);
             return qry;
         }
 
-        public static string rpt9(string begin, string end)
+        public static string rpt_3(string begin, string end)
         {
             string qry = string.Format(@" SELECT A.REVERSE_TRANS_ID ,A.TRANS_ID ,A.CARD_NO,A.BILL_NUMBER,C.PRODUCT_NAME ,D.BRANCH_NAME AS BRANCHNAME, E.CHANNEL_NAME , B.USER_NAME , F.CALL_TYPE_NAME, A.INSERTDATE AS REGDATE,
              A.BONUS_AMOUNT, A.TOTAL_POINT AS NEMEGDSEN_UPOINT, A.SPEND_POINT AS ZARTSUULSAN_UPOINT   FROM (
             SELECT * FROM (
-                        SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.POINT_BALANCE, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,NULL AS REVERSE_TRANS_ID, A.BONUS_POINT FROM UPOINT_TRANSACTION A
+                        SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,NULL AS REVERSE_TRANS_ID FROM UPOINT_TRANSACTION A
                         LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
                         WHERE (A.INSERTDATE >= TO_DATE('{0}','yyyymmddhh24miss') AND 
                         A.INSERTDATE <= TO_DATE('{1}','yyyymmddhh24miss') AND A.RESULT = 0)
                          )
             UNION ALL
             SELECT * FROM (
-                            SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.POINT_BALANCE, A.TOTAL_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE,C.REGDATE,
-                             B.TRANS_ID AS REVERSE_TRANS_ID,A.BONUS_POINT FROM UPOINT_TRANSACTION A
-                            LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
-                            LEFT JOIN ACCOUNT_TRANSACTION C ON C.TRANS_ID = B.REVERSE_TRANS_ID 
-
-                            WHERE (C.REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') AND 
-                            C.REGDATE <= TO_DATE('{1}','yyyymmddhh24miss') AND A.RESULT = 0 AND (C.DESCR!= '[Дараа төлбөрт шилжүүлэг] идэвхтэй багцын буцаалт.' OR C.DESCR IS NULL)  )
+                            SELECT A.ID, A.TRANS_ID, A.CARD_NO, A.BONUS_AMOUNT, A.BONUS_POINT, A.SPEND_POINT, A.BILL_NUMBER, A.RESULT, A.MESSAGE, A.INSERTDATE,A.TRANS_ID AS REVERSE_TRANS_ID FROM UPOINT_TRANSACTION A WHERE TRANS_ID IN (
+                            SELECT TO_NUMBER(SUBSTR(PARAMETERS,0,LENGTH(PARAMETERS)-2)) AS TRANS_ID FROM UPOINT_LOG 
+                            WHERE INSERT_DATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND INSERT_DATE <= TO_DATE('{1}','YYYYMMDDHH24MISS')  AND API_NAME = 'UPointReverse reverseTrans' AND SUBSTR(RESULT,1,3) = '000')
                          )) A
             LEFT JOIN ACCOUNT_TRANSACTION B ON A.TRANS_ID = B.TRANS_ID
             LEFT JOIN PRODUCT_CATALOG C ON C.PRODUCT_ID = B.PRODUCT_ID
@@ -277,7 +279,7 @@ where REGDATE >= TO_DATE('{0}','yyyymmddhh24miss') and REGDATE <= TO_DATE('{1}',
             return qry;
         }
 
-        public static string rpt10(string begin)
+        public static string rpt_4(string begin)
         {
             string qry = string.Format(@"select * from 
                     (select c.NAME, l.card_no, t.SUBSCRIBER_FNAME, a.PHONE_NO, ( NVL( l.odoo,0) + NVL(r4.zar,0) - NVL(u4.tsen,0) ) correct from 
@@ -309,7 +311,7 @@ and a.type = 1 and a.INSTALLER = 'dd_darkhan_1' ", begin, end);
             return qry;
         }
 
-        public static string rpt12(string begin, string end)
+        public static string rpt_6(string begin, string end)
         {
             string qry = string.Format(@"select installer, a.CARD_NO, a.amount, DECODE(a.amount, 500,'Илүү багц', 1000,'Үлэмж багц') Bagtsiin_ner, c.name, a.INSERT_DATE, b.CREATE_DATE from installer_promotion_tbl_new a
 left join t_dish_custom b on a.CARD_NO = b.CARD_NO
@@ -322,7 +324,7 @@ and a.type = 1 and a.INSTALLER = 'dd_darkhan_1'", begin, end);
             return qry;
         }
 
-        public static string rpt13(string begin, string end)
+        public static string rpt_7(string begin, string end)
         {
             string qry = string.Format(@"select a.trans_id, card_number, c.PRODUCT_NAME, d.name_eng AS CONTENT_NAME, b.STARTDATE, b.ENDDATE, b.DESCR, vcontent, unitel, ddish, unitel_amount, ddish_amount, regdate  from UNINEGJ_REPORT a
 left join ACCOUNT_TRANSACTION b on b.TRANS_ID  = a.TRANS_ID
@@ -339,7 +341,7 @@ where  b.REGDATE >= to_date('{0}','yyyymmddhh24miss') and b.REGDATE <= to_date('
 and b.CARD_NUMBER != '8097603536532789' and b.CARD_NUMBER not like '100%' AND B.PRODUCT_ID = 45", begin, end);
             return qry;
         }
-        public static string rpt14(string begin, string end)
+        public static string rpt_8(string begin, string end)
         {
             string qry = string.Format(@"select q.REVERSE_TRANS_ID, l.PRODUCT_NAME, ch.CHANNEL_NAME, substr(r.CDR_REGDATE, 0, 8) as REGDATE, substr(r.CDR_REGDATE, 9, 14) as REGTIME, c.NAME as VirtualAccount,
 r.CARD_NO, t.SUBSCRIBER_FNAME, q.STARTDATE, q.ENDDATE, r.CDR_BEFORE_BALANCE, r.CDR_USED_AMOUNT as AMOUNT, r.CDR_AFTER_BALANCE, ct.CALL_TYPE_NAME, B.Branch_name, q.USER_NAME,  
@@ -354,7 +356,7 @@ left join uni_dish.PRODUCT_CATALOG l on l.PRODUCT_ID = q.PRODUCT_ID
 where  substr(r.CDR_REGDATE, 0, 8) >= '{0}' and substr(r.CDR_REGDATE, 0, 8) <= '{1}' and t.SUBSCRIBER_STATUS = '1' and r.CDR_USED_COUNTERS! = '1001' AND r.CARD_NO not in ('8097603536532789', '2130152015') AND r.CARD_NO not like '100%'", begin, end);
             return qry;
         }
-        public static string rpt15(string begin, string end)
+        public static string rpt_9(string begin, string end)
         {
             string qry = string.Format(@"select * from (
 select installer, a.CARD_NO, amount, INSERT_DATE, b.CREATE_DATE from uni_dish.installer_promotion_tbl_new a
@@ -365,7 +367,7 @@ and INSERT_DATE<=to_date('{1}','yyyymmddhh24miss') and type=1
             return qry;
         }
 
-        public static string rpt16(string begin, string end)
+        public static string rpt_10(string begin, string end)
         {
             string qry = string.Format(@"SELECT CARD_NO, SUBSCRIBER_FNAME, SUBSCRIBER_LNAME, CERTIFICATE_NO, BRANCHNAME, CREATE_USER, CREATE_DATE, BUNDLE_NAME, TOTAL, DEPOSIT, DISCOUNT, LEASING FROM 
     (
@@ -378,7 +380,7 @@ and INSERT_DATE<=to_date('{1}','yyyymmddhh24miss') and type=1
                     LEFT JOIN W_BUNDLE C ON C.ID  = A.BUNDLE_ID
                     LEFT JOIN T_DISH_CUSTOM D ON D.SUBSCRIBER_CODE =  A.SUBCODE
                     LEFT JOIN SYSTEM_BRANCH_LOCATION E ON E.BRANCH_ID = A.BRANCH_ID
-                    WHERE C.IS_PREPAID = 1 AND C.SERVICE_TYPE = 2 AND A.CARD_NO NOT LIKE '100%'
+                    WHERE C.IS_PREPAID = 1 AND C.SERVICE_TYPE = 2 AND A.CARD_NO NOT LIKE '100%' AND D.SUBSCRIBER_STATUS = 1
                     )
                 )
         UNION ALL
@@ -394,7 +396,7 @@ and INSERT_DATE<=to_date('{1}','yyyymmddhh24miss') and type=1
                                 LEFT JOIN T_DISH_CUSTOM_BRIEF BB ON BB.CARD_NO = AA.CARD_NO
                                 LEFT JOIN W_ITEM_BUNDLE CC ON CC.ID = BB.BUNDLE_ID
                                 LEFT JOIN T_DISH_CUSTOM DD ON DD.SUBSCRIBER_CODE =  BB.SUBCODE
-                                LEFT JOIN SYSTEM_BRANCH_LOCATION EE ON EE.BRANCH_ID = BB.BRANCH_ID WHERE CC.TYPE = 16 
+                                LEFT JOIN SYSTEM_BRANCH_LOCATION EE ON EE.BRANCH_ID = BB.BRANCH_ID WHERE CC.TYPE = 16 AND DD.SUBSCRIBER_STATUS = 1
                                 )
                             )
         UNION ALL
@@ -405,15 +407,17 @@ and INSERT_DATE<=to_date('{1}','yyyymmddhh24miss') and type=1
                             left join SYSTEM_YES_USER_TBL C ON C.USER_NAME = A.CREATED_USER
                             LEFT JOIN ACCOUNT_TRANSACTION P ON P.TRANS_ID = A.TRANS_ID
                             LEFT JOIN SYSTEM_BRANCH_LOCATION D ON D.BRANCH_ID =  P.BRANCH
-                            WHERE A.PROMOTION_ID = 136
+                            WHERE A.PROMOTION_ID = 136 AND b.SUBSCRIBER_STATUS = 1
                             )   
     ) WHERE CREATE_DATE  >= TO_DATE('{0}','YYYYMMDDHH24MISS')  AND CREATE_DATE  <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND CARD_NO NOT LIKE '100%'", begin, end);
             return qry;
         }
 
-        public static string rpt17(string begin, string end)
+        public static string rpt_12(string begin, string end)
         {
-            string qry = string.Format(@"SELECT DISTINCT (CARD_NO), FIRST_BALANCE,INCOME,AMOUNT,LAST_BALANCE,SUBSCRIBER_FNAME,SUBSCRIBER_LNAME,CERTIFICATE_NO,BRANCH_NEW ,CREATE_DATE, UPDATED_DATE, CREATE_USER,LEASING_NAME 
+            string qry = string.Format(@"
+
+SELECT  * FROM (SELECT DISTINCT (CARD_NO), FIRST_BALANCE,INCOME,AMOUNT,LAST_BALANCE,SUBSCRIBER_FNAME,SUBSCRIBER_LNAME,CERTIFICATE_NO,BRANCH_NEW ,CREATE_DATE, UPDATED_DATE, CREATE_USER,LEASING_NAME 
 FROM( SELECT CARD_NO, FIRST_BALANCE,INCOME,AMOUNT,LAST_BALANCE,SUBSCRIBER_FNAME,SUBSCRIBER_LNAME, CERTIFICATE_NO,
 CASE WHEN BRANCH IS NULL THEN CREATE_USER ELSE BRANCH END AS BRANCH_NEW,CREATE_DATE, UPDATED_DATE,CREATE_USER,LEASING_NAME 
 FROM(SELECT A.*,SBL.BRANCH_NAME BRANCH 
@@ -547,11 +551,25 @@ LEFT JOIN RESELLER.T_BRANCH@UNIDISHDB SBL ON SYUT.BRANCH_ID = SBL.BRANCHID
 )) A 
 LEFT JOIN UNI_DISH.SYSTEM_YES_USER_TBL SYUT ON A.CREATE_USER = SYUT.USER_NAME 
 LEFT JOIN UNI_DISH.SYSTEM_BRANCH_LOCATION SBL ON SYUT.BRANCH_ID = SBL.BRANCH_ID) B 
-WHERE CARD_NO IN (SELECT CARD_NO FROM   UNI_DISH.T_DISH_CUSTOM WHERE  SUBSCRIBER_STATUS = '1') AND CARD_NO NOT IN (SELECT CARD_NO FROM   UNI_DISH.TEST_CARDS) AND CARD_NO NOT LIKE '100%' AND LEASING_NAME IS NOT NULL)", begin, end);
+WHERE CARD_NO IN (SELECT CARD_NO FROM   UNI_DISH.T_DISH_CUSTOM WHERE  SUBSCRIBER_STATUS = '1') AND CARD_NO NOT IN (SELECT CARD_NO FROM   UNI_DISH.TEST_CARDS) AND CARD_NO NOT LIKE '100%' AND LEASING_NAME IS NOT NULL)
+UNION ALL
+SELECT TO_CHAR(X.CARD_NO) , X.FIRST_BALANCE , X.INCOME , X.AMOUNT , X.LAST_BALANCE , Y.SUBSCRIBER_FNAME , Y.SUBSCRIBER_LNAME , Y.CERTIFICATE_NO , TO_CHAR(T.BRANCHNAME) AS BRANCH_NEW , X.CREATE_DATE ,X.UPDATED_DATE , X.CREATE_USER ,P.PROMOTION_NAME AS LEASING_NAME  FROM (
+SELECT CARD_NO , TRUNC(CREATE_DATE) AS CREATE_DATE  , PROMOTION_ID,CREATE_USER,MAX(UPDATED_DATE )  AS UPDATED_DATE,
+SUM (CASE WHEN (CREATE_DATE < TO_DATE('{0}','YYYYMMDDHH24MISS') AND  UPDATED_DATE >= TO_DATE('{0}','YYYYMMDDHH24MISS')) OR UPDATED_DATE IS NULL THEN DEVICE_PRICE END) AS FIRST_BALANCE ,
+NVL(SUM (CASE WHEN (CREATE_DATE > TO_DATE('{0}','YYYYMMDDHH24MISS')) THEN DEVICE_PRICE END),0) AS INCOME ,
+SUM (CASE WHEN UPDATED_DATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND UPDATED_DATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') THEN DEVICE_PRICE END) AS AMOUNT ,
+SUM (CASE WHEN (CREATE_DATE < TO_DATE('{0}','YYYYMMDDHH24MISS') AND  UPDATED_DATE >= TO_DATE('{1}','YYYYMMDDHH24MISS')) OR UPDATED_DATE IS NULL THEN DEVICE_PRICE END) AS LAST_BALANCE 
+FROM D_PRODUCT_PLAN WHERE CARD_NO = '2130194186' 
+GROUP BY CARD_NO , TRUNC(CREATE_DATE) , PROMOTION_ID , CREATE_USER  ) X
+LEFT JOIN (SELECT * FROM T_DISH_CUSTOM WHERE CARD_NO = '2130194186' AND SUBSCRIBER_STATUS = 1 )  Y ON Y.CARD_NO = X.CARD_NO
+LEFT JOIN UNI_DISH.SYSTEM_YES_USER_TBL Z ON Y.OPERATION_ID = Z.USER_NAME 
+LEFT JOIN RESELLER.T_BRANCH@UNIDISHDB T ON Z.BRANCH_ID = T.BRANCHID 
+LEFT JOIN D_PROMOTION_ID P ON P.ID = X.PROMOTION_ID
+WHERE FIRST_BALANCE IS NOT NULL )  WHERE FIRST_BALANCE >= 0 ", begin, end);
             return qry;
         }
 
-        public static string rpt18(string begin, string end)
+        public static string rpt_13(string begin, string end)
         {
             string qry = string.Format(@"SELECT * FROM (
 SELECT CONTRACT_ID, GER_NUMBER, CONDATE, CARD_NUMBER, IS_NEWSUB, STB_NO, ADMIN_NUMBER, MAIN_PRODUCT, CUST_NAME, SSN, CUST_TYPE, BRANCH_NAME, STAFF_ID, SUBS_REG_DATE, A.POLICY_NAME, SERVICE_TYPE, IS_COMPLETE, PRICE, DEPOSIT, DRTN PROMOTION_DURATION, TTL_PYMNT, MONTHLY_PAYMENT FROM 
@@ -619,7 +637,7 @@ LEFT JOIN
             return qry;
         }
 
-        public static string rpt19(string begin, string end)
+        public static string rpt_14(string begin, string end)
         {
             string qry = string.Format(@"select to_char(b.creationtime, 'yyyy-mm-dd') as Day, to_char(b.creationtime, 'hh24:mi:ss') as Time, a.amount, b.description, a.card_no, b.bankname, b.transferaccount, a.api_result, a.ger_number, c.contract_id from postpaid_payment a
 left join bankstatement b on a.bank_id = b.id 
@@ -629,7 +647,7 @@ where INSERTED_DATE > TO_DATE('{0}','YYYYMMDDHH24MISS') AND INSERTED_DATE < TO_D
             return qry;
         }
 
-        public static string rpt20(string begin, string end)
+        public static string rpt_15(string begin, string end)
         {
             string qry = string.Format(@"select c.product_name, f.channel_name, to_char(a.regdate, 'yyyymmdd') as CDR_REGDATE, a.card_number, d.contract_id, d.ger_number, b.subscriber_fname, a.startdate, a.enddate,a.amount-A.MT_FEE AS DEDUCTED_AMOUNT,A.MT_FEE, a.amount, g.call_type_name, h.branch_name, a.descr, a.user_name, decode(d.is_status, '0', 'active', '1', 'inactive') as IS_STATUS, e.name_eng from account_transaction a
 left join t_dish_custom b on a.card_number = b.card_no
@@ -643,7 +661,7 @@ where a.regdate >= to_date('{0}','yyyymmddhh24miss') and a.regdate < to_date('{1
             return qry;
         }
 
-        public static string rpt21(string begin)
+        public static string rpt_16(string begin)
         {
             string qry = string.Format(@"select a.card_no, d.product_name, b.contract_id, b.ger_number, c.subscriber_fname, a.amount, decode(a.is_paid, '0', 'Төлөөгүй', '1', 'Төлсөн') as IS_PAID, substr(a.invoice_month, 0, 4)||'-'||substr(a.invoice_month, 5, 2) as invoice_month from postpaid_invoice a
 left join postpaid_subscriber b on a.card_no = b.card_no
@@ -651,7 +669,7 @@ left join t_dish_custom c on a.card_no = c.card_no
 left join product_catalog d on b.product_id = d.product_id where a.invoice_month = '{0}' and c.subscriber_status = '1'", begin);
             return qry;
         }
-        public static string rpt22(string begin, string end)
+        public static string rpt_17(string begin, string end)
         {
             string qry = string.Format(@"SELECT f.promotion_name, A.CARD_NO, A.BEFORE_REMAINS, A.AMOUNT, A.AFTER_REMAINS, A.CREATE_DATE, B.USER_NAME as TULULT_XIISEN_AJILTAN, C.PRODUCT_NAME, B.STARTDATE, B.ENDDATE, D.BRANCH_NAME AS TULULT_XIISEN_SALBAR, e.created_user, DECODE(TYPE, 1, 'VIRTUAL', 2, 'CASH') AS TULBUR_TURUL,A.TRANS_ID,B.DESCR   FROM FLASH_LEASING_CDR A
 LEFT JOIN ACCOUNT_TRANSACTION B ON B.TRANS_ID = A.TRANS_ID
@@ -671,7 +689,7 @@ LEFT JOIN D_PROMOTION_ID F ON F.ID = e.promotion_id
 WHERE A.CARD_NO NOT LIKE '100%' AND A.CREATE_DATE>=TO_DATE('{0}','YYYYMMDDHH24MISS') AND  A.CREATE_DATE<=TO_DATE('{1}','YYYYMMDDHH24MISS') AND A.TRANS_ID NOT IN (SELECT TRANS_ID FROM FLASH_LEASING_CDR)", begin, end);
             return qry;
         }
-        public static string rpt23(string begin, string end)
+        public static string rpt_18(string begin, string end)
         {
             string qry = string.Format(@"SELECT * FROM ( 
                             SELECT FROM_TXN_USER_NAME, BUNDLE_ID, BUNDLE_NAME, UNIT_PRICE, QTY, TTL_PRICE FROM ( SELECT FROM_TXN_USER_NAME, UNIT_PRICE, BUNDLE_ID, BUNDLE_NAME, SUM(QUANTITY) AS QTY, SUM(PRICE) AS TTL_PRICE FROM ( 
@@ -688,7 +706,7 @@ WHERE A.CARD_NO NOT LIKE '100%' AND A.CREATE_DATE>=TO_DATE('{0}','YYYYMMDDHH24MI
                         GROUP BY FROM_TXN_USER_NAME, BUNDLE_ID, BUNDLE_NAME, UNIT_PRICE )) ORDER BY FROM_TXN_USER_NAME ASC", begin, end);
             return qry;
         }
-        public static string rpt24(string begin, string end)
+        public static string rpt_19(string begin, string end)
         {
             string qry = string.Format(@"SELECT X.CARD_NO, Z.PRODUCT_NAME, TO_CHAR(X.COMPLETED_DATE, 'YYYY-MM-DD') AS REGDATE, BANKNAME, X.AMOUNT, PHONE_NO, INVOICE_NO,
                         DECODE(REQUEST_TYPE, 1001, 'Bagts sungalt', 1004, 'Dans tsenegleed - NVOD uzsen', 1007, 'Dans tseneglelt', 1010, 'Dans tseneglelt', 1013, 'Bagts ahiulalt', 1017, 'Dans tseneglelt') AS REQUEST_TYPE
@@ -698,7 +716,7 @@ WHERE A.CARD_NO NOT LIKE '100%' AND A.CREATE_DATE>=TO_DATE('{0}','YYYYMMDDHH24MI
                         ORDER BY COMPLETED_DATE", begin, end);
             return qry;
         }
-        public static string rpt25(string begin, string end)
+        public static string rpt_20(string begin, string end)
         {
             string qry = string.Format(@"SELECT A.TRANS_ID, DECODE(A.CHANNEL_TYPE, 9, 'Салбар', 11, 'Суурьлуулагч', 3, 'Мобайл диллер', 13, 'Агент') AS SOURCE, A.CARD_NO, B.BRANCH_NAME, A.USER_NAME, TO_NUMBER(A.AMOUNT)  AS AMOUNT , A.MONTH, A.INSERT_DATE AS REGDATE, NUKHTSUL, T.PRODUCT_NAME,C.DESCR 
                                             FROM UPSELL_2K21_EMP_REPORT A
@@ -710,7 +728,7 @@ WHERE A.CARD_NO NOT LIKE '100%' AND A.CREATE_DATE>=TO_DATE('{0}','YYYYMMDDHH24MI
                                             ORDER BY REGDATE ASC", begin, end);
             return qry;
         }
-        public static string rpt26(string begin, string end)
+        public static string rpt_21(string begin, string end)
         {
             string qry = string.Format(@"SELECT CREATE_USER AS INSTALLER,
                 COUNT(CASE WHEN PURCHASE_TYPE = 'CASH' THEN 1 END) AS CASH ,
@@ -736,7 +754,7 @@ WHERE A.CARD_NO NOT LIKE '100%' AND A.CREATE_DATE>=TO_DATE('{0}','YYYYMMDDHH24MI
                 GROUP BY CREATE_USER ", begin, end);
             return qry;
         }
-        public static string rpt27(string begin, string end)
+        public static string rpt_22(string begin, string end)
         {
             string qry = string.Format(@"SELECT * FROM ((SELECT DISTINCT(AA.TRANS_ID), AA.REVERSE_TRANS_ID AS ESREG_GUILGEE, HH.PRODUCT_NAME AS BAGTS, GG.CHANNEL_NAME AS SUWAG, AA.REGDATE AS SUNGASN_UDUR, AA.CARD_NUMBER AS CARD, BB.SUBSCRIBER_FNAME AS NER, DECODE(BB.SUBSCRIBER_STATUS, 0,'INACTIVE', 1,'ACTIVE', 'UNKNOWN') STATUS, SS.SUBTYPE_NAME AS TURUL, AA.STARTDATE AS EXLEX_XUGATSAA, AA.ENDDATE AS DUUSAX_XUGATSAA, AA.AMOUNT AS TOTAL_DUN, MT_FEE,AA.AMOUNT - MT_FEE AS MUNGUN_DUN , DD.BRANCH_NAME AS SALBAR, AA.USER_NAME AS SUNGALT_AJILTAN, AA.DESCR AS TAILBAR, BB.OPERATION_ID AS UUSGESEN_AJILTAN , AA.TOTAL_POINT AS UP_NEMEGDSEN, AA.SPEND_POINT AS UP_HASAGDSAN FROM (
         SELECT ORGACC.*,P.TOTAL_POINT,P.SPEND_POINT FROM (
@@ -791,9 +809,34 @@ LEFT JOIN T_DISH_SUBSCRIBERTYPE SS ON BB.SUBSCRIBER_TYPE = SS.SUBTYPE_ID))
 WHERE TRANS_ID IN (SELECT TRANS_ID FROM ACCOUNT_TRANSACTION WHERE REGDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND REGDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND PROMOTION_ID = 161) ", begin, end);
             return qry;
         }
+        public static string rpt_23(string begin, string end)
+        {
+            string qry = string.Format(@"select * from (
+            SELECT X.TRANS_ID , X.PAYMENT_DATE , X.CARD_NO , Z.CHANNEL_NAME , DECODE(X.IS_MONTH , 1 , 'Сараар' , 2 ,'Хоногоор') AS TOPUP_TYPE , X.STARTDATE , X.ENDDATE ,X.MTFEE, T.PRODUCT_NAME , SUBSCRIBER_FNAME ,L.TYPE_NAME AS USER_TYPE, H.TRANS_ID AS ReVERSE_TRANS_ID , H.REGDATE AS REVERSE_DATE 
+            FROM (SELECT * FROM MT_FEE_EXTRACTED 
+            WHERE CARD_NO NOT LIKE '100%' AND STARTDATE >= TO_DATE('{0}','YYYYMMDDHH24MISS') AND STARTDATE <= TO_DATE('{1}','YYYYMMDDHH24MISS') AND CARD_NO!= '8097603536532789') X
+            LEFT JOIN ACCOUNT_TRANSACTION Y ON Y.TRANS_ID = X.TRANS_ID
+            LEFT JOIN ACCOUNT_TRANSACTION H ON H.TRANS_ID = Y.REVERSE_TRANS_ID
+            LEFT JOIN TYPE_CHANNEL Z ON Z.CHANNEL_ID = X.CHANNEL_ID
+            LEFT JOIN PRODUCT_CATALOG T ON T.PRODUCT_ID = X.PRODUCT_ID
+            LEFT JOIN (SELECT * FROM T_DISH_CUSTOM WHERE SUBSCRIBER_STATUS = 1 ) K ON K.CARD_NO = X.CARD_NO
+            LEFT JOIN T_DISH_CUSTOM_TYPE L ON L. TYPE_ID = K.SUBSCRIBER_TYPE
+             ) sub1 order by 2 asc", begin, end);
+            return qry;
+        }
         public static string login(string username)
         {
-            string qry = string.Format(@"select USER_FIRST_NAME, USER_PASSWORD, USER_EMAIL, USER_PHONE , DIVISION from DREPORT_LOGIN where USER_PHONE='{0}'", username);
+            string qry = string.Format(@"select USER_ID, USER_FIRST_NAME ,USER_LAST_NAME, USER_PASSWORD, USER_EMAIL, USER_PHONE , DIVISION from DREPORT_LOGIN where USER_PHONE='{0}'", username);
+            return qry;
+        }
+        public static string version_checker()
+        {
+            string qry = string.Format(@"SELECT APP_VERSION FROM (SELECT * FROM DREPORT_VERSION ORDER BY REGDATE DESC) WHERE rownum = 1");
+            return qry;
+        }
+        public static string permission_reports(string division)
+        {
+            string qry = string.Format(@"SELECT REPORTS FROM dreport_permission WHERE DIVISION = '{0}' AND IS_ACTIVE = 1" , division);
             return qry;
         }
     }
