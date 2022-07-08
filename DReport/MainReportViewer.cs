@@ -37,7 +37,6 @@ namespace DReport
         {
             foreach (XtraTabPage tabPage in xtratabcontrol_report.TabPages)
             {
-/*                label1.Text = tabPage.Name;*/
                 
                 if (!accessiblereports.Contains(tabPage.Name))
                 {

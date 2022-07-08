@@ -23,6 +23,7 @@ namespace DReport
         public Form1()
         {
             InitializeComponent();
+            versionlabel.Text = ConstantValues.VERSION;
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)

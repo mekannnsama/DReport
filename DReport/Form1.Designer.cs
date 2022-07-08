@@ -41,6 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.versionlabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.versionlabel);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.Forgotpassbutton);
@@ -197,6 +199,15 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "DREPORT";
             // 
+            // versionlabel
+            // 
+            this.versionlabel.AutoSize = true;
+            this.versionlabel.Location = new System.Drawing.Point(198, 43);
+            this.versionlabel.Name = "versionlabel";
+            this.versionlabel.Size = new System.Drawing.Size(71, 13);
+            this.versionlabel.TabIndex = 7;
+            this.versionlabel.Text = "version 1.0.0";
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnLogin;
@@ -238,6 +249,7 @@
         private DevExpress.XtraEditors.SimpleButton Forgotpassbutton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label versionlabel;
     }
 }
 

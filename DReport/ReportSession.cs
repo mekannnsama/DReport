@@ -8,7 +8,6 @@ namespace DReport
 {
     public class ReportSession
     {
-
         public static string UserId;
         public static string Lname;
         public static string Fname;

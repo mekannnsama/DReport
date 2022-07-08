@@ -32,14 +32,30 @@ namespace DReport
         {
             //Овог update хийх //
    /*         XtraMessageBox.Show(ReportSession.UserId);*/
-            string updatesquery = string.Format(@"UPDATE DREPORT_LOGIN SET USER_FIRST_NAME = '{0}' WHERE USER_ID = {1} ", textEdit2.EditValue , ReportSession.UserId); 
-            dbconn.iDBCommand(updatesquery);
+            string updatesquery = string.Format(@"UPDATE DREPORT_LOGIN SET USER_FIRST_NAME = '{0}' WHERE USER_ID = {1} ", textEdit2.EditValue , ReportSession.UserId);
+            string result = dbconn.iDBCommand(updatesquery);
+            if ( result.Substring( result.Length - 3 , 3 ) == "000")
+            {
+                MessageBox.Show(result);
+            }
+            else
+            {
+                MessageBox.Show(result);
+            }
         }
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             //Нэр update хийх //
-            string updatesquery = string.Format(@"UPDATE DREPORT_LOGIN SET USER_LAST_NAME = '{0}' WHERE USER_ID = '{1}' ", textEdit1.EditValue, ReportSession.UserId);
-            dbconn.iDBCommand(updatesquery);
+            string updatesquery = string.Format(@"UPDATE DREPORT_LOGIN SET USER_LAST_NAME = '{0}' WHERE USER_ID = {1}", textEdit1.EditValue, ReportSession.UserId);
+            string result = dbconn.iDBCommand(updatesquery);
+            if (result.Substring(result.Length - 3, 3) == "000")
+            {
+                MessageBox.Show(result);
+            }
+            else
+            {
+                MessageBox.Show(result);
+            }
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
